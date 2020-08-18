@@ -1,0 +1,75 @@
+<div class="container">
+    <h2 class="text-center">Have You Seen My Works?</h2>
+</div>
+<div class="container">
+    <div class="portfolio-window" id="portfolioWindow">
+        <img src="img/book_690x419.png" alt="book_690x419.png"/>
+    </div>
+</div>
+<div class="container">
+    <div role="tabpanel">
+        <ul class="filters-tabs-ul" role="tablist">
+            <li role="presentation" class="active filters-tabs-li">
+                <a href="#technology" class="filters-tabs-a" aria-controls="home" role="tab" data-toggle="tab">Tag</a>
+            </li>
+            <li role="presentation" class="filters-tabs-li">
+                <a href="#job" aria-controls="profile" class="filters-tabs-a" role="tab" data-toggle="tab">Job</a>
+            </li>
+            <li role="presentation" class="filters-tabs-li">
+                <a href="#order" aria-controls="profile" class="filters-tabs-a" role="tab" data-toggle="tab">Order</a>
+            </li>
+        </ul>
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="technology">
+                <div class="btn-group-filter" role="group" aria-label="">
+                    <button type="button" class="btn btn-sm btn-default filter" data-filter=".html" title="Filter projects by Html tag"><span class="icon icon-html vcenter"></span>Html</button>
+                    <button type="button" class="btn btn-sm btn-default filter" data-filter=".css" title="Filter projects by Css tag"><span class="icon icon-css vcenter"></span>Css</button>
+                    <button type="button" class="btn btn-sm btn-default filter" data-filter=".javascript" title="Filter projects by Javascript tag"><span class="icon icon-js vcenter"></span>Javascript</button>
+                    <button type="button" class="btn btn-sm btn-default filter" data-filter=".grunt" title="Filter projects by Grunt tag"><span class="icon icon-grunt vcenter"></span>Grunt</button>
+                    <button type="button" class="btn btn-sm btn-default filter" data-filter=".handlebars" title="Filter projects by Handlebars tag"><span class="icon icon-handlebars vcenter"></span>Handlebars</button>
+                    <button type="button" class="btn btn-sm btn-default filter" data-filter=".requirejs" title="Filter projects by RequireJS tag"><span class="icon icon-requirejs vcenter"></span>RequireJS</button>
+                    <button type="button" class="btn btn-sm btn-default filter" data-filter=".vue" title="Filter projects by VueJs tag"><span class="icon icon-vue vcenter"></span>Vue</button>
+                    <button type="button" class="btn btn-sm btn-default filter" data-filter=".php" title="Filter projects by Php tag"><span class="icon icon-php vcenter"></span>Php</button>
+                    <button type="button" class="btn btn-sm btn-default filter" data-filter=".backbone" title="Filter projects by Backbone tag"><span class="icon icon-backbone vcenter"></span>Backbone</button>
+                    <button type="button" class="btn btn-sm btn-default filter" data-filter=".bootstrap" title="Filter projects by Bootstrap tag"><span class="icon icon-bootstrap vcenter"></span>Bootstrap</button>
+                    <button type="button" class="btn btn-sm btn-default filter" data-filter=".uikit" title="Filter projects by UIKit tag"><span class="icon icon-uikit vcenter"></span>UIKit</button>
+                    <button type="button" class="btn btn-sm btn-default filter" data-filter=".magento" title="Filter projects by Magento tag"><span class="icon icon-magento vcenter"></span>Magento</button>
+                    <button type="button" class="btn btn-sm btn-default filter" data-filter=".symfony" title="Filter projects by Symfony tag"><span class="icon icon-sf vcenter"></span>Symfony</button>
+                    <button type="button" class="btn btn-sm btn-default filter" data-filter=".laravel" title="Filter projects by Laravel tag"><span class="icon icon-laravel vcenter"></span>Laravel</button>
+                    <button type="button" class="btn btn-sm btn-default filter" data-filter=".csharp" title="Filter projects by C# tag"><span class="icon icon-csharp vcenter"></span>C#</button>
+                    <button type="button" class="btn btn-sm btn-default filter" data-filter="all" title="Clear tag filter">All</button>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="job">
+                <div class="btn-group-filter" role="group" aria-label="">
+                    <button type="button" class="btn btn-sm btn-default filter" data-filter=".frontend" title="Show frontend jobs">Frontend</button>
+                    <button type="button" class="btn btn-sm btn-default filter" data-filter=".backend" title="Show backend jobs">Backend</button>
+                    <button type="button" class="btn btn-sm btn-default filter" data-filter=".design" title="Show design jobs">Design</button>
+                    <button type="button" class="btn btn-sm btn-default filter" data-filter="all" title="Clear job filter">All</button>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="order">
+                <div class="btn-group-filter" role="group" aria-label="">
+                    <button type="button" class="btn btn-sm btn-default sort" data-sort="myorder:desc" title="Show newest projects first">Newest First</button>
+                    <button type="button" class="btn btn-sm btn-default sort" data-sort="myorder:asc" title="Show oldest projects first">Oldest First</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container portfolio" id="portfolioFilters">
+    {{#each projects}}
+        <div class="portfolio-item mix {{class this.job}} {{class this.tags}}" data-myorder="{{this.timestamp}}">
+            <div class="portfolio-img-wrapper">
+                {{#if this.gallery}}
+                    <img src="{{this.gallery.[0].thumb}}" class="portfolio-img"/>
+                {{/if}}
+                <div class="overlay show-item" data-slug="{{this.slug}}" title="Open project">
+                    <div class="overlay-expand">
+                        <span class="glyphicon glyphicon-share-alt"></span>{{this.title}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    {{/each}}
+</div>
