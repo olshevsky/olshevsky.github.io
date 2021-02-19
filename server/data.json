@@ -126,7 +126,7 @@
       "css",
       "javascript"
     ],
-    "url": "\/projects\/pink",
+    "url": "\/projects\/pink\/index.html",
     "urlTitle": "demo",
     "description": "Web application for managing Magento white-label shops. My place in team was to develop and maintain all frontend integration during the project. Over 80 pages of html. Many customized UI elements such as date and color pickers, charts, lightboxes, tabs, info hints, forms, WYSIWYG editors, etc.",
     "gallery": [
