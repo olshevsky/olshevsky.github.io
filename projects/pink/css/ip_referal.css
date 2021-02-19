@@ -1,0 +1,8 @@
+.ip_referal{
+    
+}
+
+.ip_referal .content_section > .ta_center > .pagination{
+    display: inline-block;
+    margin-top: 10px;
+}

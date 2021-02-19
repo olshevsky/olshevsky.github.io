@@ -1,0 +1,1065 @@
+/*here are placed all common styles*/
+html{
+    height:100%;
+    margin:0px;
+    padding:0px;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background: url('../images/bg_texture.png') repeat left top;
+    height: 100%;
+    font-family: 'Verdana';
+}
+
+/*custom font*/
+@font-face {
+    font-family: 'Myriad Pro Cond';
+    src: url('../fonts/MyriadPro-BoldCond.eot'); /*for IE*/
+    src: local('☺'), url('../fonts/MyriadPro-BoldCond.woff') format('woff'), url('../fonts/MyriadPro-BoldCond.ttf') format('truetype'), url('../fonts/Font.asp?Font=MyriadPro-BoldCond%2Esvg#MyriadPro-BoldCond') format('svg'); /*for Browsers*/
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Myriad Pro Cond';
+    src: url('../fonts/MyriadPro-Cond.eot'); /*for IE*/
+    src: local('☺'), url('../fonts/MyriadPro-Cond.woff') format('woff'), url('../fonts/MyriadPro-Cond.ttf') format('truetype'), url('../fonts/Font.asp?Font=MyriadPro-Cond%2Esvg#MyriadPro-Cond') format('svg'); /*for Browsers*/
+    font-weight: normal;
+}
+
+
+/* other try
+@font-face {   
+   font-family: "Myriad Pro Cond";   
+   src: url( ../fonts/MyriadPro-Cond.eot );  
+   src: local(" Myriad Pro Cond "), url( ../fonts/MyriadPro-Cond.ttf ) format("truetype");
+   font-weight: normal;
+ }   
+
+ @font-face {   
+   font-family: "Myriad Pro Cond";   
+   src: url( ../fonts/MyriadPro-BoldCond.eot ); 
+   src: local(" Myriad Pro Cond "), url( ../fonts/MyriadPro-BoldCond.ttf ) format("truetype");
+   font-weight: bold;
+ } 
+*/
+
+/*one more*/
+/*@font-face {
+        font-family: 'Myriad Pro Cond';
+        src: url('../fonts/MyriadPro_Cond.otf');
+        font-weight: normal;
+        font-style: normal;
+}
+
+@font-face {
+        font-family: 'Myriad Pro Cond';
+        src: url('../fonts/MyriadPro_BoldCond.otf');
+        font-weight: bold;
+        font-style: normal;
+}*/
+
+/*headers*/
+h1{
+    font: bold 20px 'Myriad Pro Cond';
+}
+
+h2{
+    font: bold 18px 'Myriad Pro Cond';
+}
+
+h3{
+    font: bold 16px 'Myriad Pro Cond';
+}
+
+h4{
+    font: bold 14px 'Myriad Pro Cond';
+}
+
+/*text colors*/
+.tc_ffffff{color: #FFFFFF;} /*white*/
+.tc_000000{color: #000000;} /*black*/
+.tc_ffcccc{color: #FFCCCC;} /*pink*/
+.tc_cc3366{color: #CC3366;} /*pink*/
+.tc_666666{color: #666666;} /*grey*/
+
+/*background colors*/
+.bc_ffffff{color: #FFFFFF;} /*white*/
+.bc_000000{color: #000000;} /*black*/
+.bc_ffcccc{color: #FFCCCC;} /*pink*/
+.bc_666666{color: #666666;} /*grey*/
+
+/*text align*/
+.ta_center{ text-align: center;}
+.ta_left{ text-align: left;}
+.ta_right{ text-align: right;}
+
+/*floats*/
+.fleft{ float: left;}
+.fright{ float: right;}
+.fclear{ clear: both;}
+
+/*horizontal grey line*/
+.hl{
+    width: 100%;
+    height: 1px;
+    background-color: #E1E1E1;
+}
+
+/*block sizes*/
+.one_half   { width: 50%;}
+.one_third  { width: 30%;}
+.one_fourth { width: 25%;}
+.one_fifth  { width: 20%;}
+.one tenth  { width: 10%;}
+
+/*---START header---*/
+.header_wrapper{
+    height: 81px;
+    width: 100%;
+    background: #D92273 url('../images/header_texture.png') repeat-x left top;
+    box-shadow: 1px 1px 15px #888;
+    -moz-box-shadow: 1px 1px 15px #888;
+    -webkit-box-shadow: 1px 1px 15px #888;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.header{
+    width: 990px;
+    height: 82px;
+    margin: 0 auto;
+}
+
+/*logo*/
+.logo_wrapper{
+    width: 500px;
+    height: 75px;
+    background: url('../images/logo.png') repeat-x center center;
+    float: left;
+    margin-left: -105px;
+}
+
+.logo_wrapper > a.logo{
+    display: block;
+    width: 295px;
+    height: 75px;
+    margin-left: 105px;
+}
+/*logo*/
+
+/*top menu*/
+.header > .top_menu{
+    height: 49px;
+    width: 360px;
+    float: left;
+    margin-left: -105px;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 26px 0 0 20px;
+}
+
+.header > .top_menu > ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.header > .top_menu > ul > li{
+    margin: 0;
+    padding: 0;
+    float: left;
+    background-color: #FFD1E5;
+    padding: 0 10px;
+    margin: 0 0 5px 5px;
+    height: 21px;
+}
+
+.header > .top_menu > ul > li > a{
+    text-decoration: none;
+    font: normal 11px 'Arial';
+    line-height: 11px;
+    color: #CC3366; 
+}
+
+.header > .top_menu > ul > li:hover, .header > .top_menu > ul > li:hover > a{
+    background-color: #ACACAC;
+    color: #FFF;
+}
+/*top menu*/
+
+/*icon block*/
+.header > .icon_block{
+    float: right;
+    height: 54px;
+    width: 75px;
+    padding-top: 21px;
+    text-align: right;
+}
+
+.header > .icon_block > a{
+    display: inline-block;
+    height: 33px;
+    width: 33px;
+    transition: box-shadow 0.3s;
+    -moz-transition: box-shadow  0.3s;
+    -webkit-transition: box-shadow 0.3s;
+    -o-transition: box-shadow 0.3s;
+}
+
+.header > .icon_block > a:hover{
+    box-shadow: 0px 0px 8px #FFFFFF;
+}
+
+.icon1{
+    background: url('../images/icon1.png');
+}
+
+.icon2{
+    background: url('../images/icon2.png');
+}
+/*icon block*/
+
+/*welcome*/
+.header > .welcome{
+    width: 230px;
+    height: 54px;
+    float: right;
+    padding: 21px 5px 0 5px;;
+    text-align: right;
+}
+
+.header > .welcome > p{
+    font: normal 11px 'Verdana';
+    margin: 0 0 6px 0;
+    color: #FFFFFF;
+    text-shadow: 0px -1px #000000;
+}
+/*welcome*/
+
+/*---END header---*/
+
+/*---START side bar---*/
+.side_bar{
+    width: 167px;
+    padding: 81px 0 0 2px;
+    float: left;
+
+}
+
+.side_bar > h2{
+    margin: 0;
+    padding: 10px 0 10px 10px;
+    color: #CCCCCC;
+    text-shadow: -1px -1px 1px #000000;
+}
+
+.side_bar > form > select{
+    width: 150px;
+    margin: 0 10px 10px 10px;
+}
+
+.side_bar > select > option{
+    width: 150px;
+}
+
+/*left menu*/
+div.sdmenu {
+    font-family: Verdana, sans-serif;
+    font-size: 11px;
+    color: #FFFFFF;
+    width: 185px;
+}
+
+div.sdmenu div {
+    overflow: hidden;
+}
+
+div.sdmenu div.collapsed {
+    height: 37px;
+    width: 169px;
+}
+
+div.sdmenu div.collapsed span {
+    height: 30px;
+    color: #FFFFFF;
+    width: 155px;
+    text-shadow: none;
+    background-color: transparent;
+    text-shadow: -1px -1px 0 #333;   
+}
+
+div.sdmenu div span {
+    display: block;
+    font-weight: bold;
+    padding: 7px 0 0 10px;
+    cursor: pointer;
+    height: 30px;
+    background-color: #D0216F;
+    color: #FFFFFF;
+    text-shadow: -1px -1px 0 #333;    
+    font: normal 19px 'Myriad Pro Cond';
+    width: 155px;
+    border-top: 1px dotted #FFF;
+    border-bottom: 1px dotted #FFF;
+    transition: background-color 0.3s;
+    -moz-transition: background-color 0.3s;
+    -webkit-transition: background-color 0.3s;
+    -o-transition: background-color 0.3s;
+}
+
+div.sdmenu div a {
+    padding: 9px 0 10px 10px;
+    height: 9px;
+    border-bottom: 1px dotted #8D8D8D;
+    text-decoration: none;
+    display: block;
+    color: #666666;
+    background: #CDCDCD;
+    width: 154px;
+}
+
+div.sdmenu div a.current {
+    color: #666;
+    width: 177px;
+    border: none;
+    height: 9px;
+    background: url('../images/arrow_act.png') top right no-repeat;
+}
+
+div.sdmenu div a:last-child, div.sdmenu div a.last{
+    border-bottom: none;
+}
+
+div.sdmenu div a.current:hover {
+    color: #666666;
+}
+
+div.sdmenu div a:hover {
+    color: #666666;
+    text-decoration: none;
+}
+
+.menu_inner_wrapp{
+    border-left: 1px solid #BDBDBD;
+    width: 100%;
+    height: 100%;
+}
+
+div.sdmenu div > a > span.arrow{
+    width: 5px;
+    height: 7px;
+    display: inline-block;
+    background: url('../images/arrow.png') no-repeat;
+    border: none;
+    margin: 0;
+    padding: 0 5px 0 0;
+}
+/*left menu*/
+
+.side_bar .banners{
+    padding-left: 8px;
+}
+
+.side_bar > div{
+    margin-bottom: 20px;
+}
+
+/*---END side bar---*/
+
+/*---START main content---*/
+.main_wrapper{
+    width: 1010px;
+    min-height: 100%;
+    margin: 0 auto;
+    background: url('../images/main_wrapper_bg.png') repeat-y top left;
+
+}
+
+.main_wrapper > .content_block{
+    width: 841px;
+    float: left;
+    padding-top: 81px;
+}
+
+.main_wrapper > .content_block > .title_block{
+    height: 42px;
+    padding-left: 25px;
+    background: url('../images/title_block_bg.png') no-repeat top left;
+}
+
+.main_wrapper > .content_block > .title_block > h2{
+    margin: 0;
+    padding: 10px 0 0 0;
+    color: #666666;
+    text-shadow: 1px 1px 1px #FFFFFF;
+}
+
+.main_wrapper > .content_block > .content{
+    padding-left: 20px;
+    padding-bottom: 40px;
+}
+/*---END main content---*/
+
+/*---START account manager---*/
+.account_manager{
+    width: 315px;
+    height: 215px;
+    position: fixed;
+    top: 120px;
+    right: -285px;
+    background-color: #D92273;
+    padding: 2px 0 2px 2px;
+}
+
+.account_manager > .inner{
+    height: 213px;
+    border-bottom: 1px solid #FFFFFF;
+    border-top: 1px solid #FFFFFF;
+    border-left: 1px solid #FFFFFF;
+    background: url('../images/account_manager.png');
+    position: relative;
+}
+
+#open_account_manager{
+    width: 32px;
+    height: 212px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+
+#close_account_manager{
+    width: 29px;
+    height: 29px;
+    background: url('../images/account_manager_close.png');
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 99;
+    cursor: pointer;
+}
+
+.account_manager > .inner > .title{
+    width: 200px;
+    overflow: hidden;
+    position: absolute;
+    top: 15px;
+    left: 45px;
+}
+
+.account_manager > .inner > .title > h2{
+    color: #FFF;
+    font-size: 20px;
+    text-shadow: -1px -1px 1px black;
+    margin: 0;
+}
+
+.account_manager > .inner p{
+    font: bold 12px 'Verdana';
+    color: #FFFFFF;
+    margin: 5px 0;
+}
+
+.account_manager > .inner p.sub{
+    font: normal 11px 'Verdana';
+    color: #ff99cc;
+}
+
+.account_manager > .inner > .name{
+    position: absolute;
+    top: 53px;
+    left: 50px;
+}
+
+.account_manager > .inner > .skype{
+    position: absolute;
+    top: 103px;
+    left: 50px;
+}
+
+.account_manager > .inner > .email{
+    position: absolute;
+    top: 156px;
+    left: 50px;
+}
+
+.skype_logo{
+    width: 35px;
+    height: 35px;
+    display: block;
+    background: url('../images/skype_logo.png');
+    position: absolute;
+    top: 107px;
+    left: 148px;
+}
+
+/*---END account manager---*/
+
+/*---START custom form---*/
+.custom_checkbox{
+    background: url('../images/custom_checkbox.png') top left no-repeat;
+    -moz-appearance: checkbox ;
+    -webkit-appearance: none;
+    -o-appearance: checkbox ;
+    appearance: checkbox; 
+    border: none;
+    width: 14px;
+    height: 14px;
+    margin: 0;
+    cursor: pointer;
+}
+
+.custom_checkbox:checked{
+    background: url('../images/custom_checkbox_c.png') top left no-repeat;
+}
+
+.custom_radio{
+    background: url('../images/custom_radiobox.png') top left no-repeat;
+    width: 15px;
+    height: 15px;
+    -moz-appearance: radio;
+    -webkit-appearance: none;
+    -o-appearance: radio;
+    appearance: none;
+    cursor: pointer;
+    border: none;
+    margin: 0;
+}
+
+.custom_radio:checked{
+    background: url('../images/custom_radiobox_c.png') top left no-repeat;
+    border: none;
+}
+
+.custom_text{
+    color: #666666;
+    background-color: #EDEDED;
+    border: 1px solid #D7D7D7;
+    height: 20px;
+    padding-left: 5px;
+    transition: background-color 0.4s;
+    -moz-transition: background-color 0.4s;
+    -webkit-transition: background-color 0.4s;
+    -o-transition: background-color 0.4s;
+}
+
+.custom_text:focus{
+    background-color: #FFFFFF;
+    height: 20px;
+}
+
+.custom_select{
+    background-color: #EDEDED;
+    border-radius: 3px;
+    border: 1px solid #000000;
+    font: normal 11px 'Arial';
+    -o-appearance: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: treeview;
+    background: #EDEDED url('../images/mac_dropdown.png') no-repeat right top;  
+    padding: 0 17px 0 5px;
+    cursor: pointer;
+}
+
+.custom_select.light_border{
+    border: 1px solid #BDC7D9;
+}
+
+.custom_textarea{
+    background-color: #EDEDED;
+    border: 1px solid #D7D7D7;
+}
+
+.custom_textarea:focus, custom_text:focus{
+    background-color: #FFFFFF;
+}
+
+custom_text, .custom_textarea{
+    transition: background-color 0.4s;
+    -moz-transition: background-color 0.4s;
+    -webkit-transition: background-color 0.4s;
+    -o-transition: background-color 0.4s;
+}
+
+.custom_file{ 
+    background-color: transparent;
+    border: none;  
+    -o-appearance: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+label.custom_label{
+    font: bold 12px 'Verdana';
+    color: #666666;
+}
+
+input[type="radio"]:checked.custom_radio+label{ 
+    color: #cc3366; 
+}
+/*---END custom form---*/
+
+/*---START grey form---*/
+.grey_form_block{
+    width: 100%;
+    background: #595959 url('../images/point_texture.png');
+    height: 140px;
+}
+
+.grey_form_block h3{
+    color: #FFF;
+    text-shadow: 1px 1px #000000;
+}
+
+.grey_form_block .left_part  h3{
+    margin: 0;
+    float: left;
+    padding: 3px 0 0 5px;
+    font-size: 18px;
+}
+
+.grey_form_block .left_part input{
+    float: left;
+}
+
+.grey_form_block .left_part{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.grey_form_block .left_part div.input_row{
+    height: 33px;
+    padding-top: 2px;
+    padding-left: 2%;
+    width: 98%;
+    background-color: #767677; 
+}
+
+.grey_form .deactivate .checkbox{
+    background-color: #9A9A9B;
+}
+
+.grey_form_block .left_part div.input_row.deactivate > h3{
+    color: #9A9A9B;
+    text-shadow: none;
+}
+
+.grey_form_block .left_part div.active{
+    background-color: transparent;
+}
+
+.grey_form_block .right_part{
+    width: 50%;
+    height: 100%;
+    margin-left: 50%;
+}
+
+.grey_form_block .right_part h3{
+    margin: 0;
+    padding: 5px 0 0 5px;
+    height: 30px;
+    font-size: 18px;
+}
+
+.grey_form_block .right_part p{
+    margin: 0;
+    color: #FFFFFF;
+    font: normal 12px 'Verdana';
+    text-shadow: 1px 1px #000000;
+    padding-top: 2px;
+    height: 25px;
+}
+
+.grey_form_block .right_part p.deactivate{
+    color: #999999;
+}
+
+.grey_form_block .right_part input{
+    float: left;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.grey_form .checkbox{
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    -o-appearance:none;
+    border: none;
+    width: 24px;
+    height: 24px;
+    background-color: #F2F2F2;
+    cursor: default;
+}
+
+.grey_form .checkbox:checked{
+    background: url('../images/grey_checkbox.png') top left no-repeat;
+}
+
+.grey_form .checkbox_small{
+    appearance: icon;
+    -moz-appearance: normal; /* Firefox */
+    -webkit-appearance: none; /* Safari and Chrome */
+    -o-appearance: normal;
+    border: none;
+    width: 14px;
+    height: 14px;
+    background-color: #F2F2F2;
+    cursor: default;
+}
+
+.grey_form .checkbox_small:checked{
+    background: url('../images/grey_checkbox_small.png') top left no-repeat;
+}
+
+.grey_form .checkbox_small.deactivate{
+    background-color: #999999;
+}
+/*---END grey form---*/
+
+/*---START grey table---*/
+table.grey_table{
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0px;
+    border: 1px solid #D7D7D7;
+}
+
+table.grey_table tr td{
+    font: normal 12px 'Verdana';
+    color: #666666;
+    text-align: center;
+    border: 1px solid #D7D7D7;
+    height: 25px;
+}
+
+table.grey_table tr th{
+    font: bold 12px 'Verdana';
+    color: #666666;
+    background: #D7D7D7 url('../images/table_h_bg.png');
+    border-left: 1px solid #FFF; 
+    padding: 0;
+    height: 29px;
+    text-shadow: 1px 1px 0 #FFF;
+}
+
+table.grey_table tr th:first-child{
+    border-left: 1px solid #D7D7D7;
+}
+/*---END grey table---*/
+
+/*---START pagination---*/
+.pagination{
+    height: 35px;
+}
+
+.pagination > a{
+    display: inline-block;
+    width: 35px;
+    height: 25px;
+    float: left;
+    padding-top: 10px;
+    background-color: #FFF;
+    color: #000000;
+
+    text-align: center;
+    font: normal 12px 'Arial';
+    text-decoration: none;
+
+    border-top: 1px solid #DDDDDD;
+    border-bottom: 1px solid #DDDDDD;
+    border-right: 1px solid #DDDDDD;
+}
+
+.pagination > a:first-child{
+    border-left: 1px solid #DDDDDD;
+}
+
+.pagination > a:hover{
+    color: #999999;
+}
+
+.pagination > a.next{ background: url('../images/next.png') no-repeat center center;}
+.pagination > a.prev{ background: url('../images/prev.png') no-repeat center center;}
+.pagination > a.next:hover{ background: url('../images/next_h.png') no-repeat center center;}
+.pagination > a.prev:hover{ background: url('../images/prev_h.png') no-repeat center center;}
+/*---END pagination---*/
+
+/*---START pink button---*/
+.button{
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.button.pink{
+    height: 25px;
+    padding: 6px 15px 0 15px;
+    background: url('../images/pink_button.png') repeat-x left top;
+    border: 1px solid #D92273;
+    font: bold 16px 'Arial';
+    color: #FFFFFF;
+    text-shadow: -1px -1px 0 #666;
+}
+
+.button.pink_small{
+    height: 19px;
+    padding: 5px 15px 0 15px;
+    margin: 0;
+    background: url('../images/pink_button_small.png') repeat-x left top;
+    border: 1px solid #D92273;
+    font: normal 12px 'Arial';
+    color: #FFFFFF;
+    text-shadow: -1px -1px 0 #666;
+}
+
+/*height fix for input*/
+input.button.pink_small{
+    height: 26px;
+    padding-top: 0px;
+}
+
+input.button.pink{
+    height: 33px;
+    padding-top: 0;
+}
+
+.button.info{
+    width: 21px;
+    height: 21px;
+    background: url('../images/info_button.png');
+}
+
+.button.xicon{
+    height: 15px;
+    width: 15px;
+    background: url('../images/sitemap.png');
+}
+
+.button.x{
+    height: 11px;
+    width: 11px;
+    background: url('../images/x.png');
+}
+
+.pink_link{
+    text-decoration: none;
+    color: #cc3366;
+    font: normal 12px 'Verdana';
+}
+
+.content .content_section .pink_link span{
+    margin: 0 5px 0 0;
+}
+/*---END pink button---*/
+
+/*---START content section---*/
+.content{
+    padding: 15px 10px 0 20px;
+}
+
+.content .grey_form_block{
+    margin-bottom: 15px;
+}
+
+.content_section{
+    background-color: #FFFFFF;
+    border: 1px solid #D7D7D7;
+    padding: 0 10px 10px 10px;
+    margin-bottom: 15px;
+}
+
+.content .content_section .section_title{
+    height: 35px;
+    border-bottom: 1px solid #E1E1E1;
+    margin-bottom: 10px;
+}
+
+.content .content_section .section_title h2{
+    margin: 0;
+    line-height: 18px;
+    padding-top: 10px;
+    float: left;
+    color: #cc3366;
+}
+
+.content .content_section .section_title > .button.info{
+    margin-top: 7px;
+    float: right;
+}
+
+.content .content_section p{
+    margin: 0 0 10px 0;
+    padding: 0;
+    font: normal 11px 'Verdana';
+    color: #666666;
+}
+
+.content .content_section .input_row{
+    height: 20px; 
+}
+
+.content .content_section .input_row > input{
+    float: left;
+    margin-right: 5px;
+}
+
+.content .content_section .input_row > label{
+    margin: 0;
+    float: left;
+    font: normal 11px 'Verdana';
+    line-height: 15px;
+    color: #666666;
+    cursor: pointer;
+}
+
+.content .content_section .input_row > input[type="radio"]:checked+label{ 
+    color: #cc3366; 
+}
+
+.content .content_section textarea{
+    width: 99.5%;
+    height: 100px;
+}
+/*---END content section---*/
+
+/*---START input row2--*/
+.content .content_section .input_row2{
+
+}
+
+.content .content_section .input_row2 label{
+    font: bold 12px 'Verdana';
+    color: #666666;
+}
+
+.content .content_section .input_row2 input, .content .content_section .input_row2 select{
+    margin: 5px 0 10px 0;
+}
+
+/*address_column*/
+
+/*---END input row2--*/
+
+/*breadcrumbs*/
+.breadcrumbs{
+
+}
+
+.breadcrumbs > ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0 0 0 15px;
+    background: url('../images/breadcrumbs_first.png') no-repeat 0% 55%;
+}
+
+.breadcrumbs > ul > li{
+    display: inline-block;
+}
+
+.breadcrumbs > ul > li, .breadcrumbs > ul > li > a{
+    color: #cc3366;
+    font: bold 12px 'Verdana';
+    text-decoration: none;
+}
+/*breadcrumbs*/
+
+/*five columns on row*/
+div.column_five{
+    width: 20%;
+    float: left;
+}
+
+div.column_five.last{
+    margin-right: 0;
+}
+
+div.column_five > div.title{
+    text-align: center;
+    height: 26px;
+    padding-top: 4px;
+}
+
+div.column_five > div.title > label{
+    font: bold 12px 'Verdana';
+    color: #666666;
+}
+
+div.column_five > div.title > input[type="radio"]:checked+label{ 
+    color: #cc3366; 
+}
+
+div.column_five > .image_block{
+    width: 150px;
+    height: 150px;
+    background-color: #FFFFFF;
+    border: 1px solid #E1E1E1;
+    margin: 0 0 5px 2px;
+    overflow: hidden;
+}
+/*five columns on row*/
+
+/*product_block*/
+.product_section .product_block{
+    width: 55%;
+    padding-top: 5px;
+    float: left;
+}
+
+.product_section  .product_block .breadcrumbs{
+    margin: 0 0 10px 0;
+}
+
+.product_section .product_block > .title{
+    height: 20px;
+    width: 98%;
+    padding-left: 2%;
+    padding-top: 5px;
+    background-color: #D7D7D7;
+    font: normal 12px 'Verdana';
+    color: #666666;
+    margin-bottom: 5px;
+}
+
+.product_section .product_row{
+    width: 98%;
+    padding: 5px 0 0 2%;
+    height: 55px;
+    overflow: hidden;
+    margin-bottom: 5px;
+    border: 1px solid #D7D7D7;
+}
+
+.product_section .product_row > .image_block{
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+    margin: 0 5px 0 0;
+    float: left;
+}
+
+.product_section .product_row > p{
+    margin-bottom: 5px;
+}
+
+.product_section .product_row p a{
+    font: bold 12px 'Verdana';
+    color: #cc3366;
+    text-decoration: none;
+}
+
+.product_section .product_row p a:hover{
+    text-decoration: underline;
+}
+
+.product_section .product_block .pagination{
+    margin-top: 10px;
+    display: inline-block;
+}
+/*product_block*/

@@ -1,0 +1,49 @@
+/*here are fixes for Internet Explorer*/
+
+/*fonts*/
+/*@font-face {
+    font-family: 'Myriad Pro Cond';
+    src: url("bralarc0.TTF") format("truetype");
+}*/
+
+/*@font-face{ 
+    font-family: 'MyFont';
+    src: url('fonts/MyFontFile.eot');
+    src: url('fonts/MyFontFile.eot?#iefix') format('embedded-opentype'),
+         url('fonts/MyFontFile.woff') format('woff'),
+         url('fonts/MyFontFile.svg#webfont') format('svg');
+}
+ 
+@font-face{ 
+    font-family: 'MyFontBold';
+    src: url('fonts/MyFontFileBold.eot');
+    src: url('fonts/MyFontFileBold.eot?#iefix') format('embedded-opentype'),
+         url('fonts/MyFontFileBold.woff') format('woff'),
+         url('fonts/MyFontFileBold.svg#webfont') format('svg');
+}*/
+
+/*---START login page override---*/
+body.login_page .login_form_wrapper{
+    background: url('../images/login_form_ie.png') no-repeat center center;
+    width: 457px;
+    height: 282px;
+    left: 440px;
+    top: 351px;
+}
+
+body.login_page .login_form_wrapper .login_form{
+    background: none;
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 30px;
+}
+
+body.login_page .login_form_wrapper .forgot_login{
+    background: none;
+    position: absolute;
+    top: 225px;
+    left: 30px;
+    z-index: 0;
+}
+/*---END login page override---*/

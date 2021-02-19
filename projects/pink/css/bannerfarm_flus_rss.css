@@ -1,0 +1,43 @@
+.bannerfarm_flus_rss{
+    
+}
+
+/*---START Selected products---*/
+.bannerfarm_flus_rss .selected_products{
+    
+}
+
+.bannerfarm_flus_rss .selected_products > p{
+    font-size: 12px;
+    cursor: default;
+}
+
+.bannerfarm_flus_rss .selected_products > p > a{
+    text-decoration: none;
+    color: #cc3366;
+    font-weight: bold;
+}
+
+.bannerfarm_flus_rss .selected_products > p > a:hover{
+    text-decoration: underline;
+}
+/*---END Selected products---*/
+
+/*---START Choice of product---*/
+.bannerfarm_flus_rss .choice_product{
+
+}
+
+.bannerfarm_flus_rss .choice_product > .left_part{
+    width: 315px;
+    float: left;
+}
+
+.bannerfarm_flus_rss .choice_product > .right_part{
+    margin-left: 315px;
+}
+
+.bannerfarm_flus_rss .choice_product > .right_part .product_block{
+    width: 100%;
+}
+/*---END Choice of product---*/
