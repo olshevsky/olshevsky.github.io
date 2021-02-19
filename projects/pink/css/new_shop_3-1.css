@@ -1,52 +1,48 @@
-.new_shop_3-1{
-
-}
-
-.new_shop_3-1 .main_wrapper .content_block .content .content_section .hl{
+.main_wrapper .content_block .content .content_section .hl{
     margin-top: 10px;
 }
 
-.new_shop_3-1 .main_wrapper .content_block .content .content_section .category_block{
+.main_wrapper .content_block .content .content_section .category_block{
     width: 330px;
     padding-top: 10px;
     float: left;
 }
 
-.new_shop_3-1 .main_wrapper .content_block .content .content_section .desc_block{
+.main_wrapper .content_block .content .content_section .desc_block{
     margin-left: 330px;
     padding-top: 10px;
 }
 
-.new_shop_3-1 .main_wrapper .content_block .content .content_section .desc_block > div{
+.main_wrapper .content_block .content .content_section .desc_block > div{
     margin-bottom: 15px;
 }
 
-.new_shop_3-1 .main_wrapper .content_block .content .content_section .desc_block label{
+.main_wrapper .content_block .content .content_section .desc_block label{
     display: block;
     font: bold 12px 'Verdana';
     color: #666666;
     margin-bottom: 5px;
 }
 
-.new_shop_3-1 .main_wrapper .content_block .content .content_section .desc_block p{
+.main_wrapper .content_block .content .content_section .desc_block p{
     font-style: italic;
     padding-top: 5px;
 }
 
-.new_shop_3-1 .main_wrapper .content_block .content .content_section .desc_block input.custom_text{
+.main_wrapper .content_block .content .content_section .desc_block input.custom_text{
     width: 100%;
 }
 
-.new_shop_3-1 > .main_wrapper .content_block .content .content_section .grey_table{
+.main_wrapper .content_block .content .content_section .grey_table{
     width: 450px;
 }
 
-.new_shop_3-1 .main_wrapper .content_block .content .content_section .grey_table tr td,
-.new_shop_3-1 .main_wrapper .content_block .content .content_section .grey_table tr th{
+.main_wrapper .content_block .content .content_section .grey_table tr td,
+.main_wrapper .content_block .content .content_section .grey_table tr th{
     text-align: left;
     padding-left: 10px;
 }
 
-.new_shop_3-1 .breadcrumbs{
+.main_wrapper .content_block .content .content_section .breadcrumbs{
     margin-bottom: 15px;
 }

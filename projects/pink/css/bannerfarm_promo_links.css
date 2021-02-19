@@ -1,50 +1,50 @@
-.bannerfarm_promo_links{
+.main_wrapper .content_block .content{
     
 }
 
-.bannerfarm_promo_links .content_section{
+.main_wrapper .content_block .content .content_section{
     
 }
 
-.bannerfarm_promo_links .content_section .left_part{
+.main_wrapper .content_block .content .content_section .left_part{
     width: 350px;
     float: left;
 }
 
-.bannerfarm_promo_links .content_section .right_part{
+.main_wrapper .content_block .content .content_section .right_part{
     margin-left: 350px;
 }
 
-.bannerfarm_promo_links .content_section .right_part .link_of_cat{
+.main_wrapper .content_block .content .content_section .right_part .link_of_cat{
     margin-bottom: 10px;
 }
 
-.bannerfarm_promo_links .content_section .right_part .link_of_cat label{
+.main_wrapper .content_block .content .content_section .right_part .link_of_cat label{
     font: bold 12px 'Verdana';
 }
 
-.bannerfarm_promo_links .content_section .right_part .link_of_cat .custom_text{
+.main_wrapper .content_block .content .content_section .right_part .link_of_cat .custom_text{
     width: 340px;
 }
 
-.bannerfarm_promo_links .content_section .right_part .link_of_cat .pink_small{
+.main_wrapper .content_block .content .content_section .right_part .link_of_cat .pink_small{
     padding: 5px 10px;
     margin: 0;
 }
 
-.bannerfarm_promo_links .content_section .right_part .link_of_cat p{
+.main_wrapper .content_block .content .content_section .right_part .link_of_cat p{
     margin-bottom: 5px;
 }
 
-.bannerfarm_promo_links .content_section .right_part .ta_center .pagination{
+.main_wrapper .content_block .content .content_section .right_part .ta_center .pagination{
     display: inline-block;
 }
 
-.bannerfarm_promo_links .content_section .right_part .breadcrumbs{
+.main_wrapper .content_block .content .content_section .right_part .breadcrumbs{
     margin-bottom: 15px;
 }
 
-.bannerfarm_promo_links .content_section .right_part .product_row{
+.main_wrapper .content_block .content .content_section .right_part .product_row{
     width: 98%;
     height: 65px;
     border: 1px solid #D7D7D7;
@@ -53,30 +53,30 @@
     overflow: hidden;
 }
 
-.bannerfarm_promo_links .content_section .right_part .product_row .image_block{
+.main_wrapper .content_block .content .content_section .right_part .product_row .image_block{
     width: 50px;
     height: 50px;
     overflow: hidden;
     float: left;
 }
 
-.bannerfarm_promo_links .content_section .right_part .product_row .desc_block{
+.main_wrapper .content_block .content .content_section .right_part .product_row .desc_block{
     margin-left: 60px;
 }
 
-.bannerfarm_promo_links .content_section .right_part .product_row .desc_block p{
+.main_wrapper .content_block .content .content_section .right_part .product_row .desc_block p{
     margin-bottom: 5px;
     font: normal 12px 'Verdana';
 }
 
-.bannerfarm_promo_links .content_section .right_part .product_row .desc_block p label{
+.main_wrapper .content_block .content .content_section .right_part .product_row .desc_block p label{
     font: bold 12px 'Verdana';
 }
 
-.bannerfarm_promo_links .content_section .right_part .product_row .desc_block input.custom_text{
+.main_wrapper .content_block .content .content_section .right_part .product_row .desc_block input.custom_text{
     width: 265px;
 }
 
-.bannerfarm_promo_links .content_section .right_part .product_row .desc_block pink_small{
+.main_wrapper .content_block .content .content_section .right_part .product_row .desc_block pink_small{
     margin-bottom: 5px;
 }

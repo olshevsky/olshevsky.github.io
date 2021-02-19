@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Layout</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <script type="text/javascript" src="js/lib/sdmenu/menu.js"></script>  
+        <script type="text/javascript" src="js/lib/jquery/jquery-1.7.2.min.js"></script>
+        <script type="text/javascript" src="js/lib/jquery/jquery.ezpz_tooltip.min.js"></script>
+        <script type="text/javascript" src="js/lib/jquery/jquery.cookie.js"></script>
+        <script type="text/javascript" src="js/lib/googleapi/jsapi.js"></script>
+        <link rel="stylesheet" href="css/common.css"/>
+        <link rel="stylesheet" href="css/tooltip.css">
+        <link rel="stylesheet" href="css/conversions.css"/>
+        <script type="text/javascript">
+            // <![CDATA[         
+            var sideMenu;
+            window.onload = function()
+            {
+                //all javascript calls and events placed here
+                
+                // side menu
+                sideMenu.init('sideMenu'); // div id
+                
+                // account manager close
+                $('#close_account_manager').click( function(){
+                    $('#account_manager').animate({
+                        right: '-285px'
+                    }, 300, function() {
+                       
+                    });
+                });
+                
+                // account manager open
+                $('#open_account_manager').click( function(){ 
+                    $('#account_manager').animate({
+                        right: '0'
+                    }, 300, function() {
+                       
+                    });
+                });
+                
+                //info tooltips
+                $(".button.info").ezpz_tooltip({
+                    contentId: 'info_tooltip',
+                    showContent: function(content) {
+                        content.fadeIn(200);
+                    },
+                    hideContent: function(content) {
+                        content.stop(true, true).fadeOut(200);
+                    }
+                });
+            }
+            // ]]>
+        </script>
+        <script>
+            //google line graphich
+            
+            google.load("visualization", "1", {packages:["corechart"]});
+            google.setOnLoadCallback(drawChart);
+            function drawChart() {
+                /*you can also pass here json, see https://developers.google.com/chart/interactive/docs/reference#DataTable_toJSON*/
+                var data = google.visualization.arrayToDataTable([
+                    ['Date',        'Turnover'],
+                    ['1.03.2012',   10],
+                    ['5.03.2012',   80],
+                    ['10.03.2012',  60],
+                    ['15.03.2012',  100]
+                ]);
+                
+                var options = {
+                    backgroundColor: '#FFFFFF',
+                    hAxis: {minorGridlines: {color: '#333', count: 9}},
+                    vAxes: {baseline:{ color : 'red'}},
+                    tooltip: {textStyle: {color: '#000000'}, showColorCode: false}
+                };
+
+                var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+                chart.draw(data, options);
+            }     
+        </script>
+    </head>
+    <body>
+        <div class="header_wrapper">
+            <div class="header">
+                <div class="logo_wrapper">
+                    <a href="layout.html" class="logo"></a>
+                </div>
+                <div class="top_menu">
+                    <ul>
+                        <li>
+                            <a href="dashboard.html">DASHBOARD</a>
+                        </li>
+                        <li>
+                            <a href="#">BLOG</a>
+                        </li>
+                        <li>
+                            <a href="#">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="#">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="icon_block">
+                    <a href="#" class="icon1"></a>
+                    <a href="#" class="icon2"></a>
+                </div>
+                <div class="welcome">
+                    <p><span class="tc_ffcccc">Welcome,</span>&nbsp;<strong>Ardas SPA Centre</strong></p>
+                    <p><span class="tc_ffcccc">Balance</span>&nbsp;<strong>: 3500.00 €</strong></p>
+                </div>
+            </div>
+        </div>
+        <div class="account_manager" id="account_manager">
+            <div class="inner">
+                <div id="open_account_manager"></div>
+                <div class="title">
+                    <h2 >ACCOUNT MANAGER</h2>
+                </div>
+                <div class="name">
+                    <p>Loic Juillard</p>
+                    <p class="sub">name</p>
+                </div>
+                <div class="skype">
+                    <p>Loic.ddz</p>
+                    <p class="sub">skype</p>
+                </div>
+                <div class="email">
+                    <p>loic@pinkplatform.com</p>
+                    <p class="sub">e-mail</p>
+                </div>
+                <div id="close_account_manager"></div>
+                <a href="#" class="skype_logo" title="Contact Us Skype"></a>
+            </div>
+        </div>
+        <div class="main_wrapper">
+            <div class="side_bar" id="side_bar">
+                <h2>Store to work with :</h2>
+                <form action="#" method="post">
+                    <select class="custom_select dark_border">
+                        <option>Sexyshopper (www.sexshop.loc)</option>
+                        <option>Luxsexshop</option>
+                    </select>
+                </form>
+
+                <div class="side_menu" id="sideMenu">
+                    <ul>
+                        <li>
+                            <a href="#">First level 1</a>
+                        </li>
+                        <li>
+                            <a href="#">First level 2</a>
+                            <ul>
+                                <li>
+                                    <a href="#">Second level 1</a>
+                                </li>
+                                <li>
+                                    <a href="#">Second level 2</a>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Third level 1</a>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Fourth level 1</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Fourth level 2</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">Third level 2</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Second level 3</a>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Third level 1</a>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Fourth level 1</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Fourth level 2</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Fourth level 3</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">Third level 2</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Third level 3</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">First level 3</a>
+                        </li>
+                        <li>
+                            <a href="#">First level 4</a>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+            <div class="content_block" id="content_block">
+                <div class="title_block">
+                    <h2>Commerce</h2>
+                </div>
+                <div class="mobile_bar">
+                    <a href="#" class="button all_devices" title="all devices" onclick="return false;"></a>
+                    <a href="#" class="button pc" title="personal computer" onclick="return false;"></a>
+                    <a href="#" class="button tablet" title="tablet" onclick="return false;"></a>
+                    <a href="#" class="button mobile active" title="mobile" onclick="return false;"></a>
+                </div>
+                <div class="content">
+                    <div class="content_section">
+                        <div class="section_title">
+                            <h2>Taux de conversion du commerce</h2>
+                            <a href="#" class="button info"></a>
+                        </div>
+                        
+                        <div id="chart_div" style="width: 775px; height: 255px;"></div>
+                        
+                        <div class="section_title">
+                            <h2>Variable principale</h2>
+                            <a href="#" class="button info"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fclear"></div>
+            <div id="info_tooltip" class="tooltip">
+                <div class="tooltip_content">
+                    <p>
+                        <strong>Notifications</strong>
+                    </p>
+                    <p>Nulla id diam eu velit venenatis dignissim. Sed nec metus ut elit placerat elementum ut sed nulla. Cras vitae nulla leo, bibendum pretium tellus. In vehicula dolor eget purus ultrices quis diam.</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

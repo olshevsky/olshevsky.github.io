@@ -1,0 +1,63 @@
+.main_wrapper .blog_content .content_section{
+    margin-top: 10px;
+    padding-top: 10px;
+    position: relative;
+}
+
+.main_wrapper .blog_content .blog_title{
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+.main_wrapper .blog_content .blog_title a{
+    text-decoration: none;
+    color: #cc3366;
+}
+
+.main_wrapper .blog_content .blog_title a:hover{
+    text-decoration: underline;
+}
+
+.main_wrapper .blog_content .blog_title a h3{
+    color: #cc3366;
+}
+
+.main_wrapper .blog_content .content_section img{
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.main_wrapper .blog_content .content_section .date{
+    font: normal 11px 'Verdana';
+    color: #999999;
+    padding: 10px 0;
+}
+
+.main_wrapper .blog_content .content_section .date p{
+    color: #999999;
+}
+
+.main_wrapper .blog_content .content_section .date a{
+    float: right;
+}
+
+.main_wrapper .blog_content .content_section .date a.button, .main_wrapper .blog_content .content_section .date p{
+    float: left;
+    margin: 0 10px 0 0;
+}
+
+.button.new{
+    position: absolute;
+    top: 10px;
+    left: -5px;
+}
+
+.main_wrapper .blog_content .pagination{
+    display: inline-block;
+}
+
+.main_wrapper .blog_content a{
+    font: normal 11px 'Verdana';
+    color: #cc3366;
+}

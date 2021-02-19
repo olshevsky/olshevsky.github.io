@@ -1,22 +1,22 @@
-.login_page{
+body{
     
 }
 
-.login_page .header_wrapper{
-    
+body .header_wrapper{
+    min-width: 1300px;
 }
 
-.login_page .header_wrapper .header{
+body .header_wrapper .header{
     text-align: center;
 }
 
-.login_page .header_wrapper .header .logo_wrapper{
+body .header_wrapper .header .logo_wrapper{
     float: none;
     margin: 0;
     display: inline-block;
 }
 
-.login_page .main_wrapper{
+body .main_wrapper{
     width: 1300px;
     height: 971px;
     background: url('../images/login_bg.png') no-repeat 0 81px;
@@ -67,7 +67,7 @@
 
 .login_form{
     width: 310px;
-    height: 185px;
+    min-height: 185px;
     padding: 20px;
     background-color: #E7E7E7;
     opacity: 0.95;

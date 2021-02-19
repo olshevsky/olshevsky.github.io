@@ -1,0 +1,32 @@
+.content{
+    padding-top: 10px;
+}
+
+/*mobile bar*/
+.mobile_bar{
+    padding: 20px 20px 5px 20px;
+}
+
+.mobile_bar .all_devices{
+    background: url('../images/all_devices.png');
+    width: 90px;
+    height: 42px;
+}
+
+.mobile_bar .ipad{
+    background: url('../images/ipad.png');
+    width: 47px;
+    height: 42px;
+}
+
+.mobile_bar .calculator{
+    background: url('../images/calculator.png');
+    width: 47px;
+    height: 42px;
+}
+
+.mobile_bar .pc{
+    background: url('../images/pc.png');
+    width: 47px;
+    height: 42px;
+}

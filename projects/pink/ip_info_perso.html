@@ -54,7 +54,7 @@
             // ]]>
         </script>
     </head>
-    <body class="ip_info_perso">
+    <body>
         <div class="header_wrapper">
             <div class="header">
                 <div class="logo_wrapper">
@@ -63,7 +63,7 @@
                 <div class="top_menu">
                     <ul>
                         <li>
-                            <a href="#">DASHBOARD</a>
+                            <a href="dashboard.html">DASHBOARD</a>
                         </li>
                         <li>
                             <a href="#">BLOG</a>
@@ -112,7 +112,7 @@
             <div class="side_bar" id="side_bar">
                 <h2>Store to work with :</h2>
                 <form action="#" method="post">
-                    <select class="custom_select">
+                    <select class="custom_select dark_border">
                         <option>Sexyshopper (www.sexshop.loc)</option>
                         <option>Luxsexshop</option>
                     </select>
@@ -120,22 +120,31 @@
                 <div id="sideMenu" class="sdmenu">
                     <div class="collapsed">
                         <span>Configuration boutique</span>
-                        <a href="#" class="current"><span class="arrow"></span>Configure new shop</a>
-                        <a href="#"><span class="arrow"></span>Modify existing shop</a>
+                        <a href="new_shop_1.html"><span class="arrow"></span>Configure new shop</a>
+                        <a href="modify_existing_shop.html"><span class="arrow"></span>Modify existing shop</a>
                     </div>
                     <div class="collapsed">
                         <span>Outils publicitaires</span>
-                        <a href="#"><span class="arrow"></span>Modify existing shop</a>
-                        <a href="#"><span class="arrow"></span>Configure new shop</a>
-                        <a href="#"><span class="arrow"></span>Modify existing shop</a>
-                        <a href="#"><span class="arrow"></span>Configure new shop</a>
-                        <a href="#"><span class="arrow"></span>Modify existing shop</a>
-                        <a href="#"><span class="arrow"></span>Configure new shop</a>
+                        <a href="bannerfarm_create_new.html"><span class="arrow"></span>Create new banner</a>
+                        <a href="bannerfarm_modify_existing.html"><span class="arrow"></span>Modify existing banners</a>
+                        <a href="bannerfarm_promo_links.html"><span class="arrow"></span>Promo links</a>
+                        <a href="bannerfarm_create_blockjs.html"><span class="arrow"></span>Create block JS</a>
+                        <a href="bannerfarm_block_js.html" ><span class="arrow"></span>Block JS</a>
+                        <a href="bannerfarm_csv_catalogue.html"><span class="arrow"></span>CSV Catalogue</a>
+                        <a href="bannerfarm_flus_rss.html"><span class="arrow"></span>Flus RSS</a>
+                        <a href="bannerfarm_kit_mails.html"><span class="arrow"></span>Kit mails</a>
+                        <a href="#"><span class="arrow"></span>Co-inscription newsletter</a>
                     </div>
                     <div class="collapsed">
                         <span>Statistiques</span>
-                        <a href="#"><span class="arrow"></span>Configure new shop</a>
-                        <a href="#"><span class="arrow"></span>Modify existing shop</a>
+                        <a href="stat_general_stats.html"><span class="arrow"></span>General statistics</a>
+                        <a href="stat_list_orders.html"><span class="arrow"></span>List of orders</a>
+                        <a href="stat_most_sold.html"><span class="arrow"></span>Most sold products</a>
+                        <a href="stat_top_referal.html"><span class="arrow"></span>Top referal links</a>
+                        <a href="stat_tracker.html"><span class="arrow"></span>Tracker</a>
+                        <a href="stat_banners.html"><span class="arrow"></span>Banners</a>
+                        <a href="stat_mail_camp.html"><span class="arrow"></span>Mail camping</a>
+                        <a href="stat_mobile.html"><span class="arrow"></span>Mobile</a>
                     </div>
                     <div class="collapsed">
                         <span>Infos et paiements</span>
@@ -173,6 +182,9 @@
                                     <label>E-mail <span class="tc_cc3366">*</span></label>
                                 </div>
                                 <input type="text" class="custom_text" name="email" />
+                                <div class="error_block">
+                                    <p>invalid email</p>
+                                </div>
                             </div>
                             <div class="input_row2 physical_address">
                                 <div class="address_column">
@@ -185,7 +197,7 @@
                                     <div>
                                         <label>Country <span class="tc_cc3366">*</span></label>
                                     </div>
-                                    <select class="custom_select light_border" name="country">
+                                    <select class="custom_select " name="country">
                                         <option>Latvia</option>
                                         <option>France</option>
                                         <option>Usa</option>
@@ -195,7 +207,10 @@
                                     <div>
                                         <label>Postal code <span class="tc_cc3366">*</span></label>
                                     </div>
-                                    <input type="text" class="custom_text" name="postal-code"/> 
+                                    <input type="text" class="custom_text" name="postal-code"/>
+                                    <div class="error_block">
+                                        <p>invalid postal code</p>
+                                    </div>
                                 </div>
                                 <div class="fclear"></div>
                             </div>

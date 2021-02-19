@@ -1,7 +1,8 @@
-.modify_existing_shop{
+.main_wrapper .content_block .content{
     
 }
-.modify_existing_shop .content .content_section .custom_select{
+
+.main_wrapper .content_block .content .content_section .custom_select{
     margin-bottom: 10px;
     width: 250px;
 }

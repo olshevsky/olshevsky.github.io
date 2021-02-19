@@ -1,70 +1,70 @@
-.ip_info_perso{
+.main_wrapper .content_block .content{
     
 }
 
 /*---START physical_address---*/
-.ip_info_perso .physical_address .address_column{
+.main_wrapper .content_block .content .physical_address .address_column{
     width: 330px;
     float: left;
     margin-right: 20px;
 }
 
-.ip_info_perso .physical_address .address_column input{
+.main_wrapper .content_block .content .physical_address .address_column input{
     width: 325px;
 }
 
-.ip_info_perso .physical_address .country_column{
+.main_wrapper .content_block .content .physical_address .country_column{
     width: 150px;
     float: left;
     margin-right: 20px;
 }
 
-.ip_info_perso .physical_address .country_column select{
+.main_wrapper .content_block .content .physical_address .country_column select{
     width: 150px;
     margin-top: 8px;
 }
 
-.ip_info_perso .physical_address .postal_column{
+.main_wrapper .content_block .content .physical_address .postal_column{
     width: 100px;
     float: left;
 }
 
-.ip_info_perso .physical_address .postal_column input{
+.main_wrapper .content_block .content .physical_address .postal_column input{
     width: 90px;
 }
 /*---END physical_address---*/
 
 /*---START iban---*/
-.ip_info_perso .iban{
+.main_wrapper .content_block .content .iban{
     margin-bottom: 0;
 }
 
-.ip_info_perso .iban .iban_column{
+.main_wrapper .content_block .content .iban .iban_column{
     width: 215px;
     float: left;
     margin-right: 20px;
 }
 
-.ip_info_perso .iban .iban_column input{
+.main_wrapper .content_block .content .iban .iban_column input{
     width: 210px;
 }
 
-.ip_info_perso .iban .swift_column{
+.main_wrapper .content_block .content .iban .swift_column{
     width: 125px;
     margin-right: 20px;
     float: left;
 }
 
-.ip_info_perso .iban .swift_column input{
+.main_wrapper .content_block .content .iban .swift_column input{
     width: 120px;
 }
 
-.ip_info_perso .iban .bankname_column{
+.main_wrapper .content_block .content .iban .bankname_column{
     width: 235px;
     float: left;
 }
 
-.ip_info_perso .iban .bankname_column input{
+.main_wrapper .content_block .content .iban .bankname_column input{
     width: 230px;
 }
 /*---END iban---*/

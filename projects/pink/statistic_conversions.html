@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Layout</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <script type="text/javascript" src="js/lib/sdmenu/menu.js"></script>  
+        <script type="text/javascript" src="js/lib/jquery/jquery-1.7.2.min.js"></script>
+        <script type="text/javascript" src="js/lib/jquery/jquery.ezpz_tooltip.min.js"></script>
+        <script type="text/javascript" src="js/lib/jquery/jquery.cookie.js"></script>
+        <script type="text/javascript" src="js/lib/googleapi/jsapi.js"></script>
+        <script type="text/javascript" src="js/lib/jquery/jquery-ui.js"></script>
+        <link rel="stylesheet" href="css/jquery-ui.css" />
+        <link rel="stylesheet" href="css/jquery-ui_override.css" />
+        <link rel="stylesheet" href="css/common.css"/>
+        <link rel="stylesheet" href="css/tooltip.css">
+        <link rel="stylesheet" href="css/statistic_conversions.css"/>
+        <script type="text/javascript">
+            // <![CDATA[
+            window.onload = function()
+            {
+                //all javascript calls and events placed here
+                
+                // side menu
+                sideMenu.init('sideMenu'); // div id
+                
+                //
+                $(function(){
+                    $( "#statistic_tabs" ).tabs();
+                    $( "#statistic_tabs_2" ).tabs();
+                });
+                
+                // account manager close
+                $('#close_account_manager').click( function(){
+                    $('#account_manager').animate({
+                        right: '-285px'
+                    }, 300, function() {
+                       
+                    });
+                });
+                
+                // account manager open
+                $('#open_account_manager').click( function(){ 
+                    $('#account_manager').animate({
+                        right: '0'
+                    }, 300, function() {
+                       
+                    });
+                });
+                
+                //info tooltips
+                $(".button.info").ezpz_tooltip({
+                    contentId: 'info_tooltip',
+                    showContent: function(content) {
+                        content.fadeIn(200);
+                    },
+                    hideContent: function(content) {
+                        content.stop(true, true).fadeOut(200);
+                    }
+                });
+            }
+            // ]]>
+        </script>
+    </head>
+    <body>
+        <div class="header_wrapper">
+            <div class="header">
+                <div class="logo_wrapper">
+                    <a href="layout.html" class="logo"></a>
+                </div>
+                <div class="top_menu">
+                    <ul>
+                        <li>
+                            <a href="dashboard.html">DASHBOARD</a>
+                        </li>
+                        <li>
+                            <a href="#">BLOG</a>
+                        </li>
+                        <li>
+                            <a href="#">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="#">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="icon_block">
+                    <a href="#" class="icon1"></a>
+                    <a href="#" class="icon2"></a>
+                </div>
+                <div class="welcome">
+                    <p><span class="tc_ffcccc">Welcome,</span>&nbsp;<strong>Ardas SPA Centre</strong></p>
+                    <p><span class="tc_ffcccc">Balance</span>&nbsp;<strong>: 3500.00 €</strong></p>
+                </div>
+            </div>
+        </div>
+        <div class="account_manager" id="account_manager">
+            <div class="inner">
+                <div id="open_account_manager"></div>
+                <div class="title">
+                    <h2 >ACCOUNT MANAGER</h2>
+                </div>
+                <div class="name">
+                    <p>Loic Juillard</p>
+                    <p class="sub">name</p>
+                </div>
+                <div class="skype">
+                    <p>Loic.ddz</p>
+                    <p class="sub">skype</p>
+                </div>
+                <div class="email">
+                    <p>loic@pinkplatform.com</p>
+                    <p class="sub">e-mail</p>
+                </div>
+                <div id="close_account_manager"></div>
+                <a href="#" class="skype_logo" title="Contact Us Skype"></a>
+            </div>
+        </div>
+        <div class="main_wrapper">
+            <div class="side_bar" id="side_bar">
+                <h2>Store to work with :</h2>
+                <form action="#" method="post">
+                    <select class="custom_select dark_border">
+                        <option>Sexyshopper (www.sexshop.loc)</option>
+                        <option>Luxsexshop</option>
+                    </select>
+                </form>
+                <div class="side_menu" id="sideMenu">
+                    <ul>
+                        <li>
+                            <a href="#">Configurations boutique</a>
+                        </li>
+                        <li>
+                            <a href="#">Outils publicitaires</a>
+                        </li>
+                        <li class="active">
+                            <a href="#">Statistiques</a>
+                            <ul>
+                                <li>
+                                    <a href="#">Accueil</a>
+                                    <ul>
+                                        <li>
+                                            <a href="#">empty</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Audience</a>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Vue d'ensemble</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Donnes demographiques</a>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Sexe</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Langue</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Geolocalisation</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">Comportement</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Techbologie</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Sources de trafic</a>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Vue d'ensemble</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Sources</a>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Tout le trafic</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Acces direct</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Site referents</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">Resaux sociaux</a>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Vue d'ensemble</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Sources</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Pages</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Conversions</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Contenu</a>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Vue d'ensemble</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Contenu du site</a>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Toutes les pages</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Details des pages URL</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Pages de destination</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Pages de sortie</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">Recherche sur site</a>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">empty</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="active">
+                                    <a href="#">Donnees chiffrees</a>
+                                    <ul>
+                                        <li class="active">
+                                            <a href="#">Commerce</a>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Vue dénsemble</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Preformance des produits</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Transactions</a>
+                                                </li>
+                                                <li class="active">
+                                                    <a href="#">Delai avan I'achat</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Infos et paiements</a>
+                        </li>
+                        <li>
+                            <a href="#">New product</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content_block" id="content_block">
+                <div class="title_block">
+                    <h2>Commerce</h2>
+                </div>
+                <div class="mobile_bar">
+                    <a href="#" class="button all_devices" title="all devices" onclick="return false;"></a>
+                    <a href="#" class="button pc active" title="personal computer" onclick="return false;"></a>
+                    <a href="#" class="button tablet" title="tablet" onclick="return false;"></a>
+                    <a href="#" class="button mobile" title="mobile" onclick="return false;"></a>
+                </div>
+                <div class="content">
+                    <div class="content_section">
+                        <div id="statistic_tabs">
+                            <div class="statistic_head_2">
+                                <div class="section_title">
+                                    <h2>Preformances:</h2>
+                                    <div class="taber">
+                                        <ul>
+                                            <li><a href="#tabs-1">Delai avant la transaction (en jours)</a></li>
+                                            <li><a href="#tabs-2">Visites avant transaction</a></li>
+                                        </ul>
+                                    </div>
+                                    <a href="#" class="button info"></a>                            
+                                </div>
+                                <div class="fclear"></div>
+                            </div>
+                            <div id="tabs-1">
+                                <table class="statistic_table">
+                                    <tbody>
+                                        <tr>
+                                            <th>Transactions</th>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div id="tabs-2">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vitae est nulla. Nullam id arcu quis leo rhoncus blandit. Etiam sagittis purus non lacus sodales tempus.</p>
+                            </div>
+                        </div>
+                        <div id="statistic_tabs_2">
+                            <div class="statistic_head_2">
+                                <div class="section_title">
+                                    <h2>Variable principale:</h2>
+                                    <div class="taber">
+                                        <ul>
+                                            <li><a href="#tabs-3">Delai avant la transaction (en jours)</a></li>
+                                        </ul>
+                                    </div>
+                                    <a href="#" class="button info"></a>                            
+                                </div>
+                                <div class="fclear"></div>
+                            </div>
+                            <div id="tabs-3">
+                                <table class="grey_table">
+                                    <thead>
+                                        <tr>
+                                            <th>Delai avant la transaction (en jours)</th>
+                                            <th>Transactions</th>
+                                            <th>Proucentage du total</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>0</td>
+                                            <td>1</td>
+                                            <td>
+                                                <div class="progress_bar">
+                                                    <div class="percent_number">35%</div>
+                                                    <div class="percent_indicator">
+                                                        <div style="width: 35%"></div>
+                                                    </div>
+                                                    <div class="fclear"></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>555</td>
+                                            <td>10101</td>
+                                            <td>
+                                                <div class="progress_bar">
+                                                    <div class="percent_number">100%</div>
+                                                    <div class="percent_indicator">
+                                                        <div style="width: 100%"></div>
+                                                    </div>
+                                                    <div class="fclear"></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fclear"></div>
+            <div id="info_tooltip" class="tooltip">
+                <div class="tooltip_content">
+                    <p>
+                        <strong>Notifications</strong>
+                    </p>
+                    <p>Nulla id diam eu velit venenatis dignissim. Sed nec metus ut elit placerat elementum ut sed nulla. Cras vitae nulla leo, bibendum pretium tellus. In vehicula dolor eget purus ultrices quis diam.</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

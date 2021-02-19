@@ -1,0 +1,28 @@
+.main_wrapper .blog_content .content_section{
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+.main_wrapper .blog_content .blog_title{
+    margin-bottom: 10px;
+}
+
+.main_wrapper .blog_content .blog_title h3{
+    color: #666666;
+}
+
+.main_wrapper .blog_content .content_section img{
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.main_wrapper .blog_content .content_section .date{
+    font: normal 11px 'Verdana';
+    color: #999999;
+}
+
+.main_wrapper .blog_content .content_section .date .button{
+    float: left;
+    margin-right: 10px;
+}

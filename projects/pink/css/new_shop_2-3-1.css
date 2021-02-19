@@ -1,29 +1,29 @@
-.new_shop_2-3-1{
+.main_wrapper .content_block .content{
 
 }
 
-.new_shop_2-3-1 .content_section .hl{
+.main_wrapper .content_block .content .content_section .hl{
   margin-bottom: 10px;  
 }
 
 /*left part*/
-.new_shop_2-3-1 .offer_left{
+.main_wrapper .content_block .content .offer_left{
     width: 310px;
     padding-right: 20px;
     float: left;
 }
 
-.new_shop_2-3-1 .offer_left > div{
+.main_wrapper .content_block .content .offer_left > div{
     margin-bottom: 15px;
 }
 
-.new_shop_2-3-1 .offer_left > div.select_div{
+.main_wrapper .content_block .content .offer_left > div.select_div{
     border: 1px solid #E1E1E1;
     margin-right: 20px;
     padding: 5px;
 }
 
-.new_shop_2-3-1 .offer_left h3{
+.main_wrapper .content_block .content .offer_left h3{
     font: bold 12px 'Verdana';
     margin: 0 0 5px 0;
     color: #666666;
@@ -31,25 +31,25 @@
 /*left part*/
 
 /*right part*/
-.new_shop_2-3-1 .offer_right{
+.main_wrapper .content_block .content .offer_right{
     margin-left: 330px;
     padding-top: 15px;
 }
 
-.new_shop_2-3-1 .offer_right > div.text_block{
+.main_wrapper .content_block .content .offer_right > div.text_block{
     background-color: #F3F3F3;
     border: 1px solid #D7D7D7;
     padding: 5px;
     margin-bottom: 15px;
 }
 
-.new_shop_2-3-1 .offer_right > div.text_block h4{
+.main_wrapper .content_block .content .offer_right > div.text_block h4{
     font: bold 11px 'Verdana';
     margin: 0 0 5px 0;
     color: #666666;
 }
 
-.new_shop_2-3-1 .offer_right > div.text_block p{
+.main_wrapper .content_block .content .offer_right > div.text_block p{
     font: normal 11px 'Verdana';
     color: #666666;
 }

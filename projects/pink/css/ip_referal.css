@@ -1,8 +1,4 @@
-.ip_referal{
-    
-}
-
-.ip_referal .content_section > .ta_center > .pagination{
+.main_wrapper .content_block .content .content_section > .ta_center > .pagination{
     display: inline-block;
     margin-top: 10px;
 }

@@ -29,11 +29,11 @@
 /*---END Type of the shop---*/
 
 /*---START Categories of your products---*/
-.new_shop_2-1 .products_category{
+.main_wrapper .content_block .content .products_category{
     
 }
 
-.new_shop_2-1 .products_category .category_tree{
+.main_wrapper .content_block .content .products_category .category_tree{
     width: 450px;
 }
 /*---END Categories of your products---*/

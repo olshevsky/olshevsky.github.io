@@ -1,22 +1,22 @@
-.bannerfarm_block_js{
+.main_wrapper .content_block .content{
     
 }
 
-.bannerfarm_block_js .hl{
+.main_wrapper .content_block .content .hl{
     margin: 10px 0 10px 0;
 }
 
-.bannerfarm_block_js .preview img{
+.main_wrapper .content_block .content .preview img{
     margin-bottom: 10px;
 }
 
-.bannerfarm_block_js h3{
+.main_wrapper .content_block .content h3{
     font: bold 12px 'Verdana';
     color: #666666;
     margin: 0 0 5px 0;
 }
 
-.bannerfarm_block_js .column_third{
+.main_wrapper .content_block .content .column_third{
     width: 32%;
     margin-right: 2%;
     float: left;
@@ -25,35 +25,35 @@
     min-height: 100px;
 }
 
-.bannerfarm_block_js .column_third.last{
+.main_wrapper .content_block .content .column_third.last{
     margin-right: 0;
 }
 
-.bannerfarm_block_js .column_third h3{
+.main_wrapper .content_block .content .column_third h3{
     margin: 0 0 10px 0;
 }
 
-.bannerfarm_block_js .column_third textarea{
+.main_wrapper .content_block .content .column_third textarea{
     width: 97%;
     height: 120px;
 }
 
-.bannerfarm_block_js .content .content_section .column_third p{
+.main_wrapper .content_block .content .content_section .column_third p{
     font: normal 11px 'Arial';
     margin: 0 0 6px 0;
 }
 
-.bannerfarm_block_js .column_third p input.custom_checkbox{
+.main_wrapper .content_block .content .column_third p input.custom_checkbox{
     display: block;
     float: left;
     margin-right: 5px;
 }
 
-.bannerfarm_block_js .column_third p .pink_link{
+.main_wrapper .content_block .content .column_third p .pink_link{
     font: normal 11px 'Arial';
 }
 
-.bannerfarm_block_js .column_third p .pink_link span{
+.main_wrapper .content_block .content .column_third p .pink_link span{
     display: block;
     float: left;
     margin: 1px 5px 0 0;

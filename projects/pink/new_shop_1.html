@@ -5,7 +5,9 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <script type="text/javascript" src="js/lib/sdmenu/menu.js"></script>  
         <script type="text/javascript" src="js/lib/jquery/jquery-1.7.2.min.js"></script>
+        <script type="text/javascript" src="js/lib/jquery/jquery.ezpz_tooltip.min.js"></script>
         <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/tooltip.css">
         <link rel="stylesheet" href="css/new_shop_1.css">
         <script type="text/javascript">
             // <![CDATA[         
@@ -17,7 +19,7 @@
                 sideMenu.speed = 5;                  // menu sliding speed (1 - 5 recomended)
                 sideMenu.oneSmOnly = true;           // one expanded submenu at a time
                 sideMenu.remember = true;            // store menu states (expanded or collapsed) in cookie and restore later
-                sideMenu.markCurrent = false;        // mark current link / page (link.href == location.href)
+                sideMenu.markCurrent = true;        // mark current link / page (link.href == location.href)
                 sideMenu.init();
                 
                 // account manager close
@@ -37,11 +39,22 @@
                        
                     });
                 });
+                
+                //info tooltips
+                $(".button.info").ezpz_tooltip({
+                    contentId: 'info_tooltip',
+                    showContent: function(content) {
+                        content.fadeIn(200);
+                    },
+                    hideContent: function(content) {
+                        content.stop(true, true).fadeOut(200);
+                    }
+                });
             };
             // ]]>
         </script>
     </head>
-    <body class="new_shop_1">
+    <body>
         <div class="header_wrapper">
             <div class="header">
                 <div class="logo_wrapper">
@@ -50,7 +63,7 @@
                 <div class="top_menu">
                     <ul>
                         <li>
-                            <a href="#">DASHBOARD</a>
+                            <a href="dashboard.html">DASHBOARD</a>
                         </li>
                         <li>
                             <a href="#">BLOG</a>
@@ -99,7 +112,7 @@
             <div class="side_bar" id="side_bar">
                 <h2>Store to work with :</h2>
                 <form action="#" method="post">
-                    <select class="custom_select">
+                    <select class="custom_select dark_border">
                         <option>Sexyshopper (www.sexshop.loc)</option>
                         <option>Luxsexshop</option>
                     </select>
@@ -107,27 +120,37 @@
                 <div id="sideMenu" class="sdmenu">
                     <div class="collapsed">
                         <span>Configuration boutique</span>
-                        <a href="#" class="current"><span class="arrow"></span>Configure new shop</a>
-                        <a href="#"><span class="arrow"></span>Modify existing shop</a>
+                        <a href="new_shop_1.html"><span class="arrow"></span>Configure new shop</a>
+                        <a href="modify_existing_shop.html"><span class="arrow"></span>Modify existing shop</a>
                     </div>
                     <div class="collapsed">
                         <span>Outils publicitaires</span>
-                        <a href="#"><span class="arrow"></span>Modify existing shop</a>
-                        <a href="#"><span class="arrow"></span>Configure new shop</a>
-                        <a href="#"><span class="arrow"></span>Modify existing shop</a>
-                        <a href="#"><span class="arrow"></span>Configure new shop</a>
-                        <a href="#"><span class="arrow"></span>Modify existing shop</a>
-                        <a href="#"><span class="arrow"></span>Configure new shop</a>
+                        <a href="bannerfarm_create_new.html"><span class="arrow"></span>Create new banner</a>
+                        <a href="bannerfarm_modify_existing.html"><span class="arrow"></span>Modify existing banners</a>
+                        <a href="bannerfarm_promo_links.html"><span class="arrow"></span>Promo links</a>
+                        <a href="bannerfarm_create_blockjs.html"><span class="arrow"></span>Create block JS</a>
+                        <a href="bannerfarm_block_js.html" ><span class="arrow"></span>Block JS</a>
+                        <a href="bannerfarm_csv_catalogue.html"><span class="arrow"></span>CSV Catalogue</a>
+                        <a href="bannerfarm_flus_rss.html"><span class="arrow"></span>Flus RSS</a>
+                        <a href="bannerfarm_kit_mails.html"><span class="arrow"></span>Kit mails</a>
+                        <a href="#"><span class="arrow"></span>Co-inscription newsletter</a>
                     </div>
                     <div class="collapsed">
                         <span>Statistiques</span>
-                        <a href="#"><span class="arrow"></span>Configure new shop</a>
-                        <a href="#"><span class="arrow"></span>Modify existing shop</a>
+                        <a href="stat_general_stats.html"><span class="arrow"></span>General statistics</a>
+                        <a href="stat_list_orders.html"><span class="arrow"></span>List of orders</a>
+                        <a href="stat_most_sold.html"><span class="arrow"></span>Most sold products</a>
+                        <a href="stat_top_referal.html"><span class="arrow"></span>Top referal links</a>
+                        <a href="stat_tracker.html"><span class="arrow"></span>Tracker</a>
+                        <a href="stat_banners.html"><span class="arrow"></span>Banners</a>
+                        <a href="stat_mail_camp.html"><span class="arrow"></span>Mail camping</a>
+                        <a href="stat_mobile.html"><span class="arrow"></span>Mobile</a>
                     </div>
                     <div class="collapsed">
                         <span>Infos et paiements</span>
-                        <a href="#"><span class="arrow"></span>Configure new shop</a>
-                        <a href="#"><span class="arrow"></span>Modify existing shop</a>
+                        <a href="ip_info_perso.html"><span class="arrow"></span>Personal information</a>
+                        <a href="ip_retrocessions.html"><span class="arrow"></span>Retrocessions, receipts</a>
+                        <a href="ip_referal.html"><span class="arrow"></span>Referal</a>
                     </div>
                 </div>
             </div>
@@ -163,7 +186,7 @@
                             <div class="left_part">
                                 <div class="section_title">
                                     <h2>Name of the shop</h2>
-                                    <a href="#" class="button info" title="show info"> </a>
+                                    <a href="#" class="button info"></a>
                                 </div>
                                 <input type="text" class="custom_text" name="shop_url"/>
                                 <p>(ex. Washington Fabrics)</p>
@@ -171,7 +194,7 @@
                             <div class="right_part">
                                 <div class="section_title">
                                     <h2>URL of the shop</h2>
-                                    <a href="#" class="button info" title="show info"> </a>
+                                    <a href="#" class="button info"></a>
                                 </div>
                                 <input type="text" class="custom_text" name="shop_name"/>
                                 <p>(ex. http://www.nameoftheshop.com)</p>
@@ -185,6 +208,12 @@
                 </div>
             </div>
             <div class="fclear"></div>
+            <div id="info_tooltip" class="tooltip">
+                <div class="tooltip_content">
+                    <p><strong>Notifications</strong></p>
+                    <p>Nulla id diam eu velit venenatis dignissim. Sed nec metus ut elit placerat elementum ut sed nulla. Cras vitae nulla leo, bibendum pretium tellus. In vehicula dolor eget purus ultrices quis diam.</p>
+                </div>
+            </div>
         </div>
     </body>
 </html>

@@ -1,142 +1,142 @@
-.bannerfarm_kit_mails{
+.main_wrapper .content_block .content{
 
 }
 
 /*---START Générateur kit mailing---*/
-.bannerfarm_kit_mails{
+.main_wrapper .content_block .content{
 
 }
 
-.bannerfarm_kit_mails .kit_mailing{
+.main_wrapper .content_block .content .kit_mailing{
 
 }
 
-.bannerfarm_kit_mails .kit_mailing .input_row{
+.main_wrapper .content_block .content .kit_mailing .input_row{
     width: 100%;
     height: 30px;
 }
 
-.bannerfarm_kit_mails .kit_mailing .input_row label{
+.main_wrapper .content_block .content .kit_mailing .input_row label{
     margin-right: 20px;
     width: 120px;
 }
 
-.bannerfarm_kit_mails .kit_mailing .input_row .custom_text{
+.main_wrapper .content_block .content .kit_mailing .input_row .custom_text{
     width: 245px;
 }
 
-.bannerfarm_kit_mails .kit_mailing .input_row .custom_select{
+.main_wrapper .content_block .content .kit_mailing .input_row .custom_select{
     width: 252px;
 }
 /*---END Générateur kit mailing---*/
 
 /*---START Choose design for mailing---*/
-.bannerfarm_kit_mails .votre_kit{
+.main_wrapper .content_block .content .votre_kit{
 
 }
 
-.bannerfarm_kit_mails .votre_kit .input_row label{
+.main_wrapper .content_block .content .votre_kit .input_row label{
     font-size: 12px;    
 }
 
-.bannerfarm_kit_mails .votre_kit .input_row > input[type="radio"]:checked+label{ 
+.main_wrapper .content_block .content .votre_kit .input_row > input[type="radio"]:checked+label{ 
     color: #cc3366;
     font-weight: bold;
 }
 /*---END Choose design for mailing---*/
 
 /*---START Choose design for mailing---*/
-.bannerfarm_kit_mails .chose_design{
+.main_wrapper .content_block .content .chose_design{
     margin-bottom: 20px;
 }
 /*---END Choose design for mailing---*/
 
 /*---START Selected products (appears when people start to select)---*/
-.bannerfarm_kit_mails .selected_products{
+.main_wrapper .content_block .content .selected_products{
 
 }
 
-.bannerfarm_kit_mails .selected_products > p{
+.main_wrapper .content_block .content .selected_products > p{
     font-size: 12px;
 }
 
-.bannerfarm_kit_mails .selected_products > p > a{
+.main_wrapper .content_block .content .selected_products > p > a{
     text-decoration: none;
     color: #cc3366;
     font-weight: bold;
 }
 
-.bannerfarm_kit_mails .selected_products > p > a:hover{
+.main_wrapper .content_block .content .selected_products > p > a:hover{
     text-decoration: underline;
 }
 /*---END Selected products (appears when people start to select)---*/
 
 /*---START Choice of product---*/
-.bannerfarm_kit_mails .choice_product{
+.main_wrapper .content_block .content .choice_product{
 
 }
 
-.bannerfarm_kit_mails .choice_product > .left_part{
+.main_wrapper .content_block .content .choice_product > .left_part{
     width: 315px;
     float: left;
 }
 
-.bannerfarm_kit_mails .choice_product > .right_part{
+.main_wrapper .content_block .content .choice_product > .right_part{
     margin-left: 315px;
 }
 
-.bannerfarm_kit_mails .choice_product > .right_part .product_block{
+.main_wrapper .content_block .content .choice_product > .right_part .product_block{
     width: 100%;
 }
 /*---END Choice of product---*/
 
 /*---START Other kit options*/
-.bannerfarm_kit_mails .other_kit_options{
+.main_wrapper .content_block .content .other_kit_options{
     
 }
 
-.bannerfarm_kit_mails .other_kit_options .input_row{
+.main_wrapper .content_block .content .other_kit_options .input_row{
     height: auto;
     margin-bottom: 10px;
 }
 
-.bannerfarm_kit_mails .other_kit_options .input_row textarea{
+.main_wrapper .content_block .content .other_kit_options .input_row textarea{
     width: 245px;
 }
 
-.bannerfarm_kit_mails .other_kit_options .input_row label{
+.main_wrapper .content_block .content .other_kit_options .input_row label{
     width: 120px;
     margin-top: 3px;
 }
 /*---END Other kit options*/
 
 /*---START your mails---*/
-.bannerfarm_kit_mails .your_mail{
+.main_wrapper .content_block .content .your_mail{
     margin-top: 25px;
 }
 
-.bannerfarm_kit_mails .your_mail table.grey_table tr td, .bannerfarm_kit_mails .your_mail table.grey_table tr td a{
+.main_wrapper .content_block .content .your_mail table.grey_table tr td, .main_wrapper .content_block .content .your_mail table.grey_table tr td a{
     color: #cc3366;
     text-align: left;
 }
 
-.bannerfarm_kit_mails .your_mail table.grey_table tr td a{
+.main_wrapper .content_block .content .your_mail table.grey_table tr td a{
     text-decoration: none;
 }
 
-.bannerfarm_kit_mails .your_mail table.grey_table tr td a:hover{
+.main_wrapper .content_block .content .your_mail table.grey_table tr td a:hover{
     text-decoration: underline;
 }
 
-.bannerfarm_kit_mails .your_mail table.grey_table tr td{
+.main_wrapper .content_block .content .your_mail table.grey_table tr td{
     padding: 0 0 0 35px;
 }
 
-.bannerfarm_kit_mails .your_mail table.grey_table tr td:first-child{
+.main_wrapper .content_block .content .your_mail table.grey_table tr td:first-child{
     padding-left: 10px;
 }
 
-.bannerfarm_kit_mails .your_mail table.grey_table tr td > a > img{
+.main_wrapper .content_block .content .your_mail table.grey_table tr td > a > img{
     float: left;
     margin: -2px 5px 0 0;
 }

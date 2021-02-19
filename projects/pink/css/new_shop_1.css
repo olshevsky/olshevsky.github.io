@@ -1,35 +1,35 @@
-.new_shop_1{
+.main_wrapper .content_block .content{
 
 }
 
-.new_shop_1 .grey_form_block{
+.main_wrapper .content_block .content .grey_form_block{
     height: 105px;
 }
 
-.new_shop_1 .grey_form_block .left_part{
+.main_wrapper .content_block .content .grey_form_block .left_part{
     width: 100%;
 }
 
-.new_shop_1 .grey_form_block .left_part div.input_row{
+.main_wrapper .content_block .content .grey_form_block .left_part div.input_row{
     padding-left: 1%;
     width: 99%;
 }
 
-.new_shop_1 .content_section > .left_part{
+.main_wrapper .content_block .content .content_section > .left_part{
     width: 49%;
     float: left;
 }
 
-.new_shop_1 .content_section > .right_part{
+.main_wrapper .content_block .content .content_section > .right_part{
     width: 49%;
     float: right;
 }
 
-.new_shop_1 .content_section input.custom_text{
+.main_wrapper .content_block .content .content_section input.custom_text{
     width: 98%;
 }
 
-.new_shop_1 .content_section p{
+.main_wrapper .content_block .content .content_section p{
     margin: 5px 0 0 0;
     font-style: italic;
 }
