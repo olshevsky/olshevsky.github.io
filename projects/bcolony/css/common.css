@@ -1,0 +1,458 @@
+/*Main Css*/
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+}
+
+body{
+	background-color: #000;
+	color: #FFF; 
+}
+
+a img{
+	border: none;
+}
+
+h1{
+	font: bold 48px Impact, sans-serif;
+	text-transform: uppercase;
+	letter-spacing: -1px;
+}
+
+h2{
+	font: normal 22px Impact, sans-serif;
+	text-transform: uppercase
+}
+
+h3{
+	font: normal 18px Impact, sans-serif;
+	text-transform: uppercase;
+}
+
+h4{
+	font: normal 14px Arial, sans-serif;
+	letter-spacing: -1px;
+}
+
+.clear{
+	clear: both;
+}
+
+.right{
+	float: right;
+}
+
+.left{
+	float: left;
+}
+
+.greyText{
+	color: #B2B2B2;
+}
+
+.darkGreyText{
+	color: #404040;
+}
+
+.greenText{
+	color: #A6EC30;
+}
+
+.glowGreenText{
+	color: #00FF00
+}
+
+.blueText{
+	color: #29ABE2;
+}
+
+.orangeText{
+	color: #F7931E;
+}
+
+.yellowText{
+	color: #FFFF00;
+}
+
+.whiteText{
+	color: #FFF;
+}
+
+.blackText{
+	color: #000;
+}
+
+.bronzeText{
+	color: #B2AD08;
+}
+
+.myriad{
+	font-family: 'Myriad Pro', Arial, sans-serif;
+}
+
+.smallText{
+	font: normal 11px Arial, sans-serif;
+}
+
+.middleText{
+	font: normal 14px Arial, sans-serif;
+	letter-spacing: -1px;
+}
+
+.headText{
+	font: bold 18px 'Myriad Pro', sans-serif;
+}
+
+.greenLine{
+	margin-top: 10px;
+	background: #A5EB2F url(green_line.jpg) no-repeat right;
+	height: 5px;
+}
+
+.contentBlock{
+	margin-bottom: 10px;
+}
+
+.content{
+	background: #1A1A1A url(content_bg.png) repeat-x;
+	padding: 2px 15px 115px 10px;
+}
+
+#wrapper{
+	width: 1000px;	
+	margin: 0 auto;
+}
+
+#button_small{
+	background-image: url(botton_small.png);
+	border: none;
+	width: 152px;
+	height: 23px;
+	font: bold 14px Arial, sans-serif;
+	letter-spacing: -1px;
+	text-align: center;
+}
+
+/*--------------------<Augseja izvelne>----------------------*/
+#menu_bg{
+	background: #585858 url(menu_top_bg.png) repeat-x;
+	height: 73px;
+}
+
+#menu_top{
+	margin: 0 auto;
+	height: 73px;
+	width: 1000px;
+	background: #585858 url(menu_top_bg.png) repeat-x;
+}
+
+#logo{
+	width: 210px;
+	float: left;
+}
+
+#nav{
+	width: 790px;
+	height: 73px;
+	float: right;
+}
+
+#nav_items{
+	height:73px;
+	width: 790px;
+	display: table-cell;
+    vertical-align: middle;
+	text-align: center;
+}
+
+#menu_top ul{
+	list-style-type: none;
+	display: inline;
+}
+
+#menu_top ul li{
+	display: inline;
+	margin-right: 15px;
+}
+
+#menu_top a{
+	color: #000;
+	text-decoration: none;
+	text-transform: uppercase;
+	font: bold 18px 'Arial Black', sans-serif;
+	letter-spacing: -1px;
+}
+/*--------------------</Augseja izvelne>----------------------*/
+
+/*--------------------<Header>----------------------*/
+.header_bg{
+	height: 212px;
+	width: 1000px;
+	background: #757575 url(header_bg.png) repeat-x;
+	margin-bottom: 10px;
+	border-top: 1px solid #000;
+	
+}
+
+.header{
+	margin:0 auto;
+	width: 974px;
+	height: 200px;
+}
+/*--------------------</Header>----------------------*/
+
+/*--------------------<Augsejais kreisais bloks>----------------------*/
+.container_top_left{
+	width: 620px;
+	float: left;
+	padding-bottom: 10px;
+}
+
+.thumb_middle img{
+	margin: 10px 15px 0 0;
+	float: left;
+}
+
+.thumb_middle{
+	width: 490px;
+}
+/*--------------------</Augsejais kreisais bloks>----------------------*/
+
+/*--------------------<Augsejais labais bloks>----------------------*/
+.container_top_right_wrapper{
+	width: 350px;
+	float: right;
+	height: 435px;
+	overflow: hidden;
+	padding-top: 35px;
+}
+
+.container_top_right{
+	width: 320px;
+	background-color: #4D4D4D;
+	margin: 0 0 15px 0;
+	padding: 5px 15px 10px 15px;
+}
+
+.container_top_right p{
+	font: normal 11px Arial, sans-serif;
+}
+
+.container_top_right_header{
+	margin-bottom: 10px;
+}
+
+.container_top_right_header h2{
+	font-size: 24px;
+	line-height: 22px;
+}
+
+.thumb_small img{
+	margin: 0 17px 0 0;
+	float: left;
+}
+
+.thumb_small{
+	width: 320px;
+	height: 50px;
+	overflow: hidden;
+}
+/*--------------------</Augsejais labais bloks>----------------------*/
+
+/*-------<people counter>---------*/
+.people_counter{
+	width: 50px;
+	height: 20px;
+	font-size: 11px;
+	padding-top: 5px;
+	overflow: hidden;
+}
+
+.people_counter p{
+	padding-top: 5px;
+}
+
+.people_counter a img{
+	border: none;
+}
+
+.icon_light{
+	width: 26px;
+	height: 21px;
+	display: block;
+	background: url(icon_light.png) no-repeat;
+}
+
+.icon_dark{
+	width: 26px;
+	height: 21px;
+	display: block;
+	background: url(icon_dark.png) no-repeat;
+}
+
+/*-------</people counter>---------*/
+
+/*--------------------<Kreisais bloks>----------------------*/
+.container_left{
+	width: 660px;
+	float: left;	
+}
+
+.headerDiv{
+	height: 40px;
+	background-color: #4D4D4D;
+	overflow: hidden;
+}
+
+.headerTitle{
+	float: left;
+	height: 33px;
+	padding: 7px 0 0 5px;
+	overflow: hidden;
+}
+
+.headerTitle h2{
+	text-align: center;
+}
+
+.headerDetails{
+	float: right;
+	height: 35px;
+	width: 365px;
+	font-size: 11px;
+	line-height: 11px;
+	padding: 5px 5px 0 0;
+	text-align: right;
+	overflow: hidden;	
+}
+
+.footerDiv{
+	height: 38px;
+	background-color: #F2F2F2;
+	color: #000;
+	padding: 1px 40px 0 5px;
+}
+
+.footerDiv div{
+	font: normal 12px "Myriad Pro", Arial, sans-serif;
+	line-height: 12px;
+}
+
+.details{
+	padding: 2px 4px 2px 4px;
+	width: 200px;
+}
+
+.details img{
+	border: none;
+}
+
+/*---------<Gallery>-----------*/
+.galleryDiv{
+	width: 210px;
+	float: left;
+	margin-right: 15px;
+}
+
+.galleryDiv > a img{
+	border: 5px solid #FFF;
+}
+
+.sideBarGalleryDiv{
+	width: 210px;
+	margin: 0 auto;
+}
+
+.sideBarGalleryDiv  > a img{
+	border: 5px solid #FFF;
+}
+
+/*---------</Gallery>-----------*/
+
+/*---------<vote block>-----------*/
+.voteDiv{
+	width: 660px;
+	padding-top: 10px;
+	background: url(vs.jpg) no-repeat center center;
+	overflow: hidden;
+}
+
+.voteItem{
+	width: 280px;
+}
+
+.voteItem img{
+	border: 5px solid #FFF;
+}
+
+.voteCounter{
+	width: 68px;
+	text-align: center;
+	padding-top: 40px;
+}
+/*---------</vote block>-----------*/
+/*--------------------</Kreisais bloks>----------------------*/
+
+/*--------------------<Labais bloks>----------------------*/
+.container_right{
+	width: 300px;
+	float: right;
+}
+
+.container_right_item{
+	width: 300px;
+	margin-bottom: 15px;
+}
+
+/*--------------------<Laba izvelne>----------------------*/
+.sidebar{
+	background-color: #4D4D4D;
+}
+
+.container_right_header{
+	height: 33px;
+	margin-bottom: 5px;
+	text-align: center;
+	padding-top: 7px;
+	border-bottom: 2px solid #666666;
+	overflow: hidden;
+}
+
+.container_right_footer{
+	height: 40px;
+	overflow: hidden;
+}
+
+.bullet{
+	float: right;
+	cursor: pointer;
+}
+
+.forTable{
+	height: 260px;
+	overflow: hidden;
+}
+/*--------------------</Laba izvelne>----------------------*/
+
+/*--------------------<Izvelnes tabula>----------------------*/
+.sideBarTable{
+	border-collapse: collapse;
+	padding: 10px;
+	width: 295px;
+}
+
+.sideBarTable td, .sideBarTable tr{
+	vertical-align: middle;
+	font: normal 11px Arial, sans-serif;
+}
+
+.sideBarTable td{
+	padding: 5px;
+}
+
+.pairRow{
+	background-color: #5A5A5A;
+}
+/*--------------------</Izvelnes tabula>----------------------*/
+/*--------------------</Labais bloks>----------------------*/
