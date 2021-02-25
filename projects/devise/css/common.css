@@ -1,0 +1,95 @@
+/*Common styles*/
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	color: #FFF;
+	font-family: 'Arial', sans-serif;	
+}
+
+a img{
+	border: none;
+}
+
+.right{
+	float: right;
+}
+
+.left{
+	float: left;
+}
+
+.clear{
+	clear: both;
+}
+
+.white{
+	color: #FFF;
+}
+
+.black{
+	color: #000;
+}
+
+.orange{
+	color: #FD7022;
+}
+
+.pink{
+	color: #F9127B;
+}
+
+.yellow{
+	color: #FFFF00;
+}
+
+.blue{
+	color: #25CDF4;
+}
+
+.green{
+	color: #B3F72F;
+}
+
+.grey_9{
+	color: #999;
+}
+
+.grey_3{
+	color: #333333;
+}
+
+.grey_8{
+	color: #808080;
+}
+
+.grey_6{
+	color: #666666;
+}
+
+.grey_a1{
+	color: #1A1A1A;
+}
+
+.grey_26{
+	color: #262322;
+}
+
+.grey_4d{
+	color: #4D4D4D;
+}
+
+/*All grey colors used
+color: #999999;
+color: #333333
+color: #808080;
+color: #666666;
+color: #242424;
+color: #4D4D4D;
+color: #CCCCCC;
+color: #F2F2F2;
+color: #1A1A1A;
+color: #E6E6E6;
+*/
