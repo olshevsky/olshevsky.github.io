@@ -1,0 +1,130 @@
+@font-face {
+	font-family: 'MyriadProCond';
+	src: url('../fonts/MyriadPro-Cond.otf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'MyriadProCond';
+	src: url('../fonts/MyriadPro-BoldCond.otf');
+	font-weight: bold;
+	font-style: normal;
+}
+
+#content > h1 {
+	font-family: 'MyriadProCond';
+	text-align:center;
+	color:#6a6969;
+	font-size:20px;
+	font-weight: bold;
+	padding-top:15px;
+	padding-bottom:15px;
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* end of reset */
+
+/* options */
+.optionBlock {
+	width:800px;
+	margin:auto;
+	font-family:Verdana;
+	color:#6a6969;
+	padding-top:20px;
+	padding-bottom:20px;
+	margin-left:41px;
+}
+select {
+	background: #F2F2F2;
+	border: 1px #CCC solid;
+	-webkit-appearance: none;
+	box-sizing: none;
+	padding-left:10px;
+	-webkit-box-align: center;
+	width: 200px;
+	height: 26px;
+	padding-left: 10px;
+	color: #999;
+	border-radius: 0px;
+}
+select[multiple=multiple] {
+	height: 100px;
+}
+input[type=text],input[type=password],input[type=email],input[type=search], textarea {
+	font-family:Verdana;
+	background: #F2F2F2;
+	border: 1px #CCC solid;
+	-webkit-appearance: none;
+	box-sizing: none;
+	padding-left:10px;
+	-webkit-box-align: center;
+	width: 200px;
+	height: 22px;
+	margin-top:2px;
+	line-height: 16px;
+	padding-left: 10px;
+	color: #999;
+	border-radius: 0px;
+}
+
+textarea {
+	width: 500px;
+	height: 200px;
+	font-size: 12px;	
+}
+
+input[type="button"], button {
+	cursor: pointer;
+	background: #e4e4e4;
+	border: 1px solid #d3d3d3;
+	color: #8a8989;
+	padding-top: 5px;
+	padding-bottom: 6px;
+	padding-left: 17px;
+	padding-right: 17px;
+	border-radius: 5px;
+}
+input[type="submit"], button[type="submit"] {
+	cursor: pointer;
+	background: #BEE0DF;
+	border: 1px solid #619C9C;
+	color: #437474;
+	padding-top: 5px;
+	padding-bottom: 6px;
+	padding-left: 17px;
+	padding-right: 17px;
+	border-radius: 5px;
+}
+input, select, textarea {
+	margin-right:3px;
+	margin-left:3px;
+}
+.optionContainer {
+	width: 748px;
+	margin-top:20px;
+	padding-top:14px;
+
+	padding-left:12px;
+	border: 1px solid #CCC;
+	min-height: 44px;
+}
+
+a {
+  color: #42858C;
+  text-decoration: none;
+}
