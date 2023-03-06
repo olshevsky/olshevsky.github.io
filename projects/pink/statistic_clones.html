@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Layout</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <script type="text/javascript" src="js/lib/sdmenu/menu.js"></script>  
+        <script type="text/javascript" src="js/lib/jquery/jquery-1.7.2.min.js"></script>
+        <script type="text/javascript" src="js/lib/jquery/jquery.ezpz_tooltip.min.js"></script>
+        <script type="text/javascript" src="js/lib/jquery/jquery.cookie.js"></script>
+        <script type="text/javascript" src="js/lib/googleapi/jsapi.js"></script>
+        <script type="text/javascript" src="js/lib/jquery/jquery-ui.js"></script>
+        <link rel="stylesheet" href="css/jquery-ui.css" />
+        <link rel="stylesheet" href="css/jquery-ui_override.css" />
+        <link rel="stylesheet" href="css/common.css"/>
+        <link rel="stylesheet" href="css/tooltip.css">
+        <link rel="stylesheet" href="css/statistic_clones.css"/>
+        <script type="text/javascript">
+            // <![CDATA[
+            window.onload = function()
+            {
+                //all javascript calls and events placed here
+                
+                // side menu
+                sideMenu.init('sideMenu'); // div id
+                
+                //
+                $(function(){
+                    $( "#statistic_tabs" ).tabs();
+                    $( "#statistic_tabs_2" ).tabs();
+                });
+                
+                // account manager close
+                $('#close_account_manager').click( function(){
+                    $('#account_manager').animate({
+                        right: '-285px'
+                    }, 300, function() {
+                       
+                    });
+                });
+                
+                // account manager open
+                $('#open_account_manager').click( function(){ 
+                    $('#account_manager').animate({
+                        right: '0'
+                    }, 300, function() {
+                       
+                    });
+                });
+                
+                //info tooltips
+                $(".button.info").ezpz_tooltip({
+                    contentId: 'info_tooltip',
+                    showContent: function(content) {
+                        content.fadeIn(200);
+                    },
+                    hideContent: function(content) {
+                        content.stop(true, true).fadeOut(200);
+                    }
+                });
+            }
+            // ]]>
+        </script>
+        <script>
+            //google line graphich
+            
+            google.load("visualization", "1", {packages:["corechart"]});
+            google.setOnLoadCallback(drawChart);
+            function drawChart() {
+                /*you can also pass here json, see https://developers.google.com/chart/interactive/docs/reference#DataTable_toJSON*/
+                
+                var data1 = google.visualization.arrayToDataTable([
+                    ['Date',        'Quantity'],
+                    ['1.03.2012',   25],
+                    ['5.03.2012',   75],
+                    ['10.03.2012',  10],
+                    ['10.03.2012',  15],
+                    ['10.03.2012',  35],
+                    ['10.03.2012',  98],
+                    ['15.03.2012',  115]
+                ]);
+                
+                var data2 = google.visualization.arrayToDataTable([
+                    ['Date',        'Quantity'],
+                    ['1.03.2012',   1212],
+                    ['5.03.2012',   751],
+                    ['10.03.2012',  110],
+                    ['10.03.2012',  151],
+                    ['10.03.2012',  315],
+                    ['10.03.2012',  918],
+                    ['15.03.2012',  115]
+                ]);
+                
+                var data3 = google.visualization.arrayToDataTable([
+                    ['Date',        'Quantity'],
+                    ['1.03.2012',   215],
+                    ['5.03.2012',   7125],
+                    ['10.03.2012',  120],
+                    ['10.03.2012',  115],
+                    ['10.03.2012',  35],
+                    ['10.03.2012',  9831],
+                    ['15.03.2012',  15]
+                ]);
+                
+                var data4 = google.visualization.arrayToDataTable([
+                    ['Date',        'Quantity'],
+                    ['1.03.2012',   33],
+                    ['5.03.2012',   5],
+                    ['10.03.2012',  89],
+                    ['10.03.2012',  13],
+                    ['10.03.2012',  15],
+                    ['10.03.2012',  28],
+                    ['15.03.2012',  5]
+                ]);
+                
+                var options = {
+                    width: 775,
+                    height: 255,
+                    colors: ['#D92273', '#67A2E4'],
+                    hAxis: {baseline: false},
+                    backgroundColor: {fill : "#FFFFFF", stroke : "#666666", width : 0},
+                    chartArea: {left : 25, top: 'auto', width : 775, height : 215},
+                    hAxis: {minorGridlines: {color: '#333', count: 9}},
+                    vAxes: {baseline:{ color : 'red'}},
+                    tooltip: {textStyle: {color: '#000000'}, 
+                        showColorCode: false
+                    }
+       
+                };
+                
+                var chart = new google.visualization.LineChart(document.getElementById('chart_div_1'));
+                chart.draw(data1, options);
+                
+                var chart = new google.visualization.LineChart(document.getElementById('chart_div_2'));
+                chart.draw(data2, options);
+                
+                var chart = new google.visualization.LineChart(document.getElementById('chart_div_3'));
+                chart.draw(data3, options);
+                
+                var chart = new google.visualization.LineChart(document.getElementById('chart_div_4'));
+                chart.draw(data4, options);
+            }     
+        </script>
+    </head>
+    <body>
+        <div class="header_wrapper">
+            <div class="header">
+                <div class="logo_wrapper">
+                    <a href="layout.html" class="logo"></a>
+                </div>
+                <div class="top_menu">
+                    <ul>
+                        <li>
+                            <a href="dashboard.html">DASHBOARD</a>
+                        </li>
+                        <li>
+                            <a href="#">BLOG</a>
+                        </li>
+                        <li>
+                            <a href="#">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="#">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="icon_block">
+                    <a href="#" class="icon1"></a>
+                    <a href="#" class="icon2"></a>
+                </div>
+                <div class="welcome">
+                    <p><span class="tc_ffcccc">Welcome,</span>&nbsp;<strong>Ardas SPA Centre</strong></p>
+                    <p><span class="tc_ffcccc">Balance</span>&nbsp;<strong>: 3500.00 €</strong></p>
+                </div>
+            </div>
+        </div>
+        <div class="account_manager" id="account_manager">
+            <div class="inner">
+                <div id="open_account_manager"></div>
+                <div class="title">
+                    <h2 >ACCOUNT MANAGER</h2>
+                </div>
+                <div class="name">
+                    <p>Loic Juillard</p>
+                    <p class="sub">name</p>
+                </div>
+                <div class="skype">
+                    <p>Loic.ddz</p>
+                    <p class="sub">skype</p>
+                </div>
+                <div class="email">
+                    <p>loic@pinkplatform.com</p>
+                    <p class="sub">e-mail</p>
+                </div>
+                <div id="close_account_manager"></div>
+                <a href="#" class="skype_logo" title="Contact Us Skype"></a>
+            </div>
+        </div>
+        <div class="main_wrapper">
+            <div class="side_bar" id="side_bar">
+                <h2>Store to work with :</h2>
+                <form action="#" method="post">
+                    <select class="custom_select dark_border">
+                        <option>Sexyshopper (www.sexshop.loc)</option>
+                        <option>Luxsexshop</option>
+                    </select>
+                </form>
+                <div class="side_menu" id="sideMenu">
+                    <ul>
+                        <li>
+                            <a href="#">Configurations boutique</a>
+                        </li>
+                        <li>
+                            <a href="#">Outils publicitaires</a>
+                        </li>
+                        <li class="active">
+                            <a href="#">Statistiques</a>
+                            <ul>
+                                <li class="active">
+                                    <a href="#">Accueil</a>
+                                    <ul>
+                                        <li class="active">
+                                            <a href="#">empty</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Audience</a>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Vue d'ensemble</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Donnes demographiques</a>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Sexe</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Langue</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Geolocalisation</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">Comportement</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Techbologie</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Sources de trafic</a>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Vue d'ensemble</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Sources</a>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Tout le trafic</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Acces direct</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Site referents</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">Resaux sociaux</a>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Vue d'ensemble</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Sources</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Pages</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Conversions</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Contenu</a>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Vue d'ensemble</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Contenu du site</a>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Toutes les pages</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Details des pages URL</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Pages de destination</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Pages de sortie</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">Recherche sur site</a>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">empty</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Infos et paiements</a>
+                        </li>
+                        <li>
+                            <a href="#">New product</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content_block" id="content_block">
+                <div class="title_block">
+                    <h2>Commerce</h2>
+                </div>
+                <div class="mobile_bar">
+                    <a href="#" class="button all_devices" title="all devices" onclick="return false;"></a>
+                    <a href="#" class="button pc active" title="personal computer" onclick="return false;"></a>
+                    <a href="#" class="button tablet" title="tablet" onclick="return false;"></a>
+                    <a href="#" class="button mobile" title="mobile" onclick="return false;"></a>
+                </div>
+                <div class="content">
+                    <div class="content_section">
+                        <div class="section_title">
+                            <h2>Taux de conversion du commerce</h2>
+                            <a href="#" class="button info"></a>
+                        </div>
+                        <div id="statistic_tabs">
+                            <div class="statistic_head">
+                                <div class="left">
+                                    <select class="custom_select">
+                                        <option>Select Filter 1</option>
+                                        <option>Select Filter 2</option>
+                                        <option>Select Filter 3</option>
+                                    </select>
+                                    <p>par raport a</p>
+                                    <select class="custom_select">
+                                        <option>Select Filter 1</option>
+                                        <option>Select Filter 2</option>
+                                        <option>Select Filter 3</option>
+                                    </select>
+                                </div>
+                                <div class="right">
+                                    <ul>
+                                        <li><a href="#tabs-1">Heures</a></li>
+                                        <li><a href="#tabs-2">Jour</a></li>
+                                        <li><a href="#tabs-3">Semaine</a></li>
+                                        <li><a href="#tabs-4">Mois</a></li>
+                                    </ul>
+                                </div>
+                                <div class="fclear"></div>
+                            </div>
+                            <div id="tabs-1">
+                                <div id="chart_div_1" style="width: 775px; height: 255px;"></div>
+                            </div>
+                            <div id="tabs-2">
+                                <div id="chart_div_2" style="width: 775px; height: 255px;"></div>
+                            </div>
+                            <div id="tabs-3">
+                                <div id="chart_div_3" style="width: 775px; height: 255px;"></div>
+                            </div>
+                            <div id="tabs-4">
+                                <div id="chart_div_4" style="width: 775px; height: 255px;"></div>
+                            </div>
+                        </div>
+                        <table class="statistic_table">
+                            <tr>
+                                <th>Visites</th>
+                                <th>Pages/visite</th>
+                                <th>Temps moyen sur la page</th>
+                                <th>Temps moyen sur la page</th>
+                            </tr>
+                            <tr>
+                                <td>2355</td>
+                                <td>3225</td>
+                                <td>00:00:57</td>
+                                <td>29,70 %</td>
+                            </tr>
+                        </table>
+                        <div id="statistic_tabs_2">
+                            <div class="statistic_head_2">
+                                <div class="section_title">
+                                    <h2>Variable principale</h2>
+                                    <div class="taber">
+                                        <ul>
+                                            <li><a href="#tabs-5">Heures</a></li>
+                                            <li><a href="#tabs-6">Jour</a></li>
+                                            <li><a href="#tabs-7">Semaine</a></li>
+                                            <li><a href="#tabs-8">Mois</a></li>
+                                        </ul>
+                                    </div>
+                                    <a href="#" class="button info"></a>                            
+                                </div>
+                                <div class="fclear"></div>
+                            </div>
+                            <div id="tabs-5">
+                                <table class="grey_table">
+                                    <thead>
+                                        <tr>
+                                            <th>Page de destination</th>
+                                            <th>Visites</th>
+                                            <th>Pages/visites</th>
+                                            <th>Temps moyen</th>
+                                            <th>Nouvelles visites</th>
+                                            <th>Traux de rebond</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>/</td>
+                                            <td>2487</td>
+                                            <td>66.23</td>
+                                            <td>00:10:23</td>
+                                            <td>45,05%</td>
+                                            <td>45,05%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>/4-femmes</td>
+                                            <td>2487</td>
+                                            <td>66.23</td>
+                                            <td>00:10:23</td>
+                                            <td>45,05%</td>
+                                            <td>45,05%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>/10-sexsex</td>
+                                            <td>2487</td>
+                                            <td>66.23</td>
+                                            <td>00:10:23</td>
+                                            <td>45,05%</td>
+                                            <td>45,05%</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div id="tabs-6">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vitae est nulla. Nullam id arcu quis leo rhoncus blandit. Etiam sagittis purus non lacus sodales tempus. Maecenas at ante id erat imperdiet vehicula eget at velit. Morbi vulputate elit et diam malesuada luctus sed et odio. Suspendisse potenti. Aenean nunc ipsum, imperdiet vitae posuere vel, gravida sit amet quam. Etiam leo tellus, porta vel blandit sed, viverra quis urna. Donec aliquet tempus purus vitae fermentum. Sed commodo molestie feugiat. Vestibulum eleifend aliquet nisi, molestie condimentum erat ultrices cursus. Nam nisi diam, tristique vel aliquam in, posuere id sem. Donec ornare viverra tortor eu fermentum.</p>
+                            </div>
+                            <div id="tabs-7">
+                                <table class="grey_table">
+                                    <thead>
+                                        <tr>
+                                            <th>Page de destination</th>
+                                            <th>Visites</th>
+                                            <th>Pages/visites</th>
+                                            <th>Temps moyen</th>
+                                            <th>Nouvelles visites</th>
+                                            <th>Traux de rebond</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>/</td>
+                                            <td>2487</td>
+                                            <td>66.23</td>
+                                            <td>00:10:23</td>
+                                            <td>45,05%</td>
+                                            <td>45,05%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>/4-femmes</td>
+                                            <td>2487</td>
+                                            <td>66.23</td>
+                                            <td>00:10:23</td>
+                                            <td>45,05%</td>
+                                            <td>45,05%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>/10-sexsex</td>
+                                            <td>2487</td>
+                                            <td>66.23</td>
+                                            <td>00:10:23</td>
+                                            <td>45,05%</td>
+                                            <td>45,05%</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div id="tabs-8">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vitae est nulla. Nullam id arcu quis leo rhoncus blandit. Etiam sagittis purus non lacus sodales tempus. Maecenas at ante id erat imperdiet vehicula eget at velit. Morbi vulputate elit et diam malesuada luctus sed et odio. Suspendisse potenti. Aenean nunc ipsum, imperdiet vitae posuere vel, gravida sit amet quam. Etiam leo tellus, porta vel blandit sed, viverra quis urna. Donec aliquet tempus purus vitae fermentum. Sed commodo molestie feugiat. Vestibulum eleifend aliquet nisi, molestie condimentum erat ultrices cursus. Nam nisi diam, tristique vel aliquam in, posuere id sem. Donec ornare viverra tortor eu fermentum.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fclear"></div>
+            <div id="info_tooltip" class="tooltip">
+                <div class="tooltip_content">
+                    <p>
+                        <strong>Notifications</strong>
+                    </p>
+                    <p>Nulla id diam eu velit venenatis dignissim. Sed nec metus ut elit placerat elementum ut sed nulla. Cras vitae nulla leo, bibendum pretium tellus. In vehicula dolor eget purus ultrices quis diam.</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

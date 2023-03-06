@@ -1,0 +1,991 @@
+/*index.html css file*/
+
+body{
+	background: #262322 url(head_line_bg.png) repeat-x;
+}
+
+#wrapper{
+	width: 960px;
+	margin: 0 auto;
+}
+
+/*------------------------------------<HEADER AND NAV>----------------------------------------*/
+#header_wrapper{
+	width: 960px;
+	height: 94px;
+	
+}
+
+#top_block{
+	width: 960px;
+	height: 35px;
+	overflow: hidden;
+	display: table-cell;
+	vertical-align: middle;	
+}
+
+.color_line{
+	height: 1px;
+	background: url(header_line.png) no-repeat;
+}
+
+#logo_block{
+	width: 100px;
+	height: 35px;
+	overflow: hidden;
+}
+
+#logo{
+	width: 100px;
+	height: 35px;
+	overflow: hidden;
+	background: url(logo.png);
+	display: block;
+}
+
+#logo_block h1{
+	text-indent: -9999px; /*hide h1 text*/
+}
+
+#top_nav_block{
+	width: 860px;
+	height: 20px;
+	margin-top: 15px;
+	overflow: hidden;	
+}
+
+#top_nav_block a{
+	text-decoration: none;
+}
+
+/*----------<Main navigation block>--------------*/
+#nav{
+	width: 720px;
+}
+
+#nav li{
+	display: inline;
+	float: right;
+	margin-right: 5px;
+}
+
+#nav li a{
+	font: normal 13px 'Arial', sans-serif;
+	color: #999;
+}
+/*----------</Main navigation block>--------------*/
+
+/*-------<Login block>--------*/
+#login_block{
+	width: 130px;
+	padding-left: 10px;
+	height: 20px;
+	overflow: hidden;
+}
+
+#login_block li + li{
+	margin-left: 30px;
+}
+
+#login_block li{
+	font: bold 14px 'Myriad Pro', 'Arial', sans-serif;
+	display: inline;
+}
+
+#login_block li a{
+	color: #FFF;
+}
+/*-------</Login block>--------*/
+
+/*-------<Text image block>--------*/
+#header_img{
+	margin: 6px 0 0 15px;
+}
+/*-------</Text image block>--------*/
+/*------------------------------------</HEADER AND NAV>----------------------------------------*/
+
+
+/*------------------------------------<CONTENT>----------------------------------------*/
+
+.content{
+	width: 948px;
+	padding: 10px 0 0 12px;
+}
+
+.block_title{
+	height: 20px;
+	width: 140px;
+	overflow: visible;
+	border-bottom: 1px solid #363433;
+}
+
+h2, h2 a{
+	font: bold 11px 'Arial', sans-serif;
+	text-shadow: 4px 3px 10px #0C0B0B;
+}
+
+h3{
+	font: bold 11px 'Arial', sans-serif;
+}
+
+.block_title h2, .coming_event_foot h2, .mx_title h2, .lastest_comments_block h2{
+	color: #808080;
+}
+
+.block_title h2 a, .coming_event_foot h2 a, .mx_title h2 a, .lastest_comments_block h2 a{
+	color: #808080;	
+	text-decoration: none;
+}
+
+.detailsTitle{
+	font: bold 11px Arial
+}
+
+.detailsText{
+	font: bold 9px Arial;
+}
+
+/*-----------------------<LEFT BLOCK>--------------------*/
+#left_block{
+	width: 675px;
+	border-right: 1px solid #363433;
+	border-top: 1px solid #363433;
+	
+	min-height: 1500px;
+}
+
+/*-----------<ride day block>--------------*/
+.ride_day{
+	width: 671px;
+	height: 321px;
+	overflow: hidden;
+	padding: 4px 0 0 4px;
+	
+	border-bottom: 1px solid #363433;
+}
+
+.ride_day_obj{
+	width: 650px;
+	height: 300px;
+	overflow: hidden;
+	box-shadow: 10px 8px 15px #0C0B0B;
+	-moz-box-shadow: 10px 8px 15px #0C0B0B;
+	-webkit-box-shadow: 10px 8px 15px #0C0B0B;
+}
+/*-----------</ride day block>--------------*/
+
+
+/*--------------<media block>---------------*/
+
+.media_block{
+	width: 675px;
+	height: 485px;
+	overflow: hidden;
+}
+
+/*--------------<Devisemoto media>-----------------*/
+.devisemoto_media_block{
+	width: 645px;
+	height: 199px;
+	padding: 0 30px 0 0;
+	border-bottom: 1px solid #363433;
+}
+
+.devisemoto_media_item_block{
+	height: 185px;
+	width: 645px;
+	overflow: hidden;
+	position: relative;
+	top: -10px;
+	left: 0;
+}
+
+.devisemoto_media_block .block_title{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.devisemoto_media_item{
+	width: 200px;
+	height: 185px;
+	overflow: hidden;
+	margin-left: 9px;
+}
+
+.devisemoto_media_item_title{
+	height: 15px;
+	width: 200px;
+	overflow: hidden;
+	text-align: right;
+	color: #4D4D4D;
+}
+
+.devisemoto_media_img{
+	width: 200px;
+	height: 120px;
+	overflow: hidden;
+}
+
+.devisemoto_media_details{
+	width: 90px;
+	height: 45px;
+	overflow: hidden;
+	padding-top: 2px;
+}
+
+.devisemoto_media_post{
+	width: 110px;
+	height: 43px;
+	overflow: hidden;
+	padding-top: 4px;
+}
+
+.devisemoto_media_post a{
+	margin-left: 10px;
+}
+
+.devisemoto_media_archive{
+	text-decoration: none;
+	font: bold 11px 'Arial', sans-serif;
+	color: #4D4D4D;
+	width: 70px;
+	height: 15px;
+	overflow: hidden;
+	border-top: 1px solid #363433;
+	display: block;
+	margin-top: 15px;
+	text-align: right;
+	position: relative;
+	top: 10px;
+	left: 30px;
+}
+
+.post_button_green, .post_button_blue, .post_button_pink, .post_button_orange{
+	height: 14px;
+	width: 14px;
+	display: block;
+}
+
+.post_button_green{
+	background: url(post_button_green.png) no-repeat;
+}
+
+.post_button_blue{
+	background: url(post_button_blue.png) no-repeat;
+}
+
+.post_button_pink{
+	background: url(post_button_pink.png) no-repeat;
+}
+
+.post_button_orange{
+	background: url(post_button_orange.png) no-repeat;
+}
+
+/*--------------</Devisemoto media>----------------*/
+
+/*--------------<Up next Devisemoto media>-----------*/
+
+.up_next_devisemoto_media_block{
+	width: 645px;
+	height: 195px;
+	padding: 8px 30px 0 0;
+}
+
+.up_next_devisemoto_media_block  .block_title h2{
+	width: 180px;
+}
+
+.up_next_devisemoto_head{
+	font: normal 12px 'Arial', sans-serif;
+}
+
+.up_next_devisemoto_item_block{
+	height: 169px;
+	width: 645px;
+	overflow: hidden;
+	padding-top: 5px;
+}
+
+.up_next_devisemoto_item{
+	width: 200px;
+	height: 169px;
+	overflow: hidden;
+	margin-left: 9px;
+}
+
+.post_question{
+	font: normal 11px 'Arial', sans-serif;
+}
+
+.post_title{
+	font: bold 14px 'Arial', sans-serif;
+}
+
+.post_interview{
+	font: bold 11px 'Arial', sans-serif;
+}
+
+.post_interview a{
+	text-decoration: none;
+	color: #666666;
+	margin: 0;
+}
+/*--------------</Up next Devisemoto media>-----------*/
+
+/*--------------<Lastes user question>----------------*/
+.lastest_user_question{
+	width: 645px;
+	margin-right: 30px;
+	height: 80px;
+	overflow: hidden;
+	border-top: 1px dashed #363433;
+}
+
+.lastest_user_question_item{
+	width: 200px;
+	height: 55px;
+	overflow: hidden;
+	margin-top: 4px;
+}
+
+.lastest_user_question .block_title{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+/*-------------</Lastes user question>----------------*/
+/*--------------</media block>---------------*/
+
+
+/*-----------------------<industry media>------------------------*/
+
+.industry_media{
+	width: 675px;
+	overflow: hidden;
+	border-top: 4px double #363433;
+	margin-bottom: 12px;
+}
+
+.industry_media .block_title{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.industry_media_row{
+	width: 665px;
+	height: 235px;
+	overflow: hidden;
+	margin-top: 8px;
+	padding-right: 10px;
+}
+
+/*-----------<Industry media row left part>-----------*/
+.industry_media_main{
+	width: 590px;
+	height: 233px;
+	overflow: hidden;
+	background-color: #B3B3B3;
+	padding: 1px;
+}
+
+.industry_media_main_header{
+	height: 25px;
+	width: 580px;
+	overflow: hidden;
+	padding-left: 10px;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.industry_media_main_header h4{
+	font: bold 14px 'Arial', sans-serif;
+}
+
+.header_pink{
+	background-color: #F9127B;
+}
+
+.industry_media_left{
+	width: 210px;
+	height: 183px;
+	overflow: hidden;
+	padding: 2px 0 0 10px;
+}
+
+.industry_media_left_img{
+	width: 200px;
+	height: 120px;
+	overflow: hidden;
+	box-shadow: 3px 3px 10px #343333;
+	-moz-box-shadow: 3px 3px 10px #343333;
+	-webkit-box-shadow: 3px 3px 10px #343333;
+}
+
+.industry_media_left_head{
+	height: 20px;
+	width: 150px;
+	overflow: hidden;
+	position: relative;
+	top: 45px;
+	left: 0;
+}
+
+.industry_media_left_head h2 a{
+	text-decoration: none;
+	color: #1A1A1A;
+}
+
+.industry_media_right{
+	width: 360px;
+	height: 183px;
+	overflow: hidden;
+	padding: 2px 10px 0 0;
+}
+
+.industry_media_right_posted{
+	width: 110px;
+	height: 30px;
+	overflow: hidden;
+}
+
+.protaper_button{
+	width: 295px;
+	height: 70px;
+	display: block;
+	background: url(protaper.jpg) no-repeat;
+}
+
+.industry_media_avatar{
+	width: 32px;
+	height: 32px;
+	overflow: hidden;
+	margin-right: 3px;
+}
+
+.industry_media_text{
+	width: 245px;
+	height: 100px;
+	overflow: hidden;
+	padding-left: 5px;
+	margin-bottom: 5px;
+	color: #F2F2F2;
+}
+
+.industry_media_text h5{
+	font: bold 17px 'Arial', sans-serif;
+	margin-bottom: 10px;
+}
+
+.industry_media_text p{
+	font: bold 12px 'Arial', sans-serif;
+}
+
+.industry_media_footer{
+	height: 18px;
+	width: 570px;
+	padding: 4px 0 0 10px;
+	overflow: visible;
+	border-top: 1px solid #A0A0A0;
+	font: bold 11px 'Arial', sans-serif;
+}
+
+.industry_media_footer_comment{
+	width: 120px;
+	height: 22px;
+	overflow: hidden;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+.industry_media_footer_lastest_comment{
+	width: 390px;
+	height: 22px;
+	overflow: hidden;
+	position: relative;
+	top: -22px;
+	left: 120px;
+}
+
+.industry_media_footer_archive{
+	width: 70px;
+	height: 20px;
+	overflow: hidden;
+	border-top: 1px solid #A0A0A0;
+	position: relative;
+	top: -44px;
+	left: 510px;
+}
+
+.industry_media_footer_archive a{
+	text-decoration: none;
+	font: bold 11px 'Arial', sans-serif;
+	color: #4D4D4D;
+}
+
+/*-----------</Industry media row left part>-----------*/
+
+
+/*----------<Industry media row right part>------------*/
+.industry_media_previous{
+	width: 70px;
+	height: 235px;
+	overflow: hidden;
+	background-color: #B3B3B3;
+}
+
+.industry_media_previous_head{
+	height: 25px;
+	width: 70px;
+	overflow: hidden;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.industry_media_previous_head h2 a{
+	text-shadow: none;
+	color: #242424;
+	text-decoration: none;
+}
+
+
+.industry_media_previous_img_block{
+	width: 68px;
+	height: 210px;
+	overflow: hidden;
+	padding: 0 0 0 2px;
+}
+
+.industry_media_previous_img_block img{
+	margin-top: 2px;
+}
+/*----------</Industry media row right part>------------*/
+/*--------------------</industry media>-----------------------*/
+/*---------------------------------</LEFT BLOCK>-----------------------*/
+
+
+
+/*-----------------------<RIGHT BLOCK>--------------------*/
+
+#right_block{
+	width: 270px;
+	border-top: 1px solid #363433;
+}
+
+.right_top{
+	border-bottom: 1px solid #363433;
+	width: 270px;
+	height: 525px;
+}
+
+
+/*-------<coming_events>-----------*/
+.coming_events{
+	width: 185px;
+	height: 320px;
+	overflow: hidden;
+	border-bottom: 1px solid #363433;
+	padding: 5px 0 0 5px;
+}
+
+.events_block{
+	height: 280px;
+	width: 185px;
+	overflow: hidden;
+}
+
+.coming_event_row{
+	margin-top: 5px;
+	height: 53px;
+	width: 185px;
+	overflow: hidden;
+	border-bottom: 1px dashed #363433;
+}
+
+.coming_event_title{
+	margin-bottom: 4px;
+}
+
+.coming_event_month{
+	margin-bottom: 3px;
+}
+
+.coming_event_row div{
+	font: bold 11px 'Arial', sans-serif;
+	line-height: 9px;
+}
+
+.coming_event_foot{
+	height: 20px;
+	width: 70px;
+	overflow: hidden;
+	border-top: 1px solid #363433;
+	text-align: right;
+}
+
+.coming_event_foot a{
+	text-decoration: none;
+	color: #808080;
+}
+
+.red_button{
+	height: 19px;
+	width: 25px;
+	overflow: hidden;
+	padding: 6px 0 0 0;
+	background: url(button_red.png);
+	display: block;
+	text-decoration: none;
+	color: #FFF;
+	font: bold 14px 'Arial', sans-serif;
+	text-align: center;
+}
+
+.coming_event_row  .red_button{
+	margin-right: 6px;
+}
+/*-------</coming_events>-----------*/
+
+/*-------<lastest_comments>-----------*/
+.lastest_comments_block{
+	width: 180px;
+	height: 195px;
+	padding: 5px 0 0 10px;
+	overflow: hidden;
+}
+
+.last_comment{
+	height: 55px;
+	width: 165px;
+	overflow: hidden;
+	margin-top: 5px;
+	padding: 0 15px 0 0;
+}
+
+.last_comment .detailsText a{
+	text-decoration: none;
+	color: #808080;
+}
+
+/*-------</lastest_comments>-----------*/
+
+/*-----------<Mx links>-------------*/
+.mx_links{
+	height: 520px;
+	width: 65px;
+	overflow: hidden;
+	padding: 15px 0 5px 10px;
+	position: relative;
+	left: 0;
+	top: -10px;
+	border-left: 1px solid #363433;
+}
+
+.mx_title{
+	height: 20px;
+	width: 60px;
+	overflow: hidden;
+	border-bottom: 1px solid #363433;
+}
+
+.mx_links_img_block{
+	width: 75px;
+	height: 435px;
+	overflow: hidden;
+	padding: 10px 0 0 0;
+}
+
+.mx_links_img_block img{
+	margin-bottom: 7px;
+}
+
+.mx_links_img_block + .refresh_botton{
+	margin: 5px 0 0 10px;
+}
+
+.refresh_botton{
+	height: 45px;
+	width: 40px;
+	display: block;
+	background: url(refresh.png) no-repeat;
+}
+/*-----------</Mx links>-------------*/
+
+/*-----------<Request exposure form>-------------*/
+.request_exposure{
+	min-height: 275px;
+	width: 262px;
+	overflow: hidden;
+	padding: 10px 0 0 8px;
+}
+
+.request_exposure_title{
+	height: 20px;
+	width: 250px;
+	overflow: hidden;
+	border-bottom: 1px dashed #363433;
+}
+
+.request_exposure_title h2{
+	font: normal 14px 'Arial', sans-serif;
+}
+
+#request_name, #request_email, #request_link, #request_text{
+	width: 245px;
+	background-color: #B3B3B3;
+	border: none;
+	color: #666666;
+	font: normal 11px 'Arial', sans-serif;
+	padding-left: 5px;
+	margin-top: 8px;
+}
+
+#request_name, #request_email, #request_link{
+	height: 25px;
+}
+
+#request_text{
+	height: 120px;
+	overflow: auto;
+}
+
+.request_button_block{
+	height: 20px;
+	width: 250px;
+	background-color: #B3B3B3;
+	position: relative;
+	left: 0;
+	top: -5px;
+}
+
+#request_button{
+	height: 20px;
+	width: 60px;
+	background-color: #4D4D4D;
+	border: none;
+	color: #808080;
+	font: bold 11px 'Arial', sans-serif;
+}
+/*-----------</Request exposure form>-------------*/
+
+
+/*----------------<Industry deals>---------------*/
+.industry_deals{
+	border-top: 4px double #363433;
+	width: 263px;
+	padding: 0 0 10px 7px;
+}
+
+.industry_deals .block_title{
+	margin-bottom: 7px;
+}
+
+/*--------------</Industry deals>---------------*/
+
+/*---------------<RSS Feeds>------------*/
+
+.rss_feeds_block{
+	width: 260px;
+	min-height: 40px;
+}
+
+.rss_feeds{
+	width: 250px;
+	border-top: 1px solid #363433;
+	position: relative;
+	top: 0;
+	left: -5px;
+	padding: 0 0 0 10px;
+	color: #E6E6E6;
+	min-height: 40px;
+}
+
+.rss_feeds_title{
+	height: 20px;
+	width: 128px;
+	border-bottom: 1px dashed #363433;
+	padding-left: 7px;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.rss_feeds h2 a{
+	color: #E6E6E6;
+	text-decoration: none;
+}
+
+/*---------------</RSS Feeds>------------*/
+
+/*--------------------------</RIGHT BLOCK>----------------------*/
+
+
+/*----------------------<FOOTER>--------------------------------*/
+#footer_wrapper{
+	height: 130px;
+	width: 935px;
+	overflow: visible;
+	border-top: 1px solid #363433;
+	margin-bottom: 50px;
+}
+
+/*----------------<LEFT BLOCK>-------------*/
+#footer_left{
+	height: 130px;
+	width: 675px;
+	overflow: visible;
+	border-right: 1px solid #363433;
+}
+
+
+
+
+/*------------<Copyright block>-------------*/
+
+#copyright_block_block{
+	position: relative;
+	left: 0;
+	top: 0;
+}
+
+#footer_copyright{
+	width: 210px;
+	height: 20px;
+	overflow: hidden;
+	padding-top: 10px;
+}
+
+#footer_copyright h2{
+	font: bold 12px 'Arial', sans-serif;
+	color: #E6E6E6;
+	line-height: 13px;
+	text-shadow: none;
+}
+
+#footer_contact{
+	font: bold 11px 'Arial', sans-serif;
+	height: 40px;
+	width: 140px;
+}
+
+#footer_contact a{
+	color: #808080;
+	text-decoration: none;
+}
+
+#contact_us, #advertise_us{
+	height: 17px;
+	width: 140px;
+	overflow: hidden;
+	padding-top: 3px;
+}
+
+#contact_us{
+	border-bottom: 1px solid #363433;
+}
+/*------------</Copyright block>-------------*/
+
+
+/*------------<Buttons block>----------------*/
+#follow_button_block{
+	position: relative;
+	top: -70px;
+	left: 130px;
+	width: 555px;
+	height: 90px;
+	overflow: hidden;
+	border-bottom: 1px solid #363433;
+	padding-top: 5px;
+	padding-bottom: 2px;
+}
+
+.facebook_button{
+	width: 106px;
+	height: 78px;
+	display: block;
+	overflow: hidden;
+	font: bold 12px 'Arial', sans-serif;
+	text-decoration: none;
+	color: #FFF;
+	padding-top: 12px;
+	padding-left: 14px;
+	background: url(facebook_button.png) no-repeat;
+}
+
+.tweeter_button{
+	width: 110px;
+	height: 78px;
+	display: block;
+	overflow: hidden;
+	font: bold 12px 'Arial', sans-serif;
+	text-decoration: none;
+	color: #FFF;
+	padding-top: 12px;
+	padding-left: 10px;
+	background: url(tweeter_button.png) no-repeat;
+}
+
+.youtube_button{
+	width: 90px;
+	height: 90px;
+	display: block;
+	background: url(youtube_button.png) no-repeat;
+}
+
+.tweeter_logo_button{
+	width: 62px;
+	height: 52px;
+	display: block;
+	background: url(tweeter_logo_button.png) no-repeat;
+}
+
+.like_us{
+	font: bold 11px 'Arial', sans-serif;
+	margin: 0 30px 0 15px;
+}
+/*------------</Buttons block>----------------*/
+/*----------------</LEFT BLOCK>-------------*/
+
+#tweet{
+	width: 284px;
+	height: 132px;
+	overflow: visible;
+	background: url(tweet.png) no-repeat center center;
+	position: relative;
+	top: -130px;
+	left: 685px;
+}
+
+#tweet a{
+	text-decoration: none;
+}
+
+#tweet_inner_text{
+	width: 222px;
+	height: 86px;
+	overflow: hidden;
+	position: relative;
+	top: 12px;
+	left: 32px;
+}
+
+#tweet_header{
+	height: 15px;
+	width: 165px;
+	border-bottom: 1px solid #4A4A4A;
+	font: bold 11px 'Arial', sans-serif;
+	overflow: visible;
+}
+
+#tweet_message{
+	width: 222px;
+	height: 65px;
+	padding-top: 5px;
+	overflow: hidden;
+	font: bold 13px 'Arial', sans-serif;
+	color: #CCCCCC;
+}
+
+/*---------------------</FOOTER>-----------------------------*/
+/*------------------------------------</CONTENT>----------------------------------------*/

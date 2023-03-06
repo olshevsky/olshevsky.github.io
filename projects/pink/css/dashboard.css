@@ -1,0 +1,133 @@
+.main_wrapper .content_block .content{
+    padding: 15px 20px 40px 20px;
+}
+
+/*titles*/
+.main_wrapper .content_block .content .notifications .title, .main_wrapper .content_block .content .actual .title, .main_wrapper .content_block .content .how_to .title{
+    height: 35px;
+    border-bottom: 1px solid #E1E1E1;
+}
+
+.main_wrapper .content_block .content .notifications .title h2, .main_wrapper .content_block .content .actual .title h2, .main_wrapper .content_block .content .how_to .title h2{
+    margin: 0;
+    line-height: 18px;
+    padding-top: 10px;
+    float: left;
+    color: #cc3366;
+}
+
+.main_wrapper .content_block .content .notifications .title > .button.info, .main_wrapper .content_block .content .actual .title > .button.info, .main_wrapper .content_block .content .how_to .title > .button.info{
+    margin-top: 7px;
+    float: right;
+}
+/*titles*/
+
+/*---START notifications---*/
+.main_wrapper .content_block .content .notifications{
+    width: 370px;
+    float: left;
+    margin-bottom: 15px;
+    min-height: 100px;
+    border: 1px solid #D7D7D7;
+    padding: 0 10px 10px 10px;
+    background-color: #FFFFFF;
+}
+
+.main_wrapper .content_block .content .notifications .notif_row{
+    height: 40px;
+    padding-top: 5px;
+    border-bottom: 1px solid #E1E1E1;
+    overflow: hidden;
+}
+
+.main_wrapper .content_block .content .notifications .notif_row .icon{
+    width: 35px;
+    height: 35px;
+    overflow: hidden;
+    float: left;
+    margin-right: 10px;
+}
+
+
+.main_wrapper .content_block .content .notifications .notif_row p{
+    margin: 0;
+    color: #999999;
+}
+
+.main_wrapper .content_block .content .notifications .notif_row .date{
+    font: bold 10px 'Verdana';
+    margin: 3px 0 4px 0;
+}
+
+.main_wrapper .content_block .content .notifications .notif_row .text{
+    font: normal 12px 'Verdana';
+}
+/*---END notifications---*/
+
+/*---START actual---*/
+.main_wrapper .content_block .content .actual{
+    width: 370px;
+    float: right;
+    min-height: 100px;
+    margin-bottom: 15px;
+    border: 1px solid #D7D7D7;
+    padding: 0 10px 10px 10px;
+    background-color: #FFFFFF;
+}
+
+.main_wrapper .content_block .content .actual .actual_row{
+    border-bottom: 1px solid #E1E1E1;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.main_wrapper .content_block .content .actual .actual_row .date{
+    font: normal 10px 'Verdana';
+    color: #999999;
+    margin: 5px 0;
+}
+
+.main_wrapper .content_block .content .actual .actual_row h3{
+    color: #7F8080;
+    font: bold 12px 'Verdana';
+    margin: 0 0 5px 0;
+}
+
+.main_wrapper .content_block .content .actual .actual_row p{
+    margin: 0 0 5px 0;
+    font: normal 12px 'Verdana';
+    color: #999999;
+}
+
+.main_wrapper .content_block .content .actual a{
+    color: #cc3366;
+    font: normal 12px 'Verdana';
+    text-decoration: none;
+}
+
+.main_wrapper .content_block .content .actual a:hover{
+    text-decoration: underline;
+}
+/*---END actual---*/
+
+/*---START how to---*/
+.main_wrapper .content_block .content .how_to{
+    width: 370px;
+    float: right;
+    margin-bottom: 15px;
+    min-height: 100px;
+    border: 1px solid #D7D7D7;
+    padding: 0 10px 10px 10px;
+    background-color: #FFFFFF;
+}
+
+.main_wrapper .content_block .content .how_to .title{
+    margin-bottom: 10px;
+}
+
+.main_wrapper .content_block .content .how_to .media{
+    height: 235px;
+    width: 370px;
+    overflow: hidden;
+}
+/*---END how to---*/

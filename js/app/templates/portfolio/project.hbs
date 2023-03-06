@@ -1,0 +1,30 @@
+<a href="#" class="portfolio-window-close"><i class="fa fa-times"></i></a>
+<div class="col-md-6">
+    <div class="portfolio-gallery">
+        {{#each gallery}}
+            {{#if @first}}
+                <a href="{{full}}" class="portfolio-gallery-viewport-a portfolio-gallery-a">
+                    <img src="img/book_690x419.png" class="portfolio-gallery-viewport"/>
+                    <i class="fa fa-search-plus portfolio-gallery-icon"></i>
+                </a>
+                <img src="{{thumb}}" class="portfolio-gallery-img active"/>
+            {{else}}
+                <a href="{{full}}" class="portfolio-gallery-a">
+                    <img src="{{thumb}}" class="portfolio-gallery-img"/>
+                </a>
+            {{/if}}
+        {{/each}}
+    </div>
+</div>
+<div class="col-md-6">
+    <h4 class="portfolio-title">{{title}}</h4>
+    <div class="seperator type-3 portfolio-seperator"></div>
+    <p class="text-capitalize">Job: {{list job}}</p>
+    <p class="text-capitalize">Tags: {{list tags}}</p>
+    <p>Year: {{timeToYear timestamp}}</p>
+    {{#if url}}
+    <p>Url: <a href="{{url}}" target="_blank">{{urlTitle}}</a></p>
+    {{/if}}
+    <p>{{description}}</p>
+</div>
+<div class="fclear"></div>

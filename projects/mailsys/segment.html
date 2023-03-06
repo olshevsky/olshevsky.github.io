@@ -1,0 +1,625 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>EmailSys</title>
+
+<link rel="stylesheet" href="css/main.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/jquery-ui-1.8.21.custom.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/layout.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/text.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/segment.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/override.css" type="text/css" media="all" />
+
+<script type="text/javascript" src="js/lib/jquery/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/lib/jquery/jquery-ui-1.8.21.custom.min.js"></script>
+<script type="text/javascript" src="js/lib/sdmenu/menu.js"></script>
+<script type="text/javascript" src="js/lib/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript" src="js/lib/taconite/jquery.taconite.js"></script>
+
+
+<script type="text/javascript">
+	// <![CDATA[         
+  var sideMenu;
+  window.onload = function() {
+    sideMenu = new SDMenu("my_menu"); //create menu object
+    sideMenu.speed = 5; //menu sliding speed (1 - 5 recomended)
+    sideMenu.oneSmOnly = true; // One expanded submenu at a time
+    sideMenu.remember = true; // Store menu states (expanded or collapsed) in cookie and restore later
+    sideMenu.markCurrent = false; // Mark current link / page (link.href == location.href)
+    sideMenu.init();
+  };
+
+  $(function() {
+    $('.fancybox').fancybox();
+  });
+	// ]]>
+</script>
+  </head>
+  <body>
+  	<div id="header">
+	<div class="headerInner">
+		<div class="logo">
+			<img src="images/logo.png" width="205" height="40" />
+		</div>
+		<div class="profile">
+			<p style="width: 400px; clear: both; height: 15px">
+						       Hello, <strong>Johnny</strong> |
+		       <a href="/mailer/web/app.php/logout">
+		           <strong>Logout</strong>
+		       </a>
+			   				
+			</p>
+
+			<div class="icons">
+				<img src="images/1.png" width="31" height="31" />
+				<img src="images/2.png" width="31" height="31" />
+				<img src="images/3.png" width="31" height="31" />
+			</div>
+			<div class="stats">
+				<p>
+					Formule souscrite : <strong>365000</strong>
+				</p>
+				<p>
+					Credits restants : <strong>3500</strong>
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- header -->
+
+<div id="all">
+	<div id="menu">
+		<div class="menu_inner_wrapp">
+			<div style="float: left" id="my_menu" class="sdmenu">
+				<div class="collapsed">
+					<span>Campaign</span>
+					<a href="/mailer/web/app.php/template"><span class="arrow"></span>Templates</a>
+          <a href="/mailer/web/app.php/message/"><span class="arrow"></span>Messages</a>
+          <a href="/mailer/web/app.php/segment/"><span class="arrow"></span>Segments</a>
+          <a href="/mailer/web/app.php/campaign/new/standard"><span class="arrow"></span>Standard Campaign</a>
+          <a href="/mailer/web/app.php/campaign/new/variate"><span class="arrow"></span>Split testing</a>
+          <a href="/mailer/web/app.php/campaign/new/triggered"><span class="arrow"></span>Reflex</a>
+          <a href="/mailer/web/app.php/campaign/new/workflow"><span class="arrow"></span>Scenario</a>
+				</div>
+        <div class="collapsed">
+          <span>Delivrabilite</span>
+          <a href="#"><span class="arrow"></span>Split testing</a>
+          <a href="#"><span class="arrow"></span>Reflex</a>
+          <a href="#"><span class="arrow"></span>Scenario</a>
+        </div>
+        <div class="collapsed">
+          <span>Notifications</span>
+          <a href="#"><span class="arrow"></span>Campagne</a>
+          <a href="#"><span class="arrow"></span>Message</a>
+          <a href="#"><span class="arrow"></span>Split testing</a>
+        </div>
+        <div class="collapsed">
+          <span>Social Media</span>
+          <a href="#"><span class="arrow"></span>Reflex</a>
+          <a href="#"><span class="arrow"></span>Scenario</a>
+        </div>
+        <div class="collapsed">
+          <span>Base de donnes</span>
+          <a href="#"><span class="arrow"></span>Scenario</a>
+        </div>
+        <div class="collapsed">
+          <span>Analyse</span>
+          <a href="#"><span class="arrow"></span>Campagne</a>
+          <a href="#"><span class="arrow"></span>Scenario</a>
+          <a href="#"><span class="arrow"></span>Split testing</a>
+          <a href="#"><span class="arrow"></span>Reflex</a>
+          <a href="#"><span class="arrow"></span>Message</a>
+        </div>
+        <div class="collapsed">
+          <span>Admin</span>
+          <a href="/mailer/web/app.php/client/"><span class="arrow"></span>Clients</a>
+          <a href="/mailer/web/app.php/segment/poolfilterparametercategory/"><span class="arrow"></span>Filter Parameter Pool Categories</a>
+          <a href="/mailer/web/app.php/segment/poolfilterparameter/"><span class="arrow"></span>Filter Parameter Pool</a>
+          <a href="/mailer/web/app.php/campaign/campaigntype/"><span class="arrow"></span>Campaign Types</a>
+          <a href="/mailer/web/app.php/campaign/campaigncategory/"><span class="arrow"></span>Campaign Categories</a>
+        </div>
+			</div>
+		</div>
+	</div>
+
+	<div id="content">
+		  
+		
+		
+<h1>Segment edit</h1>
+
+<form action="/mailer/web/app.php/segment/1/update" method="post">
+	
+	
+	<label for="ddz_bundle_segmentbundle_segmenttype_name" class=" required">Name</label>
+	
+	<input type="text" id="ddz_bundle_segmentbundle_segmenttype_name" name="ddz_bundle_segmentbundle_segmenttype[name]" required="required" maxlength="255" value="First Segment @" />
+
+	<div style="text-align: right">
+	<input type="button" onclick="createParameterGroup()" value="Create Group" />
+</div>
+
+<div class="vspacer"></div>
+
+<div id="segmentParameterPool" class="clearfix">
+	<div id="pool">
+            <div id="categoryPool">
+                <h4>Demographics</h4>
+                <div>
+                    <div id="parameterPool">
+                        <div class="pool parameter" data="1">Address<span class="arrow"></span></div>
+                        <div class="pool parameter" data="2">City<span class="arrow"></span></div>
+                        <div class="pool parameter" data="4">Country<span class="arrow"></span></div>
+                    </div>	
+                </div>
+                <h4>Behavioural</h4>
+                <div>
+                    <div id="parameterPool">
+                        <div class="pool parameter" data="3">Action on Campaign<span class="arrow"></span></div>
+                    </div>	
+                </div>
+                <h4>Social</h4>
+                <div>
+                    <div id="parameterPool"></div>	
+                </div>
+                <h4>Quick segments</h4>
+                <div>
+                    <div id="parameterPool"></div>	
+                </div>
+                <h4>Data mart</h4>
+                <div>
+                    <div id="parameterPool"></div>	
+                </div>
+            </div>	
+        </div>
+
+                <div id="dropZone" style="float: right;">
+								
+<div class="dropzone filter-group" style="overflow: hidden">
+	<div class="filter-parameter-header main_header_bg">
+			
+	<input type="text" id="filter_parameter[397]_name" name="filter_parameter[397][name]" required="required" value="Group 1" />
+		
+		<div style="float: right">
+			<a href="javascript: void(null);" onclick="$(this).parent().parent().parent().remove();">delete</a>
+		</div>
+	</div>
+
+	
+
+	        <input type="hidden" id="isGroup" name="filter_parameter[397][is_group]"    class="isGroup" value="1" />
+
+	        <input type="hidden" id="uniqueId" name="filter_parameter[397][unique_id]"    class="uniqueId" value="397" />
+
+	        <input type="hidden" id="parentId" name="filter_parameter[397][parent_id]"    class="parentId" />
+
+	        <input type="hidden" id="filter_parameter[397]_poolFilterParameter" name="filter_parameter[397][poolFilterParameter]" />
+
+	        <input type="hidden" id="builderClass" name="filter_parameter[397][builder_class]"    class="builderClass" value="Group" />
+
+	
+		
+	<div class="container">
+		
+	</div>
+		
+	<div class="filter-parameter-and">AND</div>
+	<div class="filter-parameter-or">OR</div>
+</div>						
+<div class="dropzone filter-parameter" style="overflow: hidden">
+	<div class="filter-parameter-header">
+			Address
+		
+		<div style="float: right">
+			<a href="javascript: void(null);" onclick="$(this).parent().parent().parent().remove();">delete</a>
+		</div>
+	</div>
+
+	
+
+	        <input type="hidden" id="isGroup" name="filter_parameter[398][is_group]"    class="isGroup" />
+
+	        <input type="hidden" id="uniqueId" name="filter_parameter[398][unique_id]"    class="uniqueId" value="398" />
+
+	        <input type="hidden" id="parentId" name="filter_parameter[398][parent_id]"    class="parentId" value="397" />
+
+	        <input type="hidden" id="filter_parameter[398]_poolFilterParameter" name="filter_parameter[398][poolFilterParameter]" value="1" />
+
+	        <input type="hidden" id="builderClass" name="filter_parameter[398][builder_class]"    class="builderClass" value="SimpleUserProperty" />
+
+	
+			
+		<table width="100%">
+		<col width="180" />
+		<col width="180" />
+		<tr>
+			<td>
+				<select id="filter_parameter[398]_values_comparison_value_string" name="filter_parameter[398][values][comparison][value_string]" required="required"><option value="equals">equals</option><option value="contains">contains</option><option value="does_not_contain" selected="selected">does not contain</option></select>
+			</td>
+			
+			<td>
+				<input type="checkbox" id="filter_parameter[398]_values_case_sensitive_value_boolean" name="filter_parameter[398][values][case_sensitive][value_boolean]" value="1" />
+				Case sensitive
+			</td>
+			
+			<td>	
+				<div class="conditions">		
+										
+					<div style="white-space: nowrap;">
+	<input type="text" id="filter_parameter[398]_multivalues_condition_0_value_string" name="filter_parameter[398][multivalues][condition][0][value_string]" value="riga" />
+	<a href="javascript: void(null)" onclick="$(this).parent().remove();">X</a>
+</div>									
+									</div>
+				<a href="javascript: void(null)" onclick="createMultivalueField('condition', '398', 'SimpleUserProperty', $(this).parent().find('.conditions'))">add more</a>
+			</td>
+		</tr>
+		
+	</table>
+	
+		
+	<div class="filter-parameter-and">AND</div>
+	<div class="filter-parameter-or">OR</div>
+</div>						
+<div class="dropzone filter-parameter" style="overflow: hidden">
+	<div class="filter-parameter-header">
+			Address
+		
+		<div style="float: right">
+			<a href="javascript: void(null);" onclick="$(this).parent().parent().parent().remove();">delete</a>
+		</div>
+	</div>
+
+	
+
+	        <input type="hidden" id="isGroup" name="filter_parameter[399][is_group]"    class="isGroup" />
+
+	        <input type="hidden" id="uniqueId" name="filter_parameter[399][unique_id]"    class="uniqueId" value="399" />
+
+	        <input type="hidden" id="parentId" name="filter_parameter[399][parent_id]"    class="parentId" value="397" />
+
+	        <input type="hidden" id="filter_parameter[399]_poolFilterParameter" name="filter_parameter[399][poolFilterParameter]" value="1" />
+
+	        <input type="hidden" id="builderClass" name="filter_parameter[399][builder_class]"    class="builderClass" value="SimpleUserProperty" />
+
+	
+			
+		<table width="100%">
+		<col width="180" />
+		<col width="180" />
+		<tr>
+			<td>
+				<select id="filter_parameter[399]_values_comparison_value_string" name="filter_parameter[399][values][comparison][value_string]" required="required"><option value="equals">equals</option><option value="contains" selected="selected">contains</option><option value="does_not_contain">does not contain</option></select>
+			</td>
+			
+			<td>
+				<input type="checkbox" id="filter_parameter[399]_values_case_sensitive_value_boolean" name="filter_parameter[399][values][case_sensitive][value_boolean]" value="1" checked="checked" />
+				Case sensitive
+			</td>
+			
+			<td>	
+				<div class="conditions">		
+										
+					<div style="white-space: nowrap;">
+	<input type="text" id="filter_parameter[399]_multivalues_condition_0_value_string" name="filter_parameter[399][multivalues][condition][0][value_string]" value="hello" />
+	<a href="javascript: void(null)" onclick="$(this).parent().remove();">X</a>
+</div>									
+										
+					<div style="white-space: nowrap;">
+	<input type="text" id="filter_parameter[399]_multivalues_condition_1_value_string" name="filter_parameter[399][multivalues][condition][1][value_string]" value="dolly" />
+	<a href="javascript: void(null)" onclick="$(this).parent().remove();">X</a>
+</div>									
+										
+					<div style="white-space: nowrap;">
+	<input type="text" id="filter_parameter[399]_multivalues_condition_2_value_string" name="filter_parameter[399][multivalues][condition][2][value_string]" value="donkey" />
+	<a href="javascript: void(null)" onclick="$(this).parent().remove();">X</a>
+</div>									
+									</div>
+				<a href="javascript: void(null)" onclick="createMultivalueField('condition', '399', 'SimpleUserProperty', $(this).parent().find('.conditions'))">add more</a>
+			</td>
+		</tr>
+		
+	</table>
+	
+		
+	<div class="filter-parameter-and">AND</div>
+	<div class="filter-parameter-or">OR</div>
+</div>						
+<div class="dropzone filter-parameter" style="overflow: hidden">
+	<div class="filter-parameter-header">
+			Action on Campaign
+		
+		<div style="float: right">
+			<a href="javascript: void(null);" onclick="$(this).parent().parent().parent().remove();">delete</a>
+		</div>
+	</div>
+
+	
+
+	        <input type="hidden" id="isGroup" name="filter_parameter[400][is_group]"    class="isGroup" />
+
+	        <input type="hidden" id="uniqueId" name="filter_parameter[400][unique_id]"    class="uniqueId" value="400" />
+
+	        <input type="hidden" id="parentId" name="filter_parameter[400][parent_id]"    class="parentId" />
+
+	        <input type="hidden" id="filter_parameter[400]_poolFilterParameter" name="filter_parameter[400][poolFilterParameter]" value="3" />
+
+	        <input type="hidden" id="builderClass" name="filter_parameter[400][builder_class]"    class="builderClass" value="ActionOnCampaign" />
+
+	
+		
+		<table width="100%">
+		<col width="180" />
+		<col width="180" />
+		<tr>
+			<td>
+				<select id="filter_parameter[400]_values_action_value_string" name="filter_parameter[400][values][action][value_string]" required="required"><option value="sent" selected="selected">sent</option><option value="were_not_sent">were not sent</option></select>
+			</td>
+			
+			<td>
+				<select id="filter_parameter[400]_values_type_value_string" name="filter_parameter[400][values][type][value_string]"><option value="standard" selected="selected">Standard</option><option value="multi_variate_text">MultiVariate Test</option><option value="multi_message">MultiMessage</option><option value="trigger">Trigger</option></select>
+			</td>
+		</tr>
+	</table>
+	
+		
+	<div class="filter-parameter-and">AND</div>
+	<div class="filter-parameter-or">OR</div>
+</div>						
+<div class="dropzone filter-parameter" style="overflow: hidden">
+	<div class="filter-parameter-header">
+			Address
+		
+		<div style="float: right">
+			<a href="javascript: void(null);" onclick="$(this).parent().parent().parent().remove();">delete</a>
+		</div>
+	</div>
+
+	
+
+	        <input type="hidden" id="isGroup" name="filter_parameter[401][is_group]"    class="isGroup" />
+
+	        <input type="hidden" id="uniqueId" name="filter_parameter[401][unique_id]"    class="uniqueId" value="401" />
+
+	        <input type="hidden" id="parentId" name="filter_parameter[401][parent_id]"    class="parentId" />
+
+	        <input type="hidden" id="filter_parameter[401]_poolFilterParameter" name="filter_parameter[401][poolFilterParameter]" value="1" />
+
+	        <input type="hidden" id="builderClass" name="filter_parameter[401][builder_class]"    class="builderClass" value="SimpleUserProperty" />
+
+	
+			
+		<table width="100%">
+		<col width="180" />
+		<col width="180" />
+		<tr>
+			<td>
+				<select id="filter_parameter[401]_values_comparison_value_string" name="filter_parameter[401][values][comparison][value_string]" required="required"><option value="equals" selected="selected">equals</option><option value="contains">contains</option><option value="does_not_contain">does not contain</option></select>
+			</td>
+			
+			<td>
+				<input type="checkbox" id="filter_parameter[401]_values_case_sensitive_value_boolean" name="filter_parameter[401][values][case_sensitive][value_boolean]" value="1" />
+				Case sensitive
+			</td>
+			
+			<td>	
+				<div class="conditions">		
+										
+					<div style="white-space: nowrap;">
+	<input type="text" id="filter_parameter[401]_multivalues_condition_0_value_string" name="filter_parameter[401][multivalues][condition][0][value_string]" value="QQQQ" />
+	<a href="javascript: void(null)" onclick="$(this).parent().remove();">X</a>
+</div>									
+									</div>
+				<a href="javascript: void(null)" onclick="createMultivalueField('condition', '401', 'SimpleUserProperty', $(this).parent().find('.conditions'))">add more</a>
+			</td>
+		</tr>
+		
+	</table>
+	
+		
+	<div class="filter-parameter-and">AND</div>
+	<div class="filter-parameter-or">OR</div>
+</div>						
+<div class="dropzone filter-parameter" style="overflow: hidden">
+	<div class="filter-parameter-header">
+			Action on Campaign
+		
+		<div style="float: right">
+			<a href="javascript: void(null);" onclick="$(this).parent().parent().parent().remove();">delete</a>
+		</div>
+	</div>
+
+	
+
+	        <input type="hidden" id="isGroup" name="filter_parameter[402][is_group]"    class="isGroup" />
+
+	        <input type="hidden" id="uniqueId" name="filter_parameter[402][unique_id]"    class="uniqueId" value="402" />
+
+	        <input type="hidden" id="parentId" name="filter_parameter[402][parent_id]"    class="parentId" />
+
+	        <input type="hidden" id="filter_parameter[402]_poolFilterParameter" name="filter_parameter[402][poolFilterParameter]" value="3" />
+
+	        <input type="hidden" id="builderClass" name="filter_parameter[402][builder_class]"    class="builderClass" value="ActionOnCampaign" />
+
+	
+		
+		<table width="100%">
+		<col width="180" />
+		<col width="180" />
+		<tr>
+			<td>
+				<select id="filter_parameter[402]_values_action_value_string" name="filter_parameter[402][values][action][value_string]" required="required"><option value="sent" selected="selected">sent</option><option value="were_not_sent">were not sent</option></select>
+			</td>
+			
+			<td>
+				<select id="filter_parameter[402]_values_type_value_string" name="filter_parameter[402][values][type][value_string]"><option value="standard" selected="selected">Standard</option><option value="multi_variate_text">MultiVariate Test</option><option value="multi_message">MultiMessage</option><option value="trigger">Trigger</option></select>
+			</td>
+		</tr>
+	</table>
+	
+		
+	<div class="filter-parameter-and">AND</div>
+	<div class="filter-parameter-or">OR</div>
+</div>							
+								</div>
+</div>	
+	<p>
+		<button type="submit">Edit</button>
+                <input type="hidden" id="ddz_bundle_segmentbundle_segmenttype__token" name="ddz_bundle_segmentbundle_segmenttype[_token]" value="5ec1be68bc8ce141f94431942803b5671bccaef2" />
+	</p>
+	
+	
+		
+</form>
+
+<ul class="record_actions">
+	<li>
+		<form action="/mailer/web/app.php/segment/1/delete" method="post">
+			<table class="input_form" id="form"><col width="150" /><input type="hidden" id="form__token" name="form[_token]" value="5ec1be68bc8ce141f94431942803b5671bccaef2" /><input type="hidden" id="form_id" name="form[id]" value="1" /></table>
+			<button type="submit">Delete</button>
+		</form>
+        </li>
+        <li><a href="/mailer/web/app.php/segment/"> Back to the list </a></li>
+</ul>
+
+<script type="text/javascript">
+
+	/*
+	 * Creates a new parameter group
+	 */
+	function createParameterGroup()
+	{
+	  $.get("/mailer/web/app.php/segment/filterparameter/portletform/group", function(data) {
+	    $("#dropZone").append(data);
+	    
+	    //re-init droppables
+	    initDropZoneDroppables()
+	  });	  
+	}
+	
+	/*
+	 * Makes dropzone Groups droppables 
+	 */
+	function initDropZoneDroppables()
+	{
+	  $( ".container" ).sortable({
+	    connectWith: "#dropZone",
+	    revert: true,
+	    placeholder: "filter-parameter-placeholder",
+	    forcePlaceholderSize: true,
+	    forceHelperSize: true,
+		});
+	}
+	
+	/*
+	 * Moves Parameters to corresponding Groups
+	 */
+	function reGroupParameters()
+	{
+	  $("#dropZone .filter-parameter").filter( function(i) {
+	    //filter out only parameters with parentId
+	    return $(this).find("#parentId").val() != "";
+	  }).each(function(i){
+	    $node = $(this);
+	    $node.addClass("group");
+	    parentId = $node.find("#parentId").val();
+	    
+	    //move it
+	   	$(".uniqueId").filter(function(i){ return $(this).val() == parentId; }).parent().find(".container").append($node.remove());
+	  })
+	}
+	
+	function createMultivalueField(shortname, parameterId, builderClass, container)
+	{
+	  $.get("/mailer/web/app.php/segment/filterparametermultivalue/field/" + shortname + "/" + parameterId + "/" + builderClass, function(data) {
+			container.append(data);
+	  });
+	}
+		
+	$(function() {
+	  //add Parameters to Groups
+	  reGroupParameters();
+	  	  
+	  initDropZoneDroppables();
+	  
+	  //init Dropzone droppable
+		$( "#dropZone" ).sortable({
+		  connectWith: ".container",
+			revert: true,
+			placeholder: "filter-parameter-placeholder",
+			forcePlaceholderSize: true,
+			forceHelperSize: true,
+			items: ">div.filter-parameter",
+			update: function(event, ui) {
+			  $parameter = ui.item;
+			  $dropZone = ui.item.parent().parent();
+			  groupId = $dropZone.find("#uniqueId").val();
+			  
+			  //if the parameter comes from the dropzone, just move it
+			 	if($parameter.hasClass("dropzone") && $dropZone.hasClass("filter-group"))
+			 	{
+			 		$parameter.addClass("group");
+			 		$parameter.find("#parentId").val( groupId );
+			 	}							  			  
+			 	else if($parameter.hasClass("dropzone") && !$parameter.hasClass("group"))
+			 	{
+			 		$parameter.removeClass("group");
+			 		$parameter.find("#parentId").val("");
+			 	}
+			},
+			receive: function(event, ui) {
+			  $dropZone = $(this);
+			  $parameter = ui.item;
+			  			  
+			  //if the parameter comes from the dropzone Group
+			  if($parameter.hasClass("dropzone"))
+			  {
+			 		$parameter.removeClass("group");
+			 		$parameter.find("#parentId").val("");
+			  }
+			  //if the Parameter comes from the Pool
+			  else
+			  {
+				 	$.get("/mailer/web/app.php/segment/filterparameter/portletform/parameter/" + $parameter.attr("data"), function(data) {
+				 	 	
+				 		var $newbie = $(data);
+				 		$newbie.removeClass("pool");
+				 		$newbie.addClass("dropzone");
+				 		
+				 		if($dropZone.hasClass("filter-group"))
+				 		{
+				 		  groupId = $dropZone.find("#uniqueId").val();
+				 		 	$newbie.find("#parentId").val( groupId );
+				 		 	$newbie.addClass("group");
+				 		}				 		 
+				 		else
+				 			$newbie.find("#parentId").val("");
+				 		$parameter.replaceWith($newbie);
+				 	});
+			  }
+			}
+		});
+		
+	  //make pool parameters draggable
+		$( "#parameterPool .parameter" ).draggable({
+		  connectToSortable: "#dropZone",
+			helper: "clone",
+			revert: "invalid",
+			appendTo: "#segmentParameterPool",
+			containment: "#segmentParameterPool", 
+		});
+	  
+	  //disable selection for Pool Parameters
+		$( "#parameterPool .parameter" ).disableSelection();
+		
+		
+	})
+</script>
+	
+	</div>
+</div>
+
+        
+  </body>
+</html>

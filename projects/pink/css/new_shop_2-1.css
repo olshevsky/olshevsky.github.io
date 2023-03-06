@@ -1,0 +1,39 @@
+/*---START Type of the shop---*/
+.shop_type{
+    
+}
+
+.shop_type .column{
+    width: 32%;
+    margin-right: 2%;
+    float: left;
+    min-height: 30px;
+}
+
+.shop_type .column .image_block{
+    width: 250px;
+    height: 95px;
+    overflow: hidden;
+    border: 1px solid #D7D7D7
+}
+
+.shop_type .column  div.title {
+    text-align: left;
+    height: 26px;
+    padding-top: 4px;
+}
+
+.shop_type .column.last{
+    margin-right: 0;
+}
+/*---END Type of the shop---*/
+
+/*---START Categories of your products---*/
+.main_wrapper .content_block .content .products_category{
+    
+}
+
+.main_wrapper .content_block .content .products_category .category_tree{
+    width: 450px;
+}
+/*---END Categories of your products---*/

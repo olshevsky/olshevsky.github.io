@@ -1,0 +1,23 @@
+.main_wrapper .content_block .content{
+}
+
+.main_wrapper .content_block .content .content_section.statistic_graph .section_title{
+}
+
+.main_wrapper .content_block .content .content_section.statistic_graph .section_title p{
+    margin-bottom: 5px;
+}
+
+.main_wrapper .content_block .content .content_section.statistic_graph .period{
+    width: 400px;
+    float: left;
+}
+
+.main_wrapper .content_block .content .statistic_graph .grey_table{
+    
+}
+
+.main_wrapper .content_block .content .statistic_graph .grey_table tr td:first-child{
+    text-align: left;
+    padding-left: 10px;
+}

@@ -1,0 +1,124 @@
+.category_content{
+    margin-top: 1px;
+    border-top: 1px solid #525252; 
+    background-color: #3C3C3C;
+    padding-top: 15px;
+}
+
+/*---START left bar---*/
+.category_content > .side_bar{
+    width: 275px;
+    padding: 0 10px;
+    float: left;
+    overflow: hidden;
+}
+
+.category_content > .side_bar > h2{
+    height: 35px;
+    width: 270px;
+    padding-bottom: 5px;
+    background: url('../images/grad_line.png') no-repeat right bottom;
+    padding-left: 10px;
+    text-transform: uppercase;
+    margin-left: -10px;
+}
+/*---START news---*/
+.category_content > .side_bar > .news{
+    
+}
+
+.category_content > .side_bar > .news > h2{
+    margin-bottom: 15px;
+}
+
+.category_content > .side_bar > .news > .register{
+    margin-bottom: 15px;
+    background-color: #7A7A7A;
+}
+
+.category_content > .side_bar > .news > .register > .register_form > form > .register_form_field{
+    width: 150px;
+}
+/*---END news-----*/
+
+
+/*---END left bar-----*/
+
+
+/*---START catalog---*/
+.category_content > .catalog{
+    width: 636px;
+    padding: 0 10px 40px 0;
+    float: right;    
+}
+
+.category_content > .catalog > h2{
+    height: 35px;
+    width: 270px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    background: url('../images/grad_line.png') no-repeat right bottom;
+    text-transform: uppercase;
+}
+
+.category_content > .catalog > p{
+    margin: 0 0 15px 0;
+    font: normal 9pt 'Arial';
+}
+
+.category_content > .catalog > .filter{
+    width: 100%;
+    height: 23px;
+    text-align: right;
+    margin-bottom: 12px; 
+}
+
+.category_content > .catalog > .filter > form > .label{
+    font: normal 9pt 'Arial';
+    color: #999;
+    float: right;
+}
+
+.category_content > .catalog > .filter > form > div{
+    margin-left: 5px;
+}
+
+.category_content > .catalog > .filter > form > .select_wrapp{
+    width: 150px;
+    float: right;
+    overflow: hidden;
+}
+
+.category_content > .catalog > .filter > form > .select_wrapp > select{
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    background: #7A7A7A url('../images/select_arrow.png') no-repeat right center;
+    width: 150px;
+    height: 23px;
+    font: normal 12px 'Arial';
+    color: #FFF;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    -moz-transition: background-color 0.3s;
+    -webkit-transition: background-color 0.3s;
+    -o-transition: background-color 0.3s;
+}
+
+.category_content > .catalog > .filter > form > .select_wrapp > select:focus, .category_content > .catalog > .filter > form > .select_wrapp > select:hover{
+    background: #FFF url('../images/select_arrow_act.png') no-repeat right center;
+    color: #000;
+}
+
+.category_content > .catalog > .shop_item{
+    margin-right: 12px;
+    margin-bottom: 10px;
+}
+
+.category_content > .catalog > .shop_item.last{
+    margin-right: 0;
+}
+/*---END catalog-----*/

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script type="text/javascript" src="js/lib/jquery/jquery-1.7.2.min.js"></script>
+        <script type="text/javascript" src="js/lib/jquery/jquery.cookie.js"></script>
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/login.css">
+        <!--[if lt IE 9]>
+        <link rel="stylesheet" href="css/ie.css" type="text/css">
+        <![endif]-->
+    </head>
+    <body class="login_page">
+        <div class="header_wrapper">
+            <div class="header">
+                <div class="logo_wrapper">
+                    <a href="login.html" class="logo"></a>
+                </div>
+            </div>
+        </div>
+        <div class="main_wrapper">
+            <div class="language_menu">
+                <a href="#" class="active">IN ENGLISH</a>
+                <a href="#">По русски</a>
+                <a href="#">Auf Deutsch</a>
+                <a href="#">En français</a>
+            </div>
+            <div class="login_form_wrapper">
+                <div class="login_form">
+                    <form action="layout.html" method="post">
+                        <div class="form_row">
+                            <label for="user_name">Username</label>
+                            <input type="text" name="user_login" id="user_name"/>
+                            <div class="error_block">
+                                <p>invalid login</p>
+                            </div>
+                        </div>
+                        <div class="form_row">
+                            <label for="user_pwd">Password</label>
+                            <input type="password" name="user_pwd" id="user_pwd"/>
+                            <div class="error_block">
+                            </div>
+                        </div>
+                        <div class="form_row">
+                            <div class="left_part">
+                                <input type="checkbox" class="custom_checkbox" name="remember_me" id="remember_me"/>
+                                <label for="remember_me">Remember my username</label>
+                            </div>
+                            <div class="right_part">
+                                <input type="submit" class="button pink" value="Login"/>
+                            </div>
+                            <div class="fclear"></div>
+                        </div>
+                    </form>
+                </div>
+                <div class="forgot_login">
+                    <a href="#">Forgot your username and/or password?</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

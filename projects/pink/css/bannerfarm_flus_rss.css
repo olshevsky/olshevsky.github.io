@@ -1,0 +1,43 @@
+.main_wrapper .content_block .content{
+    
+}
+
+/*---START Selected products---*/
+.main_wrapper .content_block .content .selected_products{
+    
+}
+
+.main_wrapper .content_block .content .selected_products > p{
+    font-size: 12px;
+    cursor: default;
+}
+
+.main_wrapper .content_block .content .selected_products > p > a{
+    text-decoration: none;
+    color: #cc3366;
+    font-weight: bold;
+}
+
+.main_wrapper .content_block .content .selected_products > p > a:hover{
+    text-decoration: underline;
+}
+/*---END Selected products---*/
+
+/*---START Choice of product---*/
+.main_wrapper .content_block .content .choice_product{
+
+}
+
+.main_wrapper .content_block .content .choice_product > .left_part{
+    width: 315px;
+    float: left;
+}
+
+.main_wrapper .content_block .content .choice_product > .right_part{
+    margin-left: 315px;
+}
+
+.main_wrapper .content_block .content .choice_product > .right_part .product_block{
+    width: 100%;
+}
+/*---END Choice of product---*/

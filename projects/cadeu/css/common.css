@@ -1,0 +1,876 @@
+body{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
+    background-image: url('../images/body_bg_top.png'), url('../images/body_bg_bottom.png');
+    background-position: center top, center bottom;
+    background-repeat: no-repeat;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.fleft{
+    float: left;
+}
+
+.fright{
+    float: right;
+}
+
+.fclear{
+    clear: both;        
+}
+
+h2{
+    font: bold 22.5pt 'MyriadProCond';
+    line-height: 22.5pt;
+    color: #FFF;
+    margin: 0;
+}
+
+h3{
+    font: bold 14px 'Arial';
+    line-height: 14px;
+    margin: 0;
+}
+
+.price{
+    font: bold 24px 'MyriadProCond';
+    margin: 0;
+}
+
+.main_wrapper{
+    width: 960px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.content_section{
+    width: 940px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.grad_line{
+    width: 100%;
+    height: 1px;
+    background: url('../images/grad_line.png') no-repeat right bottom;
+}
+
+/*---START fonts---*/
+@font-face {
+	font-family: 'MyriadProCond';
+	src: url('../fonts/MyriadPro-Cond.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: MyriadProCond;
+	src: url('../fonts/test/MyriadPro-BoldCond.ttf');
+	font-weight: bold;
+	font-style: normal;
+}
+
+/*@font-face {
+font-family: 'MyFontFamily';
+src: url('myfont-webfont.eot?') format('eot'), 
+     url('myfont-webfont.woff') format('woff'), 
+     url('myfont-webfont.ttf')  format('truetype'),
+     url('myfont-webfont.svg#svgFontName') format('svg');
+}*/
+
+/*@font-face {
+font-family: 'MyriadProCond';
+src: url('../fonts/MyriadPro-Cond.otf') format('eot'), 
+     url('myfont-webfont.woff') format('woff'), 
+     url('myfont-webfont.ttf')  format('truetype'),
+     url('myfont-webfont.svg#svgFontName') format('svg');
+}*/
+
+/*---END fonts-----*/
+
+
+/*---START text colors---*/
+.tcfff{ color: #FFFFFF;}
+.tc000{ color: #000000;}
+.tc333{ color: #333333;}
+.tc666{ color: #666666;}
+.tc999{ color: #999999;}
+.tc339{ color: #3399cc;} /*blue*/
+.tcff0{ color: #ff0099;} /*pink*/
+.tccc3{ color: #cc3399;} /*pink*/
+.tccc0{ color: #cc0066;} /*pink*/
+/*---END text colors-----*/
+
+
+/*---START background colors---*/
+.bcfff{ background-color: #FFFFFF;}
+.bc000{ background-color: #000000;}
+.bc379{ background-color: #379AD6;} /*blue*/
+.bc7a7{ background-color: #7A7A7A;} /*light grey*/
+.bc3c3{ background-color: #3C3C3C;} /*dark grey*/
+.bce61{ background-color: #E61781;} /*pink grey*/
+/*---END background colors-----*/
+
+
+/*---START header---*/
+.header{
+    width: 100%;
+    height: 110px;
+    padding-top: 30px;
+}
+
+.header > .logo{
+    float: left;
+}
+
+.header > .logo > h1{
+    text-indent: -9999px;
+}
+
+.header > .chooser{
+    float: left;
+    padding: 15px 0 0 60px;
+}
+
+.header > .basket{
+    float: right;
+    width: 180px;
+    height: 60px;
+    padding: 20px 0 0 88px;
+    margin-top: 5px;
+    background: url('../images/basket_bg.png') no-repeat left top ;
+}
+
+.header > .basket > p{
+    margin: 0;
+    padding: 0;
+}
+
+.header > .basket > .buy{
+    font: normal 9pt 'Arial';
+    color: #333333;
+}
+
+.header > .basket > .total{
+    font: normal 18px 'MyriadProCond';
+    
+/*    -webkit-font-smoothing: none;
+    -webkit-font-smoothing: subpixel-antialiased;
+    -webkit-font-smoothing: antialiased;*/
+/*    color: transparent;
+    text-shadow: 0 0 1px rgba(0,0,0,0.9);*/
+   /* shadow and blur*/
+}
+/*---END header-----*/
+
+
+/*---START top bar---*/
+.top_bar{
+    width: 956px;
+    height: 45px; 
+    background: #333 url('../images/top_bar_bg.png') repeat-x left top;  
+    border-top-left-radius: .5em;
+    border-top-right-radius: .5em;
+    border-left: 2px solid #41494C;
+    border-right: 2px solid #41494C;
+    border-top: 2px solid #41494C;
+    overflow: hidden;
+}
+
+.top_bar > ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 45px;
+}
+
+.top_bar > ul > li{
+    float: left;
+    padding: 12px 22px 0 12px;
+    height: 33px;
+    background: url('../images/top_bar_sep.png') no-repeat right top ;
+}
+
+.top_bar > ul > li > a{
+    color: #FFF;
+    font: bold 18px 'MyriadProCond';
+    text-transform: uppercase;
+    transition: color 0.3s;
+    -moz-transition: color 0.3s;
+    -webkit-transition: color 0.3s;
+    -o-transition: color 0.3s;
+}
+
+.top_bar > ul > li > a:hover{
+    text-decoration: none;
+    color: #3399cc;
+}
+
+.top_bar > ul > li:first-child{
+    margin-left: 15px;
+}
+
+.top_bar > ul > li.last{
+    background: none;
+}
+/*---END top bar-----*/
+
+
+/*---START sub bar---*/
+.sub_bar{
+    width: 960px;
+    height: 44px;
+    background: #D0D0D0 url('../images/sub_bar_bg.png') repeat-x left top ;
+    border-top: 2px solid #999999;
+    overflow: hidden;
+} 
+
+/*search*/
+.sub_bar > .search{
+    height: 27px;
+    margin: 5px 10px 0 0;
+    background-color: #FFF;
+    padding: 1px;
+    box-shadow: 2px 2px 1px #888888;
+    border-radius: 2px;
+}
+
+.sub_bar > .search > form > input{
+    float: left;
+}
+
+.sub_bar > .search > form > .search_field{
+    width: 290px;
+    height: 27px;
+    color: #666666;
+    margin: 0 1px 0 0;
+    padding: 0 0 0 10px;
+    border: none;
+    background-color: #FFF;
+    background: url('../images/seach_field_bg.png') no-repeat left top ;
+    font: normal 11px 'Arial';
+    text-align: left;
+    vertical-align: middle;
+}
+
+.sub_bar > .search > form > .search_field:focus{
+    background: none;
+    background-color: #FFF;
+}
+
+.sub_bar > .search > form > .search_submit{
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    border: none;
+    height: 27px;
+    background: #FFF url('../images/search_bg.png') repeat-x left top ;
+    color: #FFF;
+    padding: 0 10px;
+    font: bold 12px 'Arial';
+    cursor: pointer;
+}
+
+.sub_bar > .search > form > .search_submit:hover{
+    color: #000;
+    background: none;
+    background-color: #A1A1A1;
+}
+/*search*/
+
+/*breadcrumbs*/
+.sub_bar > .breadcrumbs{
+    float: left;
+    width: 540px;
+    overflow: hidden;
+}
+
+.sub_bar > .breadcrumbs > ul{
+    list-style-type: none;
+    margin: 10px 0 0 10px;
+    padding: 0;
+}
+
+.sub_bar > .breadcrumbs > ul li{
+    float: left;
+    color: #000;
+    font: bold 16px 'MyriadProCond';
+    text-transform: uppercase;
+}
+
+.sub_bar > .breadcrumbs > ul li a, .sub_bar > .breadcrumbs > ul li span{
+    color: #666666;
+}
+
+.sub_bar > .breadcrumbs > ul li a:hover{
+    text-decoration: none;
+    color: #FFF;
+}
+/*breadcrumbs*/
+
+/*---END sub bar-----*/
+
+
+/*---START footer---*/
+.footer{
+    width: 936px;
+    height: 113px;
+    padding: 15px 10px 10px 10px;
+    overflow: hidden;
+    background: #333333 url('../images/footer_bg.png') repeat-x left top ;
+    border-left: 2px solid #404646;
+    border-right: 2px solid #404646;
+    border-bottom-left-radius: .5em;
+    border-bottom-right-radius: .5em;  
+}
+
+.footer > .footer_list{
+    width: 135px;
+    height: 100%;
+    float: left;
+    margin: 0 20px 0 0;
+}
+
+.footer > .footer_list > ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer > .footer_list > ul li{
+    height: 11.5pt;
+}
+
+.footer > .footer_list > ul li a{
+    font: normal 8pt 'Arial';
+    line-height: 10pt;
+}
+
+.footer > .footer_list > ul li a:hover{
+    text-decoration: none;
+    color: #ff0099;
+}
+
+.footer h4{
+    color:#FFF;
+    margin: 0;
+    padding-bottom: 5px;
+    font: bold 10.5pt 'Arial';
+    line-height: 10pt;
+    border-bottom: 1px solid #535353
+}
+
+.footer > .footer_disclaimer{
+    width: 620px;
+    float: right;
+}
+
+.footer > .footer_disclaimer > p{
+    margin: 0;
+    padding: 0;
+    font: normal 8pt 'Arial';
+}
+/*---END footer-----*/
+
+
+/*---START copyright---*/
+.copyright{
+    width: 100%;
+    height: 60px;
+}
+
+.copyright p{
+    font: bold 10.5pt 'Arial';
+    margin-top: 1em;
+}
+
+.copy_title{
+    color: #999999;
+    margin-left: 0.8em;
+}
+
+.powered{
+    color: #999999;
+    margin-right: 0.8em;
+}
+/*---END copyright-----*/
+
+
+.ach_button{
+    padding: 5px;
+    display: inline-block;
+    font: bold 14px 'MyriadProCond';
+    background-color: #3C3C3C;
+    color: #FFF;
+    text-decoration: none;
+    border: 1px solid #FFF;
+    border-radius: 2px;
+    
+    box-shadow: 1px 1px 1px #888888;
+    transition: background-color 0.3s;
+    -moz-transition: background-color 0.3s;
+    -webkit-transition: background-color 0.3s;
+    -o-transition: background-color 0.3s;
+    
+/*    -webkit-font-smoothing: none;
+    -webkit-font-smoothing: subpixel-antialiased;
+    -webkit-font-smoothing: antialiased;
+    font-smooth: always;
+    shadow and blur*/
+}
+
+.ach_button:hover{
+    background-color: #D63789;
+    text-decoration: none;
+    color: #FFF;
+}
+
+
+/*---START small item---*/
+.item_small{
+    width: 115px;
+    height: 215px;
+    background-color: #FFF;
+    color: #FFF;
+    float: left;
+    margin-right: 9px;
+    overflow: hidden;
+    transition: background-color 0.3s;
+    -moz-transition: background-color 0.3s;
+    -webkit-transition: background-color 0.3s;
+    -o-transition: background-color 0.3s;
+}
+
+.item_small.last{
+    margin-right: 0; 
+}
+
+.item_small:hover{
+    background-color: #379AD6;
+}
+
+.item_small > .item_small_img{
+    width: 105px;
+    height: 165px;
+    margin: 5px;
+}
+
+.item_small > a{
+    display: table-cell;
+    width: 115px;
+    height: 41px;
+    vertical-align: middle;
+    text-align: center;
+    font: bold 24px 'MyriadProCond';
+    color: #FFF;
+    background-color: #379AD6;
+    
+}
+
+.item_small > a:hover{
+    height: 40px;
+    border-top: 1px solid #3C3C3C;
+    text-decoration: none;
+}
+/*---END small item-----*/
+
+/*---START timer---*/
+.timer{
+    width: 130px;
+    overflow: hidden;
+}
+
+.timer > .titles{
+    margin-bottom: 2px;
+}
+
+.timer > div > div.title, .timer > div > div.count{
+    float: left;
+    width: 28px;
+    margin-right: 6px;
+    text-align: center;
+}
+
+.timer > div > div.last{
+    margin-right: 0;
+}
+
+.timer > .titles > div.title{   
+    color: #333333;
+    font: normal 11px 'Arial';
+    line-height: 12px;
+}
+
+.timer > .counters > div.count{
+    background-color: #E61781;
+    height: 28px;
+    font: bold 17pt 'MyriadProCond';
+    color: #FFF;
+    border-radius: 3px;
+}
+/*---END timer-----*/
+
+/*---START shop item---*/
+.shop_item{
+    width: 150px;
+    height: 315px;
+    overflow: hidden;
+    background-color: #FFF;
+    color: #666666;
+    float: left;
+    text-align: center;  
+    transition: background-color 0.3s;
+    -moz-transition: background-color 0.3s;
+    -webkit-transition: background-color 0.3s;
+    -o-transition: background-color 0.3s;
+}
+
+.shop_item:hover{
+    background-color: #379AD6;
+    color: #FFF;
+}
+
+.shop_item > a{
+    height: 45px;
+    display: table-cell;
+    background-color: #379AD6;
+    color: #FFF;
+    vertical-align: middle;
+    font: bold 10.5pt 'Arial';
+    line-height: 10.5pt;
+}
+
+.shop_item > a:hover{
+    text-decoration: none;
+    border-top: 1px solid #3C3C3C; 
+    border-bottom: 1px solid #3C3C3C; 
+    height: 43px;
+}
+
+.shop_item > .item_img{
+    width: 140px;
+    height: 215px;
+    margin: 5px;
+    overflow: hidden;
+}
+
+.shop_item > .item_price{
+    width: 80px;
+    float: left;
+    padding-top: 5px;
+}
+
+.shop_item > .item_price > p{
+    margin: 0;
+    font: bold 24px 'MyriadProCond';
+}
+
+.shop_item > .item_buy{
+    width: 65px;
+    float: right;
+    padding: 5px 5px 0 0;
+}
+/*---END shop item-----*/
+
+/*---START pagination---*/
+.pagination{
+    text-align: center;
+}
+
+.pagination > a{
+    display: inline-block;
+    height: 28px;
+    background-color: #FFF;
+    font: bold 18px 'MyriadProCond';
+    line-height: 24px;
+    padding: 0 10px;
+    transition: background-color 0.3s;
+    -moz-transition: background-color 0.3s;
+    -webkit-transition: background-color 0.3s;
+    -o-transition: background-color 0.3s;
+    margin-right: 10px;
+}
+
+.pagination > a:hover{
+    background-color: #3799D4;
+    color: #FFF;
+    text-decoration: none;
+}
+
+.pagination > a.active{
+    background-color: #7A7A7A;
+    color: #333333;
+}
+
+.pagination > .paginate{
+    width: 8px;
+    margin-right: 8px;
+}
+
+.pagination > a.last{
+    margin-left: 0px;
+}
+/*---END pagination-----*/
+
+/*---START left menu---*/
+.left_menu{
+    width: 270px;
+    margin: 0 0 15px -10px;
+}
+
+.left_menu > ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.left_menu > ul > li{
+    height: 26px;
+    background: url('../images/grad_line.png') no-repeat right bottom;
+    font: bold 18px 'MyriadProCond';
+    color: #FFF;
+    text-transform: uppercase;
+    padding: 2px 0 0 10px;
+}
+
+.left_menu > ul > li > a{
+    transition: color 0.1s;
+    -moz-transition: color 0.1s;
+    -webkit-transition: color 0.1s;
+    -o-transition: color 0.1s;
+    color: #FFF;
+    display: inline-block;
+    height: 28px;
+    width: 290px;
+}
+
+.left_menu > ul > li > a:hover{
+    text-decoration: none;
+    color: #3399cc;
+}
+
+.left_menu > ul > li.active{ 
+    background: url('../images/menu_act.png') no-repeat left bottom;
+}
+
+.left_menu > ul > li.active > a{
+    color: #ff0099;
+}
+/*---END left menu-----*/
+
+/*---START custom form---*/
+.custom_form{
+    
+}
+
+.custom_form > .select_wrapp{
+    width: 150px;
+    overflow: hidden;
+}
+
+.custom_form > .select_wrapp > select{
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    background: #7A7A7A url('../images/select_arrow.png') no-repeat right center;
+    width: 150px;
+    height: 23px;
+    font: normal 12px 'Arial';
+    color: #FFF;
+    cursor: pointer;
+
+    transition: background-color 0.3s;
+    -moz-transition: background-color 0.3s;
+    -webkit-transition: background-color 0.3s;
+    -o-transition: background-color 0.3s;
+}
+
+.custom_form >.select_wrapp > select:focus, .custom_form > .select_wrapp > select:hover{
+    background: #FFF url('../images/select_arrow_act.png') no-repeat right center;
+    color: #111;
+}
+
+.custom_form input, .custom_form textarea{
+    color: #FFF;
+    background-color: #7A7A7A;
+    border: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 5px;
+
+    transition: background-color 0.3s;
+    -moz-transition: background-color 0.3s;
+    -webkit-transition: background-color 0.3s;
+    -o-transition: background-color 0.3s;
+}
+
+.custom_form input:focus, .custom_form textarea:focus{
+    color: #111;
+    background-color: #FFF; 
+}
+/*---END custom form-----*/
+
+/*---START register---*/
+.register{
+    height: 85px;
+    padding: 10px;
+    
+    width: 255px;
+    background-color: #7A7A7A;
+}
+
+.register p{
+    margin: 0;
+    font: normal 12px 'Arial';
+    color: #FFF;
+}
+
+.register > .register_form{
+    margin-top: 10px;
+}
+
+.register_form{
+    height: 27px;
+    background-color: #FFF;
+    padding: 1px;
+    box-shadow: 2px 2px 1px #888888;
+    border-radius: 2px;
+    float: left;
+}
+
+.register_form > form > .register_form_field{
+    height: 27px;
+    color: #666666;
+    margin: 0 1px 0 0;
+    padding: 0 0 0 10px;
+    border: none;
+    background-color: #FFF;
+    background: url('../images/seach_field_bg.png') no-repeat left top ;
+    font: normal 11px 'Arial';
+    text-align: left;
+    vertical-align: middle;
+    float: left;
+    
+    width: 150px;
+}
+
+.register_form > form > .register_form_field:focus{
+    background: none;
+    background-color: #FFF;
+}
+
+.register_form > form > .register_form_submit{
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    border: none;
+    height: 27px;
+    background: #FFF url('../images/search_bg.png') repeat-x left top ;
+    color: #FFF;
+    padding: 0 7px;
+    font: bold 12px 'Arial';
+    cursor: pointer;
+    float: left;
+}
+
+/*FF button size fix*/
+@-moz-document url-prefix() { 
+  .register_form > form > .register_form_submit{
+     padding: 0 5px;
+  }
+}
+
+.register_form > form > .register_form_submit:hover{
+    color: #000;
+    background: none;
+    background-color: #A1A1A1;
+}
+/*---END register-----*/
+
+/*---START stars block---*/
+.stars_block{
+    width: 125px;
+    height: 20px;
+}
+
+.stars_block > a{
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background: url('../images/star_empty.png');
+    
+    transition: background 0.3s;
+    -moz-transition: background 0.3s;
+    -webkit-transition: background 0.3s;
+    -o-transition: background 0.3s;
+}
+
+.stars_block > a:hover, .stars_block > a.active{
+    background: url('../images/star_full.png'); 
+}
+/*---END stars block-----*/
+
+/*---START comments---*/
+.comments{
+    
+}
+
+.comments > .custom_form{
+    margin-top: 10px;
+}
+
+.comments > .custom_form > div{
+    padding-bottom: 10px;
+}
+.comments > .custom_form .name{
+    width: 150px;
+    height: 23px;
+}
+
+.comments > .custom_form .email{
+    width: 200px;
+    height: 23px;
+}
+
+.comments > .custom_form textarea{
+    height: 50px;
+    width: 630px;
+}
+
+.comments > .custom_form .submit_button{
+    padding: 5px;
+    display: inline-block;
+    font: bold 14px 'MyriadProCond';
+    background-color: #3C3C3C;
+    color: #FFF;
+    text-decoration: none;
+    border: 1px solid #FFF;
+    border-radius: 2px;
+    box-shadow: 1px 1px 1px #888;
+    transition: background-color 0.3s;
+    -moz-transition: background-color 0.3s;
+    -webkit-transition: background-color 0.3s;
+    -o-transition: background-color 0.3s;
+}
+
+.comments > .custom_form .submit_button:hover{
+    background-color: #D63789;
+    text-decoration: none;
+    color: #FFF;
+}
+/*---END comments-----*/

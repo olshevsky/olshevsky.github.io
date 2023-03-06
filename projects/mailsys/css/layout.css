@@ -1,0 +1,271 @@
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+/* header */
+#header {
+	width:100%;
+	height:103px;
+	background:url(../images/header.png) repeat-x;
+}
+
+#header > .headerInner {
+	width:1000px;
+	margin:auto;
+	height:100px;
+	}
+#header > .headerInner > .logo {
+	width:205px;
+	margin-top:20px;
+	height:40px;
+	float:left;
+}
+#header > .headerInner > .profile {
+	float:right;
+	width:400px;
+	margin-top:10px;
+	height:40px;
+	text-align:right;
+	color:#99d3d2;
+	font-family:Verdana;
+	font-size:12px;
+}
+#header > .headerInner > .profile > .stats {
+	float:right;
+	width:200px;
+	line-height:15px;
+	margin-top:4px;
+}
+
+#header > .headerInner > .profile > .icons {
+	width:120px;
+	float:right;
+	margin-top:4px;
+}
+
+#header > .headerInner > .profile > .icons > a{
+        display: inline-block;
+        width: 31px;
+        height: 31px;
+        
+        transition: opacity 0.4s;
+        -moz-transition: opacity 0.4s;
+        -webkit-transition: opacity 0.4s;
+        -o-transition: opacity 0.3s;
+        
+        opacity: 0.6;
+}
+
+#header > .headerInner > .profile > .icons > a:hover{
+        opacity: 1;
+}
+
+#header > .headerInner > .profile > .icons > .first_icon{
+        background: url('../images/1.png');
+}
+
+#header > .headerInner > .profile > .icons > .second_icon{
+        background: url('../images/2.png');
+}
+
+#header > .headerInner > .profile > .icons > .third_icon{
+        background: url('../images/3.png');
+}
+
+#header > .headerInner > .profile strong {
+	font-weight:bold;
+	color:#FFF;
+}
+
+/* content */
+#content {
+	background:#FFF;
+	float:right;
+	width:790px;
+
+	min-height:500px;
+	z-index:1;
+	overflow:hidden;
+	
+	position:relative;
+	height:100%;
+	
+	padding-left: 25px;
+	padding-right: 15px;
+	padding-bottom:30px;
+}
+
+#content .graph {
+	margin-left: 15px;
+	margin-top: 12px;
+}
+
+#content > .navigation {
+	width :830px;
+	background: #d4d4d4 url('../images/top_tab_bg.png') repeat;
+	margin-left: -25px;
+	padding-top: 10px;
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+
+#content > .navigation a {
+	font-family: 'MyriadProCond';
+	font-size: 18px;
+	display: block;
+	float: left;
+	background: #969696;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: #fff;
+	text-decoration: none;
+	margin-left: 4px;
+	margin-right: 4px;
+	
+}
+
+#content > .navigation a.selected, #content > .navigation a.selected:hover {
+	background: #fff;
+	color: #6a6969;
+}
+#content > .navigation a:hover {
+	background: #6a6969;
+	color: #fff;
+}
+
+/* left menu */
+#all > #menu {
+	width:188px;
+	background: url(../images/leftmenu.png) repeat-y;
+	float:left;
+	height:100%;
+	z-index:999999;
+	position:absolute;
+	margin-right:-20px;
+	overflow: hidden;
+        padding-left: 4px;
+}
+/* left menu */
+
+div.sdmenu {
+    font-family: Verdana, sans-serif;
+    font-size: 12px;
+    color: #fff;
+}
+
+div.sdmenu div {
+    overflow: hidden;
+}
+
+div.sdmenu div:first-child {
+	
+}
+
+div.sdmenu div.collapsed {
+    height: 37px;
+    border-bottom: 1px solid #BDBDBD;
+    width: 169px;
+}
+
+/*none active span*/
+div.sdmenu div.collapsed span {
+    height: 27px;
+    background-color: #E9E9E9;
+    color: #339999;
+    width: 169px;
+    text-shadow: none;
+}
+
+/*active span*/
+div.sdmenu div span {
+    display: block;
+    font-weight: bold;
+    padding: 10px 0 0 10px;
+    cursor: pointer;
+    height: 28px;
+    background-color: #339999;
+    color: #FFFFFF;
+    text-shadow: -1px -1px 0 #333;    
+    font: normal 19px 'MyriadProCond';
+    margin-bottom: 1px;
+    width: 159px;
+    
+    transition: background-color 0.3s;
+    -moz-transition: background-color 0.3s;
+    -webkit-transition: background-color 0.3s;
+    -o-transition: background-color 0.3s;
+}
+
+div.sdmenu div a {
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    color: #666666;
+    background: #CDCDCD url('../images/menu_line.png') bottom left no-repeat;
+    width: 149px;
+}
+
+div.sdmenu div a.current {
+    color: #666;
+    width: 169px;
+    background: url('../images/arrow_act.png') bottom right no-repeat;
+}
+
+div.sdmenu div a.current:hover {
+    color: #666666;
+}
+
+div.sdmenu div a:hover {
+    color: #666666;
+    text-decoration: none;
+}
+
+.menu_inner_wrapp{
+    border-left: 1px solid #BDBDBD;
+    width: 100%;
+    height: 100%;
+}
+
+div.sdmenu div > a > span.arrow{
+    width: 5px;
+    height: 7px;
+    display: inline-block;
+    background: url('../images/arrow.png') no-repeat;
+    border: none;
+    margin: 0;
+    padding: 0 5px 0 0;
+}
+/*left side menu*/
+
+
+.about_section{
+    margin-top: 400px;
+    padding-left: 20px;
+}
+.about_section > h3{
+    color: #666666;
+    font: normal 19px 'MyriadProCond';
+    margin-bottom: 5px;
+}
+
+.about_section > p{
+    color: #666666;
+    font: normal 11px 'Verdana';
+}
+
+.input_form td { padding-bottom: 10px; }
+
+.record_actions { 
+	margin: 0;
+	padding: 0;
+}
+.record_actions li {
+	display: block;
+	float: left;
+	list-style: none;
+	margin-right: 10px;
+	padding: 0;
+}

@@ -1,0 +1,64 @@
+.button.fb{
+    height: 18px;
+    width: 60px;
+    background: url('../images/fb.png'); 
+}
+
+.button.new{
+    height: 24px;
+    width: 17px;
+    background: url('../images/new.png'); 
+}
+
+.main_wrapper .side_bar > div{
+    margin-bottom: 0;
+}
+
+.main_wrapper .side_bar div.sdmenu div > span{
+    padding: 9px 0 0 10px;
+}
+
+/*popular_articles*/
+.popular_articles{
+    margin: 0 2px 10px 0;
+    padding: 10px 0 0 10px;
+    background: url('../images/line1.png') no-repeat top left;
+}
+
+.popular_articles .title{
+    font: normal 19px 'Myriad Pro Cond';
+    color: #999999;
+    text-shadow: -1px -1px 0 #333;
+    height: 30px;
+}
+
+.popular_articles .article{
+    font: normal 11px 'Verdana';
+    color: #FFFFFF;
+    padding: 10px 0;
+    background: url('../images/line2.png') no-repeat top left;
+}
+/*blog_content*/
+.main_wrapper .blog_content{
+    padding: 10px 10px 10px 27px;
+}
+
+.main_wrapper .blog_content p{
+    font: normal 12px 'Verdana';
+    color: #666666;
+}
+
+.main_wrapper .blog_content .tags{
+    font: normal 11px 'Verdana';
+    padding: 10px 0;
+}
+
+.blog_content .blog_title{
+    height: 30px;
+    border-bottom: 1px solid #DADADA;
+}
+
+.blog_content .blog_title h3{
+    margin: 0;
+    font: bold 18px 'Myriad Pro Cond';
+}

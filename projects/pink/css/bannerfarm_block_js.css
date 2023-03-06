@@ -1,0 +1,60 @@
+.main_wrapper .content_block .content{
+    
+}
+
+.main_wrapper .content_block .content .hl{
+    margin: 10px 0 10px 0;
+}
+
+.main_wrapper .content_block .content .preview img{
+    margin-bottom: 10px;
+}
+
+.main_wrapper .content_block .content h3{
+    font: bold 12px 'Verdana';
+    color: #666666;
+    margin: 0 0 5px 0;
+}
+
+.main_wrapper .content_block .content .column_third{
+    width: 32%;
+    margin-right: 2%;
+    float: left;
+    overflow: hidden;
+    
+    min-height: 100px;
+}
+
+.main_wrapper .content_block .content .column_third.last{
+    margin-right: 0;
+}
+
+.main_wrapper .content_block .content .column_third h3{
+    margin: 0 0 10px 0;
+}
+
+.main_wrapper .content_block .content .column_third textarea{
+    width: 97%;
+    height: 120px;
+}
+
+.main_wrapper .content_block .content .content_section .column_third p{
+    font: normal 11px 'Arial';
+    margin: 0 0 6px 0;
+}
+
+.main_wrapper .content_block .content .column_third p input.custom_checkbox{
+    display: block;
+    float: left;
+    margin-right: 5px;
+}
+
+.main_wrapper .content_block .content .column_third p .pink_link{
+    font: normal 11px 'Arial';
+}
+
+.main_wrapper .content_block .content .column_third p .pink_link span{
+    display: block;
+    float: left;
+    margin: 1px 5px 0 0;
+}

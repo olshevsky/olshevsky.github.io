@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Layout</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script type="text/javascript" src="js/lib/sdmenu/menu.js"></script>  
+        <script type="text/javascript" src="js/lib/jquery/jquery-1.7.2.min.js"></script>
+        <script type="text/javascript" src="js/lib/jquery/jquery.cookie.js"></script>
+        <script type="text/javascript" src="js/lib/jquery/jquery.treeview.js"></script>
+        <script type="text/javascript" src="js/lib/colorpicker/colorpicker.js"></script>
+        <script type="text/javascript" src="js/lib/colorpicker/eye.js"></script>
+        <script type="text/javascript" src="js/lib/colorpicker/utils.js"></script>
+        <script type="text/javascript" src="js/colorpicker.js"></script>
+        <script type="text/javascript" src="js/lib/jquery/jquery.ezpz_tooltip.min.js"></script>
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/tooltip.css">
+        <link rel="stylesheet" href="css/new_shop_2-2.css">
+        <link rel="stylesheet" href="css/treeview/treeview.css">
+        <link rel="stylesheet" href="css/colorpicker/colorpicker.css">
+        <link rel="stylesheet" href="css/colorpicker/custom_colorpicker.css">
+        <script type="text/javascript">
+            // <![CDATA[         
+            var sideMenu;
+            window.onload = function()
+            {
+                // side menu script
+                sideMenu = new SDMenu("sideMenu");   // create menu object
+                sideMenu.speed = 5;                  // menu sliding speed (1 - 5 recomended)
+                sideMenu.oneSmOnly = true;           // one expanded submenu at a time
+                sideMenu.remember = true;            // store menu states (expanded or collapsed) in cookie and restore later
+                sideMenu.markCurrent = true;        // mark current link / page (link.href == location.href)
+                sideMenu.init();
+                
+                // account manager close
+                $('#close_account_manager').click( function(){
+                    $('#account_manager').animate({
+                        right: '-285px'
+                    }, 300, function() {
+                       
+                    });
+                });
+                
+                // account manager open
+                $('#open_account_manager').click( function(){ 
+                    $('#account_manager').animate({
+                        right: '0'
+                    }, 300, function() {
+                       
+                    });
+                });
+                
+                //init treeview
+                $("#browser").treeview();
+                
+                //info tooltips
+                $(".button.info").ezpz_tooltip({
+                    contentId: 'info_tooltip',
+                    showContent: function(content) {
+                        content.fadeIn(200);
+                    },
+                    hideContent: function(content) {
+                        content.stop(true, true).fadeOut(200);
+                    }
+                });
+            };
+            // ]]>
+        </script>
+    </head>
+    <body>
+        <div class="header_wrapper">
+            <div class="header">
+                <div class="logo_wrapper">
+                    <a href="layout.html" class="logo"></a>
+                </div>
+                <div class="top_menu">
+                    <ul>
+                        <li>
+                            <a href="dashboard.html">DASHBOARD</a>
+                        </li>
+                        <li>
+                            <a href="#">BLOG</a>
+                        </li>
+                        <li>
+                            <a href="#">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="#">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="icon_block">
+                    <a href="#" class="icon1"></a>
+                    <a href="#" class="icon2"></a>
+                </div>
+                <div class="welcome">
+                    <p><span class="tc_ffcccc">Welcome,</span>&nbsp;<strong>Ardas SPA Centre</strong></p>
+                    <p><span class="tc_ffcccc">Balance</span>&nbsp;<strong>: 3500.00 €</strong></p>
+                </div>
+            </div>
+        </div>
+        <div class="account_manager" id="account_manager">
+            <div class="inner">
+                <div id="open_account_manager"></div>
+                <div class="title">
+                    <h2 >ACCOUNT MANAGER</h2>
+                </div>
+                <div class="name">
+                    <p>Loic Juillard</p>
+                    <p class="sub">name</p>
+                </div>
+                <div class="skype">
+                    <p>Loic.ddz</p>
+                    <p class="sub">skype</p>
+                </div>
+                <div class="email">
+                    <p>loic@pinkplatform.com</p>
+                    <p class="sub">e-mail</p>
+                </div>
+                <div id="close_account_manager"></div>
+                <a href="#" class="skype_logo" title="Contact Us Skype"></a>
+            </div>
+        </div>
+        <div class="main_wrapper">
+            <div class="side_bar" id="side_bar">
+                <h2>Store to work with :</h2>
+                <form action="#" method="post">
+                    <select class="custom_select dark_border">
+                        <option>Sexyshopper (www.sexshop.loc)</option>
+                        <option>Luxsexshop</option>
+                    </select>
+                </form>
+                <div id="sideMenu" class="sdmenu">
+                    <div class="collapsed">
+                        <span>Configuration boutique</span>
+                        <a href="new_shop_1.html"><span class="arrow"></span>Configure new shop</a>
+                        <a href="modify_existing_shop.html"><span class="arrow"></span>Modify existing shop</a>
+                    </div>
+                    <div class="collapsed">
+                        <span>Outils publicitaires</span>
+                        <a href="bannerfarm_create_new.html"><span class="arrow"></span>Create new banner</a>
+                        <a href="bannerfarm_modify_existing.html"><span class="arrow"></span>Modify existing banners</a>
+                        <a href="bannerfarm_promo_links.html"><span class="arrow"></span>Promo links</a>
+                        <a href="bannerfarm_create_blockjs.html"><span class="arrow"></span>Create block JS</a>
+                        <a href="bannerfarm_block_js.html" ><span class="arrow"></span>Block JS</a>
+                        <a href="bannerfarm_csv_catalogue.html"><span class="arrow"></span>CSV Catalogue</a>
+                        <a href="bannerfarm_flus_rss.html"><span class="arrow"></span>Flus RSS</a>
+                        <a href="bannerfarm_kit_mails.html"><span class="arrow"></span>Kit mails</a>
+                        <a href="#"><span class="arrow"></span>Co-inscription newsletter</a>
+                    </div>
+                    <div class="collapsed">
+                        <span>Statistiques</span>
+                        <a href="stat_general_stats.html"><span class="arrow"></span>General statistics</a>
+                        <a href="stat_list_orders.html"><span class="arrow"></span>List of orders</a>
+                        <a href="stat_most_sold.html"><span class="arrow"></span>Most sold products</a>
+                        <a href="stat_top_referal.html"><span class="arrow"></span>Top referal links</a>
+                        <a href="stat_tracker.html"><span class="arrow"></span>Tracker</a>
+                        <a href="stat_banners.html"><span class="arrow"></span>Banners</a>
+                        <a href="stat_mail_camp.html"><span class="arrow"></span>Mail camping</a>
+                        <a href="stat_mobile.html"><span class="arrow"></span>Mobile</a>
+                    </div>
+                    <div class="collapsed">
+                        <span>Infos et paiements</span>
+                        <a href="ip_info_perso.html"><span class="arrow"></span>Personal information</a>
+                        <a href="ip_retrocessions.html"><span class="arrow"></span>Retrocessions, receipts</a>
+                        <a href="ip_referal.html"><span class="arrow"></span>Referal</a>
+                    </div>
+                </div>
+            </div>
+            <div class="content_block" id="content_block">
+                <div class="title_block">
+                    <h2>Configure new shop</h2>
+                </div>
+                <div class="content">
+                    <div class="grey_form_block">
+                        <form class="grey_form" method="post" action="#">
+                            <div class="left_part">
+                                <div class="input_row">
+                                    <input type="checkbox" class="checkbox" checked="checked" disabled="disabled"/>
+                                    <h3>Configure domain names and URL</h3>
+                                </div>
+                                <div class="input_row active">
+                                    <input type="checkbox" class="checkbox" disabled="disabled"/>
+                                    <h3>Content and design</h3>
+                                </div>
+                                <div class="input_row deactivate">
+                                    <input type="checkbox" class="checkbox" disabled="disabled" />
+                                    <h3>Meta titles, description, SEO</h3>
+                                </div>
+                                <div class="input_row"></div>    
+                            </div>
+                            <div class="right_part">
+                                <h3>STEP 2 - Content and design</h3>
+                                <input type="checkbox" class="checkbox_small" name="check" value="1" checked="checked" disabled="disabled"/>
+                                <p>Content</p>
+                                <input type="checkbox" class="checkbox_small" name="check" checked="checked" value="1" disabled="disabled"/>
+                                <p>Appearance</p>
+                                <input type="checkbox" class="checkbox_small" name="check" value="1" disabled="disabled"/>
+                                <p>Home page costumization</p>
+                            </div>
+                            <div class="fclear"></div>
+                        </form>
+                    </div>
+                    <form action="new_shop_2-3-1.html" method="post">
+                        <div class="content_section">
+                            <div class="section_title">
+                                <h2>Template selection</h2>
+                                <a href="#" class="button info"></a>
+                            </div>
+                            <div class="template_section">
+                                <div class="column">
+                                    <div class="title">
+                                        <input type="radio" class="custom_radio" name="template_selection" value="1" id="radio1"/>
+                                        <label for="radio1" >Normal</label>
+                                    </div>
+                                    <div class="image_block">
+                                        <img src="images/demo_images/1.png" width="180" alt="1.png"/>
+                                    </div>    
+                                    <div class="ta_center">
+                                        <input type="button" class="button pink_small" value="Quick preview"/>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <div class="title">
+                                        <input type="radio" class="custom_radio" name="template_selection" value="1" id="radio2"/>
+                                        <label for="radio2">White</label>
+                                    </div>
+                                    <div class="image_block">
+                                        <img src="images/demo_images/2.png" width="180" alt="2.png"/>
+                                    </div>  
+                                    <div class="ta_center">
+                                        <input type="button" class="button pink_small" value="Quick preview"/>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <div class="title">
+                                        <input type="radio" class="custom_radio" name="template_selection" value="1" id="radio3"/>
+                                        <label for="radio3">Shoizy</label>
+                                    </div>
+                                    <div class="image_block">
+                                        <img src="images/demo_images/3.png" width="180" alt="3.png"/>
+                                    </div>  
+                                    <div class="ta_center">
+                                        <input type="button" class="button pink_small" value="Quick preview"/>
+                                    </div>
+                                </div>
+                                <div class="column last">
+                                    <div class="title">
+                                        <input type="radio" class="custom_radio" name="template_selection" value="1" id="radio4"/>
+                                        <label for="radio4">Greenthumb</label>
+                                    </div>
+                                    <div class="image_block">
+                                        <img src="images/demo_images/4.png" width="180" alt="4.png"/>
+                                    </div>  
+                                    <div class="ta_center">
+                                        <input type="button" class="button pink_small" value="Quick preview"/>
+                                    </div>
+                                </div>
+                                <div class="fclear"></div>
+                            </div>
+                            <div class="fclear"></div>
+                        </div>
+                        <div class="content_section disclaimer_config">
+                            <div class="section_title">
+                                <h2>Disclaimer configuration</h2>
+                                <a href="#" class="button info"></a>
+                            </div>
+                            <div class="input_row">
+                                <input type="radio" class="custom_radio" name="disc_config" id="radio5" value="1" />
+                                <label for="radio5">Enable</label>
+                            </div>
+                            <div class="input_row">
+                                <input type="radio" class="custom_radio" name="disc_config" id="radio6" value="2" checked="checked" />
+                                <label for="radio6" class="active">Disabled</label>
+                            </div>
+                            <div class="hl"></div>
+                            <div class="image_block">
+                                <img src="images/demo_images/space.png" width="255"/>
+                            </div>
+                            <div class="config_block">
+                                <div>
+                                    <h3>Disclamers background picture :</h3>
+                                    <input type="file" class="custom_file" name="disc_image"/>
+                                    <p>(Suggested size 259x316 px)</p>
+                                </div>
+                                <div>
+                                    <h3>Disclaimers border color :</h3>
+                                    <div class="custom_widget">
+                                        <input type="text" name="color"/>
+                                        <div id="colorSelector2" class="color_selector"><div style="background-color: #8f3aff"></div></div>
+                                        <div id="colorpickerHolder2" class="colorpicker_holder"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h3>Disclaimers font color :</h3>
+                                    <div class="input_row">
+                                        <input type="radio" class="custom_radio" name="disc_color" id="radio7" value="1" />
+                                        <label for="radio7">White</label>
+                                    </div>
+                                    <div class="input_row">
+                                        <input type="radio" class="custom_radio" name="disc_color" id="radio8" value="2" checked="checked" />
+                                        <label for="radio8" class="active">Black</label>
+                                    </div>
+                                </div>
+                                <input type="button" class="button pink_small" value="Quick preview"/>
+                                <div class="fclear"></div>
+                            </div>
+                        </div>
+                        <div class="content_section homepage_bg_config">
+                            <div class="section_title">
+                                <h2>Home page background you will use</h2>
+                                <a href="#" class="button info"></a>
+                            </div>
+                            <div class="input_row">
+                                <input type="radio" class="custom_radio" name="home_page_bg" id="radio9" value="1" />
+                                <label for="radio9">Predefined home page background</label>
+                            </div>
+                            <div class="input_row">
+                                <input type="radio" class="custom_radio" name="home_page_bg" id="radio10" value="2" checked="checked" />
+                                <label for="radio10" class="active">Custom home page background</label>
+                            </div>
+                            <div class="hl"></div>
+                            <div class="image_block">
+                                <img src="images/demo_images/space_small.png" width="140"/>
+                            </div>
+                            <div class="config_block">
+                                <div>
+                                    <h3>Your choosen custom background</h3>
+                                    <input type="file" class="custom_file" name="disc_image"/>
+                                </div>
+                                <div>
+                                    <h3>“Achetez maintenant” button link :</h3>
+                                    <input type="text" class="custom_text" value="http://www.yourshop.com/nuisettes"/>
+                                </div>
+                                <input type="button" class="button pink_small" value="Quick preview">
+                            </div>
+                            <div class="fclear"></div>
+                        </div>
+                        <div class="content_section homepage_inner_bg_config">
+                            <div class="section_title">
+                                <h2>Inner page background you will use</h2>
+                                <a href="#" class="button info"></a>
+                            </div>
+                            <div class="input_row">
+                                <input type="radio" class="custom_radio" name="home_page_i_bg" id="radio11" value="1" />
+                                <label for="radio11">Predefined home page background</label>
+                            </div>
+                            <div class="input_row">
+                                <input type="radio" class="custom_radio" name="home_page_i_bg" id="radio12" value="2" checked="checked" />
+                                <label for="radio12" class="active">Custom home page background</label>
+                            </div>
+                            <div class="hl"></div>
+                            <div class="column_five">
+                                <div class="title">
+                                    <input type="radio" class="custom_radio" name="template_selection" value="1" id="radio13">
+                                    <label for="radio13">Clear</label>
+                                </div>
+                                <div class="image_block">
+                                </div>    
+                                <div class="ta_center">
+                                    <input type="button" class="button pink_small" value="Quick preview">
+                                </div>
+                            </div>
+                            <div class="column_five">
+                                <div class="title">
+                                    <input type="radio" class="custom_radio" name="template_selection" value="1" id="radio17">
+                                    <label for="radio17">White</label>
+                                </div>
+                                <div class="image_block">
+                                    <img src="images/demo_images/pattern1.png" width="150" alt="1.png">
+                                </div>    
+                                <div class="ta_center">
+                                    <input type="button" class="button pink_small" value="Quick preview">
+                                </div>
+                            </div>
+                            <div class="column_five">
+                                <div class="title">
+                                    <input type="radio" class="custom_radio" name="template_selection" value="1" id="radio14">
+                                    <label for="radio14">Black</label>
+                                </div>
+                                <div class="image_block">
+                                    <img src="images/demo_images/pattern2.png" width="150" alt="1.png">
+                                </div>    
+                                <div class="ta_center">
+                                    <input type="button" class="button pink_small" value="Quick preview">
+                                </div>
+                            </div>
+                            <div class="column_five">
+                                <div class="title">
+                                    <input type="radio" class="custom_radio" name="template_selection" value="1" id="radio15">
+                                    <label for="radio15">Drapper</label>
+                                </div>
+                                <div class="image_block">
+                                    <img src="images/demo_images/pattern3.png" width="150" alt="1.png">
+                                </div>    
+                                <div class="ta_center">
+                                    <input type="button" class="button pink_small" value="Quick preview">
+                                </div>
+                            </div>
+                            <div class="column_five last">
+                                <div class="title">
+                                    <input type="radio" class="custom_radio" name="template_selection" value="1" id="radio16">
+                                    <label for="radio16">Cococs</label>
+                                </div>
+                                <div class="image_block">
+                                    <img src="images/demo_images/pattern4.png" width="150" alt="1.png">
+                                </div>    
+                                <div class="ta_center">
+                                    <input type="button" class="button pink_small" value="Quick preview">
+                                </div>
+                            </div>
+                            <div class="fclear"></div>
+                        </div>
+                        <div class="content_section webshop_colours_config">
+                            <div class="section_title">
+                                <h2>Webshop colours</h2>
+                                <a href="#" class="button info"></a>
+                            </div>
+                            <div class="column">
+                                <h3>Header :</h3>
+                                <div class="custom_widget">
+                                    <input type="text" name="color"/>
+                                    <div class="color_selector"><div style="background-color: #8f3aff"></div></div>
+                                    <div class="colorpicker_holder"></div>
+                                </div>
+                                <h3>Default text:</h3>
+                                <div class="custom_widget">
+                                    <input type="text" name="color"/>
+                                    <div class="color_selector"><div style="background-color: #9071B8"></div></div>
+                                    <div class="colorpicker_holder"></div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <h3>Header :</h3>
+                                <div class="custom_widget">
+                                    <input type="text" name="color"/>
+                                    <div class="color_selector"><div style="background-color: #8f3aff"></div></div>
+                                    <div class="colorpicker_holder"></div>
+                                </div>
+                                <h3>Default text:</h3>
+                                <div class="custom_widget">
+                                    <input type="text" name="color"/>
+                                    <div class="color_selector"><div style="background-color: #9071B8"></div></div>
+                                    <div class="colorpicker_holder"></div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <h3>Header :</h3>
+                                <div class="custom_widget">
+                                    <input type="text" name="color"/>
+                                    <div class="color_selector"><div style="background-color: #8f3aff"></div></div>
+                                    <div class="colorpicker_holder"></div>
+                                </div>
+                                <h3>Default text:</h3>
+                                <div class="custom_widget">
+                                    <input type="text" name="color"/>
+                                    <div class="color_selector"><div style="background-color: #9071B8"></div></div>
+                                    <div class="colorpicker_holder"></div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <h3>Header :</h3>
+                                <div class="custom_widget">
+                                    <input type="text" name="color"/>
+                                    <div class="color_selector"><div style="background-color: #8f3aff"></div></div>
+                                    <div class="colorpicker_holder"></div>
+                                </div>
+                                <h3>Default text:</h3>
+                                <div class="custom_widget">
+                                    <input type="text" name="color"/>
+                                    <div class="color_selector"><div style="background-color: #9071B8"></div></div>
+                                    <div class="colorpicker_holder"></div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <h3>Header :</h3>
+                                <div class="custom_widget">
+                                    <input type="text" name="color"/>
+                                    <div class="color_selector"><div style="background-color: #8f3aff"></div></div>
+                                    <div class="colorpicker_holder"></div>
+                                </div>
+                                <h3>Default text:</h3>
+                                <div class="custom_widget">
+                                    <input type="text" name="color"/>
+                                    <div class="color_selector"><div style="background-color: #9071B8"></div></div>
+                                    <div class="colorpicker_holder"></div>
+                                </div>
+                            </div>
+                            <div class="fclear"></div>
+                            <div class="hl"></div>
+                            <input type="button" class="button pink_small" value="Quick preview">
+                            <div class="fclear"></div>
+                        </div>
+                        <div class="content_section webshop_logotype_config">
+                            <div class="section_title">
+                                <h2>Webshop logotype</h2>
+                                <a href="#" class="button info"></a>
+                            </div>
+                            <div class="header_logotype">
+                                <h3>Header logotype:</h3>
+                                <div class="header_logo">
+                                    <img src="images/demo_images/petite.png" width="325" />
+                                </div>
+                                <input type="file" class="custom_file" name="logo"/>
+                            </div>
+                            <div class="favicon">
+                                <h3>Favicon:</h3>
+                                <img src="images/demo_images/small_trip.png"/>
+                                <p>Will appear in the address bar of your web browser</p>
+                                <input type="file" class="custom_file" name="small_trip"/>
+                            </div>
+                            <div class="store_icon">
+                                <h3>Store icon:</h3>
+                                <div class="logo_block">
+                                    <img src="images/demo_images/big_trip.png"/>
+                                </div>
+                                <p>Will appear on the store locator (inside Google maps). Suggested size: 30x30px</p>
+                                <input type="file" class="custom_file" name="big_trip"/>
+                            </div>
+                            <div class="fclear"></div>
+                            <div class="hl"></div>
+                            <input type="button" class="button pink_small" value="Quick preview">
+                            <div class="fclear"></div>
+                        </div>
+                        <div class="content_section email_colors_config">
+                            <div class="section_title">
+                                <h2>E-mail colours</h2>
+                                <a href="#" class="button info"></a>
+                            </div>
+                            <div class="column">
+                                <h3>Header :</h3>
+                                <div class="custom_widget">
+                                    <input type="text" name="color"/>
+                                    <div class="color_selector"><div style="background-color: #8f3aff"></div></div>
+                                    <div class="colorpicker_holder"></div>
+                                </div>
+                                <h3>Default text:</h3>
+                                <div class="custom_widget">
+                                    <input type="text" name="color"/>
+                                    <div class="color_selector"><div style="background-color: #9071B8"></div></div>
+                                    <div class="colorpicker_holder"></div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <h3>Header :</h3>
+                                <div class="custom_widget">
+                                    <input type="text" name="color"/>
+                                    <div class="color_selector"><div style="background-color: #8f3aff"></div></div>
+                                    <div class="colorpicker_holder"></div>
+                                </div>
+                                <h3>Default text:</h3>
+                                <div class="custom_widget">
+                                    <input type="text" name="color"/>
+                                    <div class="color_selector"><div style="background-color: #9071B8"></div></div>
+                                    <div class="colorpicker_holder"></div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <h3>Header :</h3>
+                                <div class="custom_widget">
+                                    <input type="text" name="color"/>
+                                    <div class="color_selector"><div style="background-color: #8f3aff"></div></div>
+                                    <div class="colorpicker_holder"></div>
+                                </div>
+                            </div>
+                            <div class="fclear"></div>
+                            <div class="hl"></div>
+                            <input type="button" class="button pink_small" value="Quick preview">
+                            <div class="fclear"></div>
+                        </div>
+                        <div class="content_section email_logotype_config">
+                            <div class="section_title">
+                                <h2>E-mail logotype</h2>
+                                <a href="#" class="button info"></a>
+                            </div>
+                            <h3>Logotype:</h3>
+                            <div class="header_logo">
+                                <img src="images/demo_images/petite.png" width="325" />
+                            </div>
+                            <input type="file" class="custom_file" name="logo"/>
+                            <div class="hl"></div>
+                            <input type="button" class="button pink_small" value="Quick preview">
+                            <div class="fclear"></div>
+                        </div>
+                        <div class="ta_center">
+                            <input type="button" class="button pink" value="Preview">
+                            <input type="submit" class="button pink" value="Save and continue">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="fclear"></div>
+            <div id="info_tooltip" class="tooltip">
+                <div class="tooltip_content">
+                    <p><strong>Notifications</strong></p>
+                    <p>Nulla id diam eu velit venenatis dignissim. Sed nec metus ut elit placerat elementum ut sed nulla. Cras vitae nulla leo, bibendum pretium tellus. In vehicula dolor eget purus ultrices quis diam.</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,52 @@
+.main_wrapper .content_block .content{
+    
+}
+
+.main_wrapper .content_block .content .content_section.statistic_graph .section_title{
+    height: 50px;
+    padding-top: 10px;
+}
+
+.main_wrapper .content_block .content .content_section.statistic_graph .section_title p{
+    margin-bottom: 5px;
+}
+
+.main_wrapper .content_block .content .content_section.statistic_graph .period{
+    width: 400px;
+    float: left;
+}
+
+.main_wrapper .content_block .content .banner_row{
+    margin: 10px 0;
+}
+
+.main_wrapper .content_block .content .banner_row .hl{
+    margin: 15px 0;
+}
+
+.main_wrapper .content_block .content .banner_row .desc_block{
+    float: left;
+    width: 240px;
+}
+
+.main_wrapper .content_block .content .banner_row .image_block{
+    margin-right: 10px;
+    float: left;
+    max-width: 535px;
+    overflow: hidden;
+}
+
+.main_wrapper .content_block .content .banner_row .image_block, .banner_row .desc_block{
+    
+}
+
+.main_wrapper .content_block .content .banner_row .desc_block p{
+    font: normal 12px 'Verdana';
+    margin-bottom: 5px;
+    color: #4E4E4E;
+}
+
+.main_wrapper .content_block .content .ta_center > .pagination{
+    display: inline-block;
+    margin-top: 10px;
+}

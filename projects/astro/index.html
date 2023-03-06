@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html style="font-family: Arial, sans-serif;font-size: 12px;">
+    <head>
+        <meta charset="UTF-8">
+        <title>Astromancia</title>        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            /*For devices that support media queries*/
+            
+            /*regular screens*/
+            @media only screen and (min-width: 480px) 
+            {
+                .subtitle {
+                    font-size: 28px;
+                }
+
+                .title{
+                    font-size: 31px;
+                }
+
+                .logo-title,
+                .action-bar tr td p {
+                    font-size: 14px;
+                }
+            }                        
+            /*regular screens*/
+
+            /*mobile screens*/
+            @media only screen and (max-width: 480px) 
+            {
+                .subtitle{
+                    font-size: 18px;
+                }
+
+                .title,
+                .action-bar tr td img{
+                    font-size: 24px;
+                }
+
+                .logo-title,
+                .action-bar tr td p{
+                    font-size: 12px;
+                }
+
+                .color-buttons{
+                    max-height: 40px;   
+                }                
+            }
+            /*mobile screens*/
+
+            /*exceptions*/            
+            @media only screen and (min-width: 1px) 
+            {                
+                .arrow{
+                    position: absolute; 
+                    top: 2%; 
+                    left: 0; 
+                    width: 123px;
+                    height: 175px;
+                    background: url(img/arrow.png);
+                }
+            }
+
+            @media only screen and (max-width: 580px) 
+            {
+                .arrow{
+                    display: none;
+                }
+            }
+            /*exceptions*/
+        </style>
+    </head>    
+    <body style="margin: auto;">
+        <!--[if !mso]><!--><table align="center" bgcolor="#ffffff" cellpadding="0" cellspacing="0" style="width: 100%;min-width: 300px;border: none;border-collapse: collapse;border-spacing: 0!important;"><!--<![endif]-->
+            <!--[if gte mso 9]><table  align="center" bgcolor="#ffffff" cellpadding="0" cellspacing="0" width="600" ><![endif]-->
+            <tr style="cellpadding: 0px;border-spacing: 0px;">
+                <td style="cellpadding: 0px;border-spacing: 0px;">
+                    <table class="header" style="border: none;border-collapse: collapse;width: 100%;border-spacing: 0!important;">
+                        <tr class="header-online" style="cellpadding: 0px;border-spacing: 0px;background-color: #6A3799;height: 28px;text-align: center;">
+                            <td style="cellpadding: 0px;border-spacing: 0px;"><a href="#" class="header-title" style="color: #FFF;font-size: 11px;line-height: 11px;text-decoration: none;">view online version</a></td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #CCCCCC;max-height: 50px;overflow: hidden;cellpadding: 0px;border-spacing: 0px;">
+                            <td style="text-align: center;padding: 0;cellpadding: 0px;border-spacing: 0px;">
+                                <table style="width: 100%;max-width: 600px;margin: 0 auto;border: none;border-collapse: collapse;border-spacing: 0!important;">
+                                    <tr style="cellpadding: 0px;border-spacing: 0px;">
+                                        <td style="text-align: left;cellpadding: 0px;border-spacing: 0px;">
+                                            <a href="#"><img src="img/astro-logo.png" alt="Astromantica" style="height: auto;max-height: auto;max-width: 100%;"></a>
+                                        </td>
+                                        <td style="text-align: right;vertical-align: middle;cellpadding: 0px;border-spacing: 0px;">
+                                            <a href="#" class="logo-title" style="color: #9C9C9C;text-decoration: none;line-height: 50px;">Choose your <strong>Medium</strong></a>
+                                        </td>
+                                    </tr>
+                                </table>                                  
+                            </td>
+                        </tr>
+                    </table>                             
+                </td> 
+            </tr>
+            <tr style="cellpadding: 0px;border-spacing: 0px;">
+                <td style="text-align: center;cellpadding: 0px;border-spacing: 0px;">
+                    <table style="max-width: 600px;min-width: 300px;width: 100%;margin: 0 auto;border: none;border-collapse: collapse;border-spacing: 0!important;">
+                        <tr style="cellpadding: 0px;border-spacing: 0px;">
+                            <td style="background: url(img/bg.jpg) center;position: relative;vertical-align: top;padding-bottom: 45px;cellpadding: 0px;border-spacing: 0px;">
+                                <div class="arrow"></div>
+                                <p class="subtitle" style="color: #FFFFFF;font-weight: bold;margin: 20px 0 10px 0;">X souhaite voues apporter son aide</p>
+                                <h2 class="title" style="color: #99CC33;margin: 0 0 20px 0;">J'ACCEPTE L'AIDE DE X</h2>
+                                <table class="white-block" style="border: none;border-collapse: collapse;border-radius: 5px;-moz-border-radius: 5px;-webkit-border-radius: 5px;margin: 0 auto;max-width: 390px;min-width: 280px;background-color: #FFFFFF;border-spacing: 0!important;">
+                                    <tr style="cellpadding: 0px;border-spacing: 0px;">
+                                        <td style="text-align: right;padding-top: 10px;cellpadding: 0px;border-spacing: 0px;">
+                                            <a href="#" title="oui"><img src="img/oui.png" alt="oui" class="color-buttons" style="height: auto;max-height: auto;max-width: 100%;"></a>
+                                        </td>
+                                        <td style="text-align: center;padding-top: 10px;cellpadding: 0px;border-spacing: 0px;">
+                                            <a href="#" title="peut-etre"><img src="img/peut.png" alt="peut-etre" class="color-buttons" style="height: auto;max-height: auto;max-width: 100%;"></a>
+                                        </td>
+                                        <td style="text-align: left;padding-top: 10px;cellpadding: 0px;border-spacing: 0px;">
+                                            <a href="#" title="non"><img src="img/non.png" alt="non" class="color-buttons" style="height: auto;max-height: auto;max-width: 100%;"></a>
+                                        </td>
+                                    </tr>
+                                    <tr style="cellpadding: 0px;border-spacing: 0px;">
+                                        <td colspan="3" style="padding: 10px;cellpadding: 0px;border-spacing: 0px;">
+                                            <img src="img/avatar.jpg" alt="avatar" style="width: 100%;height: auto;max-height: auto;max-width: 100%;">
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>                            
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr style="cellpadding: 0px;border-spacing: 0px;">
+                <td style="cellpadding: 0px;border-spacing: 0px;">
+                    <table class="action-bar purple" style="border: none;border-collapse: collapse;background-color: #642F96;max-width: 600px;min-width: 300px;width: 100%;margin: 0 auto;border-spacing: 0!important;">
+                        <tr style="cellpadding: 0px;border-spacing: 0px;">
+                            <td style="cellpadding: 0px;border-spacing: 0px;background: url(img/sep.png) right center no-repeat;text-align: center;vertical-align: middle;padding: 10px 0;">
+                                <a href="#" title="chat webcam" style="text-decoration: none;">
+                                    <img src="img/icon1.png" style="height: auto;max-height: auto;max-width: 100%;margin-bottom: 2px;">
+                                </a><p style="color: #C082FC;font-weight: bold;margin: 0;">CHAT</p>
+                                <p style="color: #C082FC;font-weight: bold;margin: 0;">WEBCAM</p>
+
+                            </td>
+                            <td style="cellpadding: 0px;border-spacing: 0px;background: url(img/sep.png) right center no-repeat;text-align: center;vertical-align: middle;padding: 10px 0;">
+                                <a href="#" title="pure mediums" style="text-decoration: none;">
+                                    <img src="img/icon2.png" alt="pure mediums" style="height: auto;max-height: auto;max-width: 100%;margin-bottom: 2px;">
+                                </a><p style="color: #C082FC;font-weight: bold;margin: 0;">PURE</p>
+                                <p style="color: #C082FC;font-weight: bold;margin: 0;">MEDIUMS</p>
+
+                            </td>
+                            <td style="cellpadding: 0px;border-spacing: 0px;background: url(img/sep.png) right center no-repeat;text-align: center;vertical-align: middle;padding: 10px 0;">
+                                <a href="#" title="anonymous and discreet" style="text-decoration: none;">
+                                    <img src="img/icon3.png" alt="anonymous and discreet" style="height: auto;max-height: auto;max-width: 100%;margin-bottom: 2px;">
+                                </a><p style="color: #C082FC;font-weight: bold;margin: 0;">ANONYMOUS</p>
+                                <p style="color: #C082FC;font-weight: bold;margin: 0;">AND DISCREET</p>
+
+                            </td>
+                            <td style="cellpadding: 0px;border-spacing: 0px;background: url(img/sep.png) right center no-repeat;text-align: center;vertical-align: middle;padding: 10px 0;">
+                                <a href="#" title="100% secured" style="text-decoration: none;">
+                                    <img src="img/icon4.png" alt="100% secured" style="height: auto;max-height: auto;max-width: 100%;margin-bottom: 2px;">
+                                </a><p style="color: #C082FC;font-weight: bold;margin: 0;">100%</p>
+                                <p style="color: #C082FC;font-weight: bold;margin: 0;">SECURED</p>
+
+                            </td>
+                        </tr>
+                    </table>                    
+                </td>
+            </tr>
+            <tr style="cellpadding: 0px;border-spacing: 0px;">
+                <td class="footer" style="cellpadding: 0px;border-spacing: 0px;">                 
+                    <div style="width: 100%; max-width: 600px; margin: 0 auto; text-align: center; padding-top: 10px;">
+                        <span style="max-width: 150px; width: 100%;">
+                            <span style="color: #888889; font-size: 12px;">Astromancia &copy; 2015</span>
+                        </span>
+                        <div style="max-width: 450px; width: 100%; text-align: center; display: inline-block; margin-top: 10px">
+                            <ul style="display: inline-block;list-style-type: none;margin: 0;padding: 0;width: 100%;text-align: center;">
+                                <li style="display: inline-block;margin: 0;padding: 0 10px;border-left: none;">
+                                    <a href="#" style="color: #6A3799;font-size: 12px;line-height: 12px;text-decoration: none;">www.astromancia.net</a>
+                                </li>
+                                <li style="display: inline-block;margin: 0;padding: 0 10px;border-left: 1px solid #D1D1D1;">
+                                    <a href="#" style="color: #6A3799;font-size: 12px;line-height: 12px;text-decoration: none;">send it to a friend</a>
+                                </li>
+                                <li style="display: inline-block;margin: 0;padding: 0 10px;border-left: 1px solid #D1D1D1;">
+                                    <a href="#" style="color: #6A3799;font-size: 12px;line-height: 12px;text-decoration: none;">unsubscribe</a>
+                                </li>
+                                <li style="display: inline-block;margin: 0;padding: 0 10px;border-left: 1px solid #D1D1D1;">
+                                    <a href="#" style="color: #6A3799;font-size: 12px;line-height: 12px;text-decoration: none;">report as spam</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div style="clear: both;"></div>
+                    </div>                    
+                </td>
+            </tr>
+        </table>            
+    </body>
+</html>

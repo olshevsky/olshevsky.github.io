@@ -1,0 +1,140 @@
+body{
+    
+}
+
+body .header_wrapper{
+    min-width: 1300px;
+}
+
+body .header_wrapper .header{
+    text-align: center;
+}
+
+body .header_wrapper .header .logo_wrapper{
+    float: none;
+    margin: 0;
+    display: inline-block;
+}
+
+body .main_wrapper{
+    width: 1300px;
+    height: 971px;
+    background: url('../images/login_bg.png') no-repeat 0 81px;
+    position: relative;
+    min-height: 0;
+}
+
+/*---START language chose---*/
+.language_menu{
+    width: 330px;
+    height: 27px;
+    overflow: hidden;
+    position: absolute;
+    top: 81px;
+    left: 475px;
+    background-color: #FFFFFF;
+    padding: 3px 0 0 20px;
+}
+
+.language_menu a{
+    display: inline-block;
+    font: normal 10px 'Arial';
+    color: #666666;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-right: 12px;
+}
+
+.language_menu a:hover{
+    text-decoration: underline;
+}
+
+.language_menu a.active{
+    font-weight: bold;
+    color: #cc3366;
+}
+/*---END language chose---*/
+
+/*---START login form---*/
+.login_form_wrapper{
+    width: 350px;
+    height: 260px;
+    position: absolute;
+    left: 475px;
+    top: 351px;
+    display: block;
+}
+
+.login_form{
+    width: 310px;
+    min-height: 185px;
+    padding: 20px;
+    background-color: #E7E7E7;
+    opacity: 0.95;
+    box-shadow: 10px 0 30px 0px #111;
+    z-index: 2;
+    position: relative;
+}
+
+.login_form .form_row{
+    margin-bottom: 10px;
+}
+
+.login_form .form_row > label{
+    display: block;
+    font: normal 18px 'Arial';
+    color: #666666;
+    margin-bottom: 5px;
+}
+
+.login_form .form_row > input{
+    width: 295px;
+    height: 25px;
+    padding: 5px;
+    font: normal 18px 'Arial';
+}
+
+.login_form .form_row .left_part{
+    float: left;
+    width: 70%;
+    padding-top: 5px;
+}
+
+.login_form .form_row .left_part input.custom_checkbox{
+    float: left;
+    margin: 3px 5px 0 0;
+}
+
+.login_form .form_row .right_part{
+    float: left;
+    width: 30%;
+}
+
+.login_form .form_row .right_part input.pink{
+    float: right;
+    width: 105px;
+}
+
+.login_form .form_row .left_part > label{
+    color: #666666;
+    font: normal 12px 'Arial';
+}
+
+.login_form_wrapper .forgot_login{
+    width: 310px;
+    height: 25px;
+    padding-top: 5px;
+    margin-left: 20px;
+    background-color: #E7E7E7;
+    opacity: 0.95;
+    z-index: 1;
+    position: relative;
+    text-align: center;
+}
+
+.login_form_wrapper .forgot_login > a{
+    color: #666666;
+    font: normal 11px 'Arial';
+    margin: 0;
+}
+/*---END login form---*/

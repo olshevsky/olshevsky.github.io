@@ -1,0 +1,298 @@
+/*community.html css file*/
+
+.community_content{
+	background-color: #1A1A1A;
+	padding: 0 15px 115px 10px;
+}
+
+/*--------------------<Header>----------------------*/
+.community_header_bg{
+	height: 212px;
+	width: 1000px;
+	background: #757575 url(community_header_bg.png) repeat-x;
+	margin-bottom: 10px;
+	border-top: 1px solid #000;
+}
+/*--------------------</Header>----------------------*/
+
+/*-------------------<community top block>----------------------*/
+.community_block{
+	background: #1A1A1A url(community_bg.jpg) no-repeat bottom;
+	padding: 2px 10px 18px 10px;
+	margin-bottom: 20px;
+	height: 45px;
+	overflow: hidden;
+}
+
+.community_block div{
+	font: bold 14px Arial, sans-serif;
+	letter-spacing: -1px;
+}
+
+.community_block h1{
+	font: normal 46px Impact, sans-serif;
+	line-height: 42px;
+	text-transform: uppercase;
+	margin-right: 10px;
+}
+
+.community_details{
+	width: 520px;
+}
+
+/*-------<ADD YOUR ADD button>--------*/
+.community_button{
+	width: 78px;
+	height: 26px;
+	padding: 17px 0 0 10px;
+	margin-right: 2px;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	background: url(community_button.png) no-repeat;
+}
+
+.community_button span{
+	color: #FFF;
+	font: normal 12px Impact;
+	letter-spacing: 0;
+	line-height: 12px;
+	display: block;
+}
+/*-------</ADD YOUR ADD button>--------*/
+/*-------------------</community top block>----------------------*/
+
+/*-------------------<top viewed block>----------------------*/
+.top_viewed_header{
+	height: 28px;
+	width: 655px;
+	text-align: left;
+	padding: 7px 0 0 5px;
+	overflow: hidden;
+	background: #1A1A1A url(header_bg_green.png) no-repeat;
+	margin-bottom: 5px;
+} 
+
+.top_viewed_header h2{
+	font: normal 18px Impact, sans-serif;
+}
+
+.top_viewed{
+	background-color: #4D4D4D;
+	width: 660px;
+}
+
+.top_viewed_header .nav a{
+	text-decoration: none;
+	display: table-cell;
+	vertical-align: bottom;
+	padding-left: 10px;
+}
+
+.nav a{
+	font: normal 18px Impact, sans-serif;
+	color: #FFF;
+	text-decoration: none;
+}
+/*-------------------</top viewed block>----------------------*/
+
+/*-------------------<Community search results>----------------------*/
+.community_search_results_header{
+	height: 30px;
+	width: 645px;
+	overflow: hidden;
+	background-color: #4D4D4D;
+	font-size: 14px;
+	padding: 10px 10px 0 5px;
+	margin-bottom: 25px;
+}
+
+.community_search_results_header h2{
+	font: normal 14px Impact, Myriad Pro, sans-serif;
+	letter-spacing: 0px;
+	text-transform: uppercase;
+}
+
+.community_search_results_footer{
+	height: 25px;
+	width: 650px;
+	overflow: hidden;
+	background-color: #4D4D4D;
+	text-align: center;
+	padding: 5px 5px 0 5px;
+}
+
+.community_search_results_footer ul{
+	display: inline;
+}
+
+.community_search_results_footer ul li{
+	list-style: none;
+	display: inline;
+
+}
+
+.community_search_results_footer ul li a{
+	text-decoration: none;
+	color: #FFF;
+	font-size: 12px;
+}
+
+.community_search_block{
+	margin-bottom: 25px;
+	width: 660px;
+}
+/*-------------------</Community search results>----------------------*/
+
+/*----------------<searh members>------------------------*/
+.searh_members_header{
+	height: 28px;
+	width: 298x;
+	text-align: left;
+	padding: 7px 0 0 2px;
+	overflow: hidden;
+	background: #1A1A1A url(header_bg_blue.png) no-repeat;
+} 
+
+.searh_members_header h2{
+	font: normal 18px Impact, sans-serif;
+}
+
+.searh_members{
+	padding: 5px 0 0 2px;
+	margin-bottom: 10px;
+	width: 298px;
+	overflow: hidden;
+}
+
+.searh_members ul{
+	list-style-type: none;
+}
+
+.searh_members ul li a{
+		font: normal 18px Impact, sans-serif;
+		text-decoration: none;
+}
+
+.container_right_item a span{
+	font: normal 18px Impact, sans-serif;
+	padding-left: 5px;
+}
+
+.container_right_item {
+	width: 300px;
+}
+/*-------------------</searh members>----------------------*/
+
+.contentBlock{
+	margin-bottom: 10px;
+}
+
+.details{
+	padding: 2px 4px 2px 4px;
+	width: 200px;
+}
+
+/*----------<kreisai bloks>------------*/
+.container_left{
+	width: 660px;
+	float: left;	
+}
+
+.bulletTop,.bulletBottom{
+	float: right;
+	cursor: pointer;
+	display:block;
+	width:10px; height:40px;
+}
+.bulletTop{
+	background:url('bullet_top.png');
+}
+.bulletBottom{
+	background:url('bullet_bottom.png');
+}
+/*----------</kreisai bloks>------------*/
+
+/*---------<Gallery>-----------*/
+.galleryDiv{
+	width: 210px;
+	float: left;
+	margin-right: 15px;
+}
+
+.galleryDiv > a img{
+	border: 5px solid #FFF;
+}
+
+.sideBarGalleryDiv{
+	width: 210px;
+	margin: 0 auto;
+}
+
+.sideBarGalleryDiv  > a img{
+	border: 5px solid #FFF;
+}
+/*---------</Gallery>-----------*/
+
+
+/*--------------------<Labais bloks>----------------------*/
+.container_right{
+	width: 300px;
+	float: right;
+}
+
+.container_right_item{
+	width: 300px;
+	margin-bottom: 15px;
+}
+
+.sidebar{
+	background-color: #4D4D4D;
+}
+
+.container_right_header{
+	height: 33px;
+	margin-bottom: 5px;
+	text-align: center;
+	padding-top: 7px;
+	border-bottom: 2px solid #666666;
+	overflow: hidden;
+}
+
+.container_right_footer{
+	height: 40px;
+	overflow: hidden;
+}
+
+
+/*-------<people counter>---------*/
+.people_counter{
+	width: 50px;
+	height: 20px;
+	font-size: 11px;
+	padding-top: 5px;
+	overflow: hidden;
+}
+
+.people_counter p{
+	padding-top: 5px;
+}
+
+.people_counter a img{
+	border: none;
+}
+
+.icon_light{
+	width: 26px;
+	height: 21px;
+	display: block;
+	background: url(icon_light.png) no-repeat;
+}
+
+.icon_dark{
+	width: 26px;
+	height: 21px;
+	display: block;
+	background: url(icon_dark.png) no-repeat;
+}
+/*-------</people counter>---------*/

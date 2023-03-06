@@ -1,0 +1,720 @@
+[
+  {
+    "id": 99,
+    "title": "Health insurance results",
+    "slug": "health",
+    "job": [
+      "backend"
+    ],
+    "tags": [
+      "php",
+      "javascript",
+      "vue",
+      "laravel"
+    ],
+    "url": "http:\/\/www.christinafoley.com",
+    "urlTitle": "www.christinafoley.com",
+    "description": "Health insurance consulting website.",
+    "gallery": [
+      {
+        "thumb": "img\/projects\/health\/690x515.jpg",
+        "full": "img\/projects\/health\/1200x800.jpg"
+      },
+      {
+        "thumb": "img\/projects\/health\/690x515_2.jpg",
+        "full": "img\/projects\/health\/1200x800_2.jpg"
+      },
+      {
+        "thumb": "img\/projects\/health\/690x515_3.jpg",
+        "full": "img\/projects\/health\/1200x800_3.jpg"
+      }
+    ],
+    "timestamp": 1607430288000
+  },
+  {
+    "id": 100,
+    "title": "ZDR",
+    "slug": "zdr",
+    "job": [
+      "frontend",
+      "backend"
+    ],
+    "tags": [
+      "php",
+      "javascript",
+      "vue",
+      "uikit"
+    ],
+    "description": "Company's CRM for clients and orders management. System provides features like automatic packages tracking, call center statistics, warehouse bookkeeping, task list etc.",
+    "gallery": [
+      {
+        "thumb": "img\/projects\/zdr\/690x515.jpg",
+        "full": "img\/projects\/zdr\/1200x800.jpg"
+      }
+    ],
+    "timestamp": 1546304400000
+  },
+  {
+    "id": 101,
+    "title": "Bilderlings e-invoices",
+    "slug": "invoices",
+    "job": [
+      "frontend",
+      "backend"
+    ],
+    "tags": [
+      "php",
+      "javascript",
+      "handlebars",
+      "bootstrap"
+    ],
+    "url": "https:\/\/www.bilderlingspay.com\/en\/invoices",  
+    "urlTitle": "www.bilderlingspay.com\/en\/invoices",
+    "description": "Invoices that get created fast, issued via SMS\/e-mail, and paid in a couple of clicks with a credit card. Sending and receiving payments have never been so fast and easy before. Only payer\u2019s phone number or e-mail is needed to issue an invoice. The whole process takes less than a minute.",
+    "gallery": [
+      {
+        "thumb": "img\/projects\/invoices\/690x515.jpg",
+        "full": "img\/projects\/invoices\/1200x800.jpg"
+      },
+      {
+        "thumb": "img\/projects\/invoices\/690x515_2.jpg",
+        "full": "img\/projects\/invoices\/1200x800_2.jpg"
+      }
+    ],
+    "timestamp": 1485907200000
+  },
+  {
+    "id": 102,
+    "title": "Brand Regulator",
+    "slug": "brand-regulator",
+    "job": [
+      "frontend",
+      "backend"
+    ],
+    "tags": [
+      "php",
+      "laravel",
+      "javascript",
+      "handlebars",
+      "bootstrap"
+    ],
+    "url": "http:\/\/www.brandregulator.com\/",
+    "urlTitle": "www.brandregulator.com",
+    "description": "Regulator\u00ae is designed from the ground up to allow your brand to gauge effectiveness and to revolutionize the way you manage marketing. While most systems available today only follow assets as far as the shipping door, Regulator\u00ae operates in-market, giving you total access to all relevant information when you need it.",
+    "gallery": [
+      {
+        "thumb": "img\/projects\/br\/690x515.jpg",
+        "full": "img\/projects\/br\/1200x800.jpg"
+      }
+    ],
+    "timestamp": 1463702400000
+  },
+  {
+    "id": 103,
+    "title": "PDQ",
+    "slug": "pdq",
+    "job": [
+      "frontend",
+      "backend"
+    ],
+    "tags": [
+      "php",
+      "laravel",
+      "html",
+      "css",
+      "javascript",
+      "php",
+      "handlebars",
+      "bootstrap"
+    ],
+    "url": "http:\/\/pdqinfo.ca\/",
+    "urlTitle": "www.pdqinfo.ca",
+    "description": "PDQ is an information service providing cash grain market price information and related statistical data. Owned and operated by the Alberta Wheat Commission it is provided as a service to all market participants. Comments or suggestions to enhance this service are welcome.",
+    "gallery": [
+      {
+        "thumb": "img\/projects\/pdq\/690x515.jpg",
+        "full": "img\/projects\/pdq\/1200x800.jpg"
+      },
+      {
+        "thumb": "img\/projects\/pdq\/690x515_2.jpg",
+        "full": "img\/projects\/pdq\/1200x800_2.jpg"
+      },
+      {
+        "thumb": "img\/projects\/pdq\/690x515_3.jpg",
+        "full": "img\/projects\/pdq\/1200x800_3.jpg"
+      }
+    ],
+    "timestamp": 1442707200000
+  },
+  {
+    "id": 104,
+    "title": "Pink Platform",
+    "slug": "pink-platform",
+    "job": [
+      "frontend"
+    ],
+    "tags": [
+      "html",
+      "css",
+      "javascript"
+    ],
+    "url": null,
+    "urlTitle": null,
+    "description": "Web application for managing Magento white-label shops. My place in team was to develop and maintain all frontend integration during the project. Over 80 pages of html. Many customized UI elements such as date and color pickers, charts, lightboxes, tabs, info hints, forms, WYSIWYG editors, etc.",
+    "gallery": [
+      {
+        "thumb": "img\/projects\/pink_platform\/690x515.jpg",
+        "full": "img\/projects\/pink_platform\/1200x800.jpg"
+      },
+      {
+        "thumb": "img\/projects\/pink_platform\/690x515_2.jpg",
+        "full": "img\/projects\/pink_platform\/1200x800_2.jpg"
+      },
+      {
+        "thumb": "img\/projects\/pink_platform\/690x515_3.jpg",
+        "full": "img\/projects\/pink_platform\/1200x800_3.jpg"
+      },
+      {
+        "thumb": "img\/projects\/pink_platform\/690x515_4.jpg",
+        "full": "img\/projects\/pink_platform\/1200x800_4.jpg"
+      },
+      {
+        "thumb": "img\/projects\/pink_platform\/690x515_5.jpg",
+        "full": "img\/projects\/pink_platform\/1200x800_5.jpg"
+      },
+      {
+        "thumb": "img\/projects\/pink_platform\/690x515_6.jpg",
+        "full": "img\/projects\/pink_platform\/1200x800_6.jpg"
+      },
+      {
+        "thumb": "img\/projects\/pink_platform\/690x515_7.jpg",
+        "full": "img\/projects\/pink_platform\/1200x800_7.jpg"
+      },
+      {
+        "thumb": "img\/projects\/pink_platform\/690x515_8.jpg",
+        "full": "img\/projects\/pink_platform\/1200x800_8.jpg"
+      }
+    ],
+    "timestamp": 1345420800000
+  },
+  {
+    "id": 105,
+    "title": "Prime \u00c9nergie",
+    "slug": "prime-energie",
+    "job": [
+      "backend"
+    ],
+    "tags": [
+      "php",
+      "symfony",
+      "doctrine"
+    ],
+    "url": "http:\/\/www.primesenergie.fr\/",
+    "urlTitle": "www.primesenergie.fr",
+    "description": "Web application which helps calculate saved up energy with different kind of eco friendly house upgrades. It also calculate refundable money amount by government.",
+    "gallery": [
+      {
+        "thumb": "img\/projects\/prime_energi\/690x515.jpg",
+        "full": "img\/projects\/prime_energi\/1200x800.jpg"
+      },
+      {
+        "thumb": "img\/projects\/prime_energi\/690x515_2.jpg",
+        "full": "img\/projects\/prime_energi\/1200x800_2.jpg"
+      },
+      {
+        "thumb": "img\/projects\/prime_energi\/690x515_3.jpg",
+        "full": "img\/projects\/prime_energi\/1200x800_3.jpg"
+      },
+      {
+        "thumb": "img\/projects\/prime_energi\/690x515_4.jpg",
+        "full": "img\/projects\/prime_energi\/1200x800_4.jpg"
+      }
+    ],
+    "timestamp": 1334016000000
+  },
+  {
+    "id": 106,
+    "title": "Shine Expert",
+    "slug": "shine-expert",
+    "job": [
+      "frontend"
+    ],
+    "tags": [
+      "html",
+      "css",
+      "javascript"
+    ],
+    "url": "\/projects\/shine\/index.html",
+    "urlTitle": "demo",
+    "description": "Frontend integration for car wash service website.",
+    "gallery": [
+      {
+        "thumb": "img\/projects\/shine_expert\/690x515.jpg",
+        "full": "img\/projects\/shine_expert\/1200x800.jpg"
+      }
+    ],
+    "timestamp": 1430438400000
+  },
+  {
+    "id": 107,
+    "title": "Silvermouse",
+    "slug": "silvermouse2",
+    "job": [
+      "frontend"
+    ],
+    "tags": [
+      "html",
+      "css",
+      "javascript"
+    ],
+    "urlTitle": null,
+    "url": null,
+    "description": "Game development studio website. New design psd to html integration.",
+    "gallery": [
+      {
+        "thumb": "img\/projects\/silvermouse\/690x515.jpg",
+        "full": "img\/projects\/silvermouse\/1200x800.jpg"
+      },
+      {
+        "thumb": "img\/projects\/silvermouse\/690x515_2.jpg",
+        "full": "img\/projects\/silvermouse\/1200x800_2.jpg"
+      },
+      {
+        "thumb": "img\/projects\/silvermouse\/690x515_3.jpg",
+        "full": "img\/projects\/silvermouse\/1200x800_3.jpg"
+      },
+      {
+        "thumb": "img\/projects\/silvermouse\/690x515_4.jpg",
+        "full": "img\/projects\/silvermouse\/1200x800_4.jpg"
+      }
+    ],
+    "timestamp": 1388534400000
+  },
+  {
+    "id": 108,
+    "title": "CCCMREM",
+    "slug": "cccmrem",
+    "job": [
+      "backend"
+    ],
+    "tags": [
+      "php",
+      "symfony",
+      "doctrine",
+      "javascript"
+    ],
+    "url": null,
+    "urlTitle": null,
+    "description": "Internal relationship managment tool. Maintenance and upgrade.",
+    "gallery": [
+      {
+        "thumb": "img\/projects\/cccmrem\/690x515.jpg",
+        "full": "img\/projects\/cccmrem\/1200x800.jpg"
+      },
+      {
+        "thumb": "img\/projects\/cccmrem\/690x515_2.jpg",
+        "full": "img\/projects\/cccmrem\/1200x800_2.jpg"
+      },
+      {
+        "thumb": "img\/projects\/cccmrem\/690x515_3.jpg",
+        "full": "img\/projects\/cccmrem\/1200x800_3.jpg"
+      },
+      {
+        "thumb": "img\/projects\/cccmrem\/690x515_4.jpg",
+        "full": "img\/projects\/cccmrem\/1200x800_4.jpg"
+      },
+      {
+        "thumb": "img\/projects\/cccmrem\/690x515_5.jpg",
+        "full": "img\/projects\/cccmrem\/1200x800_5.jpg"
+      }
+    ],
+    "timestamp": 1332201600000
+  },
+  {
+    "id": 109,
+    "title": "Cadeau Coquin",
+    "slug": "cadeu-coquin",
+    "job": [
+      "frontend"
+    ],
+    "tags": [
+      "html",
+      "css"
+    ],
+    "url": null,
+    "urlTitle": null,
+    "description": "Psd to html integration for sexshop \"Cadeau Coquin\".",
+    "gallery": [
+      {
+        "thumb": "img\/projects\/cadeau_coquin\/690x515.jpg",
+        "full": "img\/projects\/cadeau_coquin\/1200x800.jpg"
+      },
+      {
+        "thumb": "img\/projects\/cadeau_coquin\/690x515_2.jpg",
+        "full": "img\/projects\/cadeau_coquin\/1200x800_2.jpg"
+      },
+      {
+        "thumb": "img\/projects\/cadeau_coquin\/690x515_3.jpg",
+        "full": "img\/projects\/cadeau_coquin\/1200x800_3.jpg"
+      },
+      {
+        "thumb": "img\/projects\/cadeau_coquin\/690x515_4.jpg",
+        "full": "img\/projects\/cadeau_coquin\/1200x800_4.jpg"
+      }
+    ],
+    "timestamp": 1336608000000
+  },
+  {
+    "id": 1010,
+    "title": "Devise Moto",
+    "slug": "devise-moto",
+    "job": [
+      "frontend"
+    ],
+    "tags": [
+      "html",
+      "css"
+    ],
+    "url": "\/projects\/devise\/index.html",
+    "urlTitle": "demo",
+    "description": "Moto racing community and media portal. Homepage psd to html integration. IE8+ support as customer required and even in IE6 it's still ok.",
+    "gallery": [
+      {
+        "thumb": "img\/projects\/devisemoto\/690x515.jpg",
+        "full": "img\/projects\/devisemoto\/1200x800.jpg"
+      },
+      {
+        "thumb": "img\/projects\/devisemoto\/690x515_2.jpg",
+        "full": "img\/projects\/devisemoto\/1200x800_2.jpg"
+      },
+      {
+        "thumb": "img\/projects\/devisemoto\/690x515_3.jpg",
+        "full": "img\/projects\/devisemoto\/1200x800_3.jpg"
+      }
+    ],
+    "timestamp": 1322697600000
+  },
+  {
+    "id": 1011,
+    "title": "Email Sys",
+    "slug": "email-sys",
+    "job": [
+      "frontend"
+    ],
+    "tags": [
+      "html",
+      "css",
+      "javascript"
+    ],
+    "url": "\/projects\/mailsys\/index.html",
+    "urlTitle": "demo",
+    "description": "Dashboard integration for email campaigns managment application. Some customized UI elements such as slide menu, charts, drag&drop elements.",
+    "gallery": [
+      {
+        "thumb": "img\/projects\/email_sys\/690x515.jpg",
+        "full": "img\/projects\/email_sys\/1200x800.jpg"
+      },
+      {
+        "thumb": "img\/projects\/email_sys\/690x515_2.jpg",
+        "full": "img\/projects\/email_sys\/1200x800_2.jpg"
+      },
+      {
+        "thumb": "img\/projects\/email_sys\/690x515_3.jpg",
+        "full": "img\/projects\/email_sys\/1200x800_3.jpg"
+      },
+      {
+        "thumb": "img\/projects\/email_sys\/690x515_4.jpg",
+        "full": "img\/projects\/email_sys\/1200x800_4.jpg"
+      }
+    ],
+    "timestamp": 1341619200000
+  },
+  {
+    "id": 1012,
+    "title": "Webcoquin",
+    "slug": "webcoquin",
+    "job": [
+      "frontend",
+      "backend"
+    ],
+    "tags": [
+      "html",
+      "css",
+      "javascript",
+      "magento"
+    ],
+    "url": null,
+    "urlTitle": null,
+    "description": "Webcoquin is internetshop based on Magento's eCommerce platform. Magento theme development from psd.",
+    "gallery": [
+      {
+        "thumb": "img\/projects\/webcoquin\/690x515.jpg",
+        "full": "img\/projects\/webcoquin\/1200x800.jpg"
+      },
+      {
+        "thumb": "img\/projects\/webcoquin\/690x515_2.jpg",
+        "full": "img\/projects\/webcoquin\/1200x800_2.jpg"
+      },
+      {
+        "thumb": "img\/projects\/webcoquin\/690x515_3.jpg",
+        "full": "img\/projects\/webcoquin\/1200x800_3.jpg"
+      },
+      {
+        "thumb": "img\/projects\/webcoquin\/690x515_4.jpg",
+        "full": "img\/projects\/webcoquin\/1200x800_4.jpg"
+      },
+      {
+        "thumb": "img\/projects\/webcoquin\/690x515_5.jpg",
+        "full": "img\/projects\/webcoquin\/1200x800_5.jpg"
+      }
+    ],
+    "timestamp": 1340150400000
+  },
+  {
+    "id": 1013,
+    "title": "bColony",
+    "slug": "bcolony",
+    "job": [
+      "frontend"
+    ],
+    "tags": [
+      "html",
+      "css"
+    ],
+    "url": "\/projects\/bcolony\/index.html",
+    "urlTitle": "demo",
+    "description": "Moto racing community website. Psd to html integration. IE8+ support as customer required and even in IE6 it's still ok.",
+    "gallery": [
+      {
+        "thumb": "img\/projects\/bcolony\/690x515.jpg",
+        "full": "img\/projects\/bcolony\/1200x800.jpg"
+      },
+      {
+        "thumb": "img\/projects\/bcolony\/690x515_2.jpg",
+        "full": "img\/projects\/bcolony\/1200x800_2.jpg"
+      },
+      {
+        "thumb": "img\/projects\/bcolony\/690x515_3.jpg",
+        "full": "img\/projects\/bcolony\/1200x800_3.jpg"
+      },
+      {
+        "thumb": "img\/projects\/bcolony\/690x515_4.jpg",
+        "full": "img\/projects\/bcolony\/1200x800_4.jpg"
+      },
+      {
+        "thumb": "img\/projects\/bcolony\/690x515_5.jpg",
+        "full": "img\/projects\/bcolony\/1200x800_5.jpg"
+      },
+      {
+        "thumb": "img\/projects\/bcolony\/690x515_6.jpg",
+        "full": "img\/projects\/bcolony\/1200x800_6.jpg"
+      }
+    ],
+    "timestamp": 1321142400000
+  },
+  {
+    "id": 1014,
+    "title": "Silvermouse",
+    "slug": "silvermouse",
+    "job": [
+      "frontend"
+    ],
+    "tags": [
+      "html",
+      "css",
+      "javascript"
+    ],
+    "url": null,
+    "urlTitle": null,
+    "description": "Design psd to html integration development for game development studio Silvermouse.",
+    "gallery": [
+      {
+        "thumb": "img\/projects\/silvermouse2\/690x515.jpg",
+        "full": "img\/projects\/silvermouse2\/1200x800.jpg"
+      },
+      {
+        "thumb": "img\/projects\/silvermouse2\/690x515_2.jpg",
+        "full": "img\/projects\/silvermouse2\/1200x800_2.jpg"
+      },
+      {
+        "thumb": "img\/projects\/silvermouse2\/690x515_3.jpg",
+        "full": "img\/projects\/silvermouse2\/1200x800_3.jpg"
+      }
+    ],
+    "timestamp": 1367366400000
+  },
+  {
+    "id": 1016,
+    "title": "Geo Crm",
+    "slug": "geo-crm",
+    "job": [
+      "backend"
+    ],
+    "tags": [
+      "php",
+      "symfony",
+      "doctrine",
+      "javascript"
+    ],
+    "url": null,
+    "urlTitle": null,
+    "description": "Internal relationship managment tool. Maintenance and upgrade.",
+    "gallery": [
+      {
+        "thumb": "img\/projects\/geo_crm\/690x515.jpg",
+        "full": "img\/projects\/geo_crm\/1200x800.jpg"
+      },
+      {
+        "thumb": "img\/projects\/geo_crm\/690x515_2.jpg",
+        "full": "img\/projects\/geo_crm\/1200x800_2.jpg"
+      },
+      {
+        "thumb": "img\/projects\/geo_crm\/690x515_3.jpg",
+        "full": "img\/projects\/geo_crm\/1200x800_3.jpg"
+      }
+    ],
+    "timestamp": 1327017600000
+  },
+  {
+    "id": 1017,
+    "title": "PrLog",
+    "slug": "prlog",
+    "job": [
+      "backend"
+    ],
+    "tags": [
+      "php",
+      "symfony",
+      "doctrine"
+    ],
+    "url": null,
+    "urlTitle": null,
+    "description": "PR Log is an online press release distribution and press release submission service. Backend development using symfony framework.",
+    "gallery": [
+      {
+        "thumb": "img\/projects\/prlog\/690x515.jpg",
+        "full": "img\/projects\/prlog\/1200x800.jpg"
+      },
+      {
+        "thumb": "img\/projects\/prlog\/690x515_2.jpg",
+        "full": "img\/projects\/prlog\/1200x800_2.jpg"
+      },
+      {
+        "thumb": "img\/projects\/prlog\/690x515_3.jpg",
+        "full": "img\/projects\/prlog\/1200x800_3.jpg"
+      },
+      {
+        "thumb": "img\/projects\/prlog\/690x515_4.jpg",
+        "full": "img\/projects\/prlog\/1200x800_4.jpg"
+      }
+    ],
+    "timestamp": 1406851200000
+  },
+  {
+    "id": 1018,
+    "title": "Astromancia email",
+    "slug": "astromancia-email",
+    "job": [
+      "frontend"
+    ],
+    "tags": [
+      "html",
+      "css"
+    ],
+    "url": "\/projects\/astro\/index.html",
+    "urlTitle": "demo",
+    "description": "Responsive email template integration for Astromancia portal.",
+    "gallery": [
+      {
+        "thumb": "img\/projects\/astro\/690x515.jpg",
+        "full": "img\/projects\/astro\/1200x800.jpg"
+      }
+    ],
+    "timestamp": 1438387200000
+  },
+  {
+    "id": 1019,
+    "title": "TND Capital Platform",
+    "slug": "tnd",
+    "job": [
+      "backend"
+    ],
+    "tags": [
+      "php"
+    ],
+    "url": null,
+    "urlTitle": null,
+    "description": "TND Capital platform for options trading. Maintenance and upgrade.",
+    "gallery": [
+      {
+        "thumb": "img\/projects\/tnd\/690x515.jpg",
+        "full": "img\/projects\/tnd\/1200x800.jpg"
+      },
+      {
+        "thumb": "img\/projects\/tnd\/690x515_2.jpg",
+        "full": "img\/projects\/tnd\/1200x800_2.jpg"
+      }
+    ],
+    "timestamp": 1398902400000
+  },
+  {
+    "id": 1020,
+    "title": "Ccm",
+    "slug": "ccm",
+    "job": [
+      "frontend",
+      "backend"
+    ],
+    "tags": [
+      "html",
+      "css",
+      "javascript",
+      "backbone",
+      "csharp"
+    ],
+    "url": null,
+    "urlTitle": null,
+    "description": "Web application's prototype for cash collectors, cars and orders control. To provide real-time user experience was used Photon socket server on backend, websockets for connection and Backbone.js on frontend.",
+    "gallery": [
+      {
+        "thumb": "img\/projects\/ccm\/690x515.jpg",
+        "full": "img\/projects\/ccm\/1200x800.jpg"
+      },
+      {
+        "thumb": "img\/projects\/ccm\/690x515_2.jpg",
+        "full": "img\/projects\/ccm\/1200x800_2.jpg"
+      }
+    ],
+    "timestamp": 1356998400000
+  },
+  {
+    "id": 1021,
+    "title": "This Website",
+    "slug": "this",
+    "job": [
+      "frontend",
+      "backend",
+      "design"
+    ],
+    "tags": [
+      "html",
+      "css",
+      "javascript",
+      "backbone",
+      "grunt",
+      "handlebars",
+      "requirejs",
+      "bootstrap"
+    ],
+    "url": null,
+    "urlTitle": null,
+    "description": "This website development",
+    "gallery": [
+      {
+        "thumb": "img\/projects\/this\/690x515_2.jpg",
+        "full": "img\/projects\/this\/1200x800_2.jpg"
+      }
+    ],
+    "timestamp": 1442707100000
+  }
+]

@@ -1,0 +1,25 @@
+.main_wrapper .content_block .content{
+}
+
+.main_wrapper .content_block .content .content_section.statistic_graph .section_title{
+    height: 50px;
+    padding-top: 10px;
+}
+
+.main_wrapper .content_block .content .content_section.statistic_graph .section_title p{
+    margin-bottom: 5px;
+}
+
+.main_wrapper .content_block .content .content_section.statistic_graph .period{
+    width: 400px;
+    float: left;
+}
+
+.statistic_graph .grey_table{
+    
+}
+
+.statistic_graph .grey_table tr td:first-child{
+    text-align: left;
+    padding-left: 10px;
+}

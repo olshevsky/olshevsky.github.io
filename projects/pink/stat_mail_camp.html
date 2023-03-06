@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Layout</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <script type="text/javascript" src="js/lib/sdmenu/menu.js"></script>  
+        <script type="text/javascript" src="js/lib/jquery/jquery-1.7.2.min.js"></script>
+        <script type="text/javascript" src="js/lib/jquery/jquery.ezpz_tooltip.min.js"></script>
+        <script type="text/javascript" src="js/lib/jquery/jquery.cookie.js"></script>
+        <script type="text/javascript" src="js/lib/googleapi/jsapi.js"></script>
+        <link rel="stylesheet" href="css/common.css"/>
+        <link rel="stylesheet" href="css/tooltip.css">
+        <link rel="stylesheet" href="css/stat_mail_camp.css"/>
+        <script type="text/javascript">
+            // <![CDATA[         
+            var sideMenu;
+            window.onload = function()
+            {
+                // side menu script
+                sideMenu = new SDMenu("sideMenu");   // create menu object
+                sideMenu.speed = 5;                  // menu sliding speed (1 - 5 recomended)
+                sideMenu.oneSmOnly = true;           // one expanded submenu at a time
+                sideMenu.remember = true;            // store menu states (expanded or collapsed) in cookie and restore later
+                sideMenu.markCurrent = true;        // mark current link / page (link.href == location.href)
+                sideMenu.init();
+                
+                // account manager close
+                $('#close_account_manager').click( function(){
+                    $('#account_manager').animate({
+                        right: '-285px'
+                    }, 300, function() {
+                       
+                    });
+                });
+                
+                // account manager open
+                $('#open_account_manager').click( function(){ 
+                    $('#account_manager').animate({
+                        right: '0'
+                    }, 300, function() {
+                       
+                    });
+                });
+                
+                //info tooltips
+                $(".button.info").ezpz_tooltip({
+                    contentId: 'info_tooltip',
+                    showContent: function(content) {
+                        content.fadeIn(200);
+                    },
+                    hideContent: function(content) {
+                        content.stop(true, true).fadeOut(200);
+                    }
+                });   
+            }
+            // ]]>
+        </script>
+        <script>
+            //google line graphich
+            
+            google.load("visualization", "1", {packages:["corechart"]});
+            google.setOnLoadCallback(drawChart);
+            function drawChart() {
+                /*you can also pass here json, see https://developers.google.com/chart/interactive/docs/reference#DataTable_toJSON*/
+                var data = google.visualization.arrayToDataTable([
+                    ['Date',        'Turnover', 'Visits', 'Registrations', 'Orders', 'Visited'],
+                    ['1.03.2012',   10,        30,         32,              20,       10],
+                    ['5.03.2012',   80,        40,         56,              30,       60],
+                    ['10.03.2012',  60,        60,         25,              40,       70],
+                    ['15.03.2012',  100,       50,         90,              50,       90]
+                ]);
+                
+                var options = {
+                    backgroundColor: '#FFFFFF',
+                    hAxis: {minorGridlines: {color: '#333', count: 9}},
+                    vAxes: {baseline:{ color : 'red'}},
+                    tooltip: {textStyle: {color: '#000000'}, showColorCode: false}
+                };
+
+                var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+                chart.draw(data, options);
+            }     
+        </script>
+    </head>
+    <body>
+        <div class="header_wrapper">
+            <div class="header">
+                <div class="logo_wrapper">
+                    <a href="layout.html" class="logo"></a>
+                </div>
+                <div class="top_menu">
+                    <ul>
+                        <li>
+                            <a href="dashboard.html">DASHBOARD</a>
+                        </li>
+                        <li>
+                            <a href="#">BLOG</a>
+                        </li>
+                        <li>
+                            <a href="#">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="#">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="icon_block">
+                    <a href="#" class="icon1"></a>
+                    <a href="#" class="icon2"></a>
+                </div>
+                <div class="welcome">
+                    <p><span class="tc_ffcccc">Welcome,</span>&nbsp;<strong>Ardas SPA Centre</strong></p>
+                    <p><span class="tc_ffcccc">Balance</span>&nbsp;<strong>: 3500.00 €</strong></p>
+                </div>
+            </div>
+        </div>
+        <div class="account_manager" id="account_manager">
+            <div class="inner">
+                <div id="open_account_manager"></div>
+                <div class="title">
+                    <h2 >ACCOUNT MANAGER</h2>
+                </div>
+                <div class="name">
+                    <p>Loic Juillard</p>
+                    <p class="sub">name</p>
+                </div>
+                <div class="skype">
+                    <p>Loic.ddz</p>
+                    <p class="sub">skype</p>
+                </div>
+                <div class="email">
+                    <p>loic@pinkplatform.com</p>
+                    <p class="sub">e-mail</p>
+                </div>
+                <div id="close_account_manager"></div>
+                <a href="#" class="skype_logo" title="Contact Us Skype"></a>
+            </div>
+        </div>
+        <div class="main_wrapper">
+            <div class="side_bar" id="side_bar">
+                <h2>Store to work with :</h2>
+                <form action="#" method="post">
+                    <select class="custom_select dark_border">
+                        <option>Sexyshopper (www.sexshop.loc)</option>
+                        <option>Luxsexshop</option>
+                    </select>
+                </form>
+                <div id="sideMenu" class="sdmenu">
+                    <div class="collapsed">
+                        <span>Configuration boutique</span>
+                        <a href="new_shop_1.html"><span class="arrow"></span>Configure new shop</a>
+                        <a href="modify_existing_shop.html"><span class="arrow"></span>Modify existing shop</a>
+                    </div>
+                    <div class="collapsed">
+                        <span>Outils publicitaires</span>
+                        <a href="bannerfarm_create_new.html"><span class="arrow"></span>Create new banner</a>
+                        <a href="bannerfarm_modify_existing.html"><span class="arrow"></span>Modify existing banners</a>
+                        <a href="bannerfarm_promo_links.html"><span class="arrow"></span>Promo links</a>
+                        <a href="bannerfarm_create_blockjs.html"><span class="arrow"></span>Create block JS</a>
+                        <a href="bannerfarm_block_js.html" ><span class="arrow"></span>Block JS</a>
+                        <a href="bannerfarm_csv_catalogue.html"><span class="arrow"></span>CSV Catalogue</a>
+                        <a href="bannerfarm_flus_rss.html"><span class="arrow"></span>Flus RSS</a>
+                        <a href="bannerfarm_kit_mails.html"><span class="arrow"></span>Kit mails</a>
+                        <a href="#"><span class="arrow"></span>Co-inscription newsletter</a>
+                    </div>
+                    <div class="collapsed">
+                        <span>Statistiques</span>
+                        <a href="stat_general_stats.html"><span class="arrow"></span>General statistics</a>
+                        <a href="stat_list_orders.html"><span class="arrow"></span>List of orders</a>
+                        <a href="stat_most_sold.html"><span class="arrow"></span>Most sold products</a>
+                        <a href="stat_top_referal.html"><span class="arrow"></span>Top referal links</a>
+                        <a href="stat_tracker.html"><span class="arrow"></span>Tracker</a>
+                        <a href="stat_banners.html"><span class="arrow"></span>Banners</a>
+                        <a href="stat_mail_camp.html"><span class="arrow"></span>Mail camping</a>
+                        <a href="stat_mobile.html"><span class="arrow"></span>Mobile</a>
+                    </div>
+                    <div class="collapsed">
+                        <span>Infos et paiements</span>
+                        <a href="ip_info_perso.html"><span class="arrow"></span>Personal information</a>
+                        <a href="ip_retrocessions.html"><span class="arrow"></span>Retrocessions, receipts</a>
+                        <a href="ip_referal.html"><span class="arrow"></span>Referal</a>
+                    </div>
+                </div>
+            </div>
+            <div class="content_block" id="content_block">
+                <div class="title_block">
+                    <h2>Mail campaign</h2>
+                </div>
+                <div class="content">
+                    <div class="content_section statistic_section">
+                        <div class="section_title">
+                            <h2>Choose a shop and period of time you want to see mobile statistics</h2>
+                            <a href="#" class="button info"> </a>
+                        </div>
+                        <form action="#" method="post">
+                            <div class="shop_block">
+                                <select class="custom_select " name="statistic_shop">
+                                    <option value="1">Sexyshopper (www.sexyshop.fr)</option>
+                                    <option value="2">Webcoquin (www.webcoquin.fr)</option>
+                                </select>
+                                <label for="tracker">Tracker :</label>
+                                <input type="text" class="custom_text" name="statistic_tracker" id="tracker" />
+                            </div>
+                            <div class="date_block">
+                                <select class="custom_select  month" name="statistic_month">
+                                    <option>November</option>
+                                    <option>December</option>
+                                </select>
+                                <select class="custom_select  date" name="statistic_date">
+                                    <option>21</option>
+                                    <option>22</option>
+                                </select>
+                                <select class="custom_select  year" name="statistic_year">
+                                    <option>2012</option>
+                                    <option>2013</option>
+                                </select>
+                                <span>to</span>
+                                <select class="custom_select " name="statistic_month_to">
+                                    <option>November</option>
+                                    <option>December</option>
+                                </select>
+                                <select class="custom_select " name="statistic_date_to">
+                                    <option>21</option>
+                                    <option>22</option>
+                                </select>
+                                <select class="custom_select " name="statistic_year_to">
+                                    <option>2012</option>
+                                    <option>2013</option>
+                                </select>
+                                <input type="button" class="button pink_small" value="Show me statistics"/>
+                            </div>
+                            <input type="button" class="button pink_small" value="Last day" />
+                            <input type="button" class="button pink_small" value="Last week" />
+                            <input type="button" class="button pink_small" value="Last month" />
+                        </form>
+                    </div>
+                    <div class="content_section_menu">
+                        <a href="#" class="active">Turnover</a>
+                        <a href="#">Number of visits</a>
+                        <a href="#">Number of regestrations</a>
+                        <a href="#">Number of orders</a>
+                        <a href="#">Most visited</a>
+                    </div>
+                    <div class="content_section statistic_graph">
+                        <div class="section_title">
+                            <div class="period">
+                                <p>Period of time: <strong>13.02.2012 - 14.02.2012</strong></p>
+                                <p>Shop: <strong>www.webcoquin.fr</strong></p>
+                            </div>                            
+                            <a href="#" class="button info"></a>
+                        </div>
+                        <div id="chart_div" style="width: 775px; height: 255px;"></div>
+                        <table class="grey_table">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Date</th>
+                                    <th>D'envois</th>
+                                    <th>Clics</th>
+                                    <th>Ventes</th>
+                                    <th>Ratio</th>
+                                    <th>Pages visitées</th>
+                                    <th>Désinscriptions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Azur</td>
+                                    <td>12.02.12 14:12</td>
+                                    <td>10 101 00</td>
+                                    <td>50000</td>
+                                    <td>14000</td>
+                                    <td>1.00</td>
+                                    <td>50000</td>
+                                    <td>14441</td>
+                                </tr>
+                                <tr>
+                                    <td>Azur</td>
+                                    <td>12.02.12 14:12</td>
+                                    <td>10 101 00</td>
+                                    <td>50000</td>
+                                    <td>14000</td>
+                                    <td>1.00</td>
+                                    <td>50000</td>
+                                    <td>14441</td>
+                                </tr>
+                                <tr>
+                                    <td>Azur</td>
+                                    <td>12.02.12 14:12</td>
+                                    <td>10 101 00</td>
+                                    <td>50000</td>
+                                    <td>14000</td>
+                                    <td>1.00</td>
+                                    <td>50000</td>
+                                    <td>14441</td>
+                                </tr>
+                                <tr>
+                                    <td>Azur</td>
+                                    <td>12.02.12 14:12</td>
+                                    <td>10 101 00</td>
+                                    <td>50000</td>
+                                    <td>14000</td>
+                                    <td>1.00</td>
+                                    <td>50000</td>
+                                    <td>14441</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="fclear"></div>
+            <div id="info_tooltip" class="tooltip">
+                <div class="tooltip_content">
+                    <p>
+                        <strong>Notifications</strong>
+                    </p>
+                    <p>Nulla id diam eu velit venenatis dignissim. Sed nec metus ut elit placerat elementum ut sed nulla. Cras vitae nulla leo, bibendum pretium tellus. In vehicula dolor eget purus ultrices quis diam.</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,56 @@
+.main_wrapper .content_block .content{
+
+}
+
+.main_wrapper .content_block .content .content_section .hl{
+  margin-bottom: 10px;  
+}
+
+/*left part*/
+.main_wrapper .content_block .content .offer_left{
+    width: 310px;
+    padding-right: 20px;
+    float: left;
+}
+
+.main_wrapper .content_block .content .offer_left > div{
+    margin-bottom: 15px;
+}
+
+.main_wrapper .content_block .content .offer_left > div.select_div{
+    border: 1px solid #E1E1E1;
+    margin-right: 20px;
+    padding: 5px;
+}
+
+.main_wrapper .content_block .content .offer_left h3{
+    font: bold 12px 'Verdana';
+    margin: 0 0 5px 0;
+    color: #666666;
+}
+/*left part*/
+
+/*right part*/
+.main_wrapper .content_block .content .offer_right{
+    margin-left: 330px;
+    padding-top: 15px;
+}
+
+.main_wrapper .content_block .content .offer_right > div.text_block{
+    background-color: #F3F3F3;
+    border: 1px solid #D7D7D7;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+.main_wrapper .content_block .content .offer_right > div.text_block h4{
+    font: bold 11px 'Verdana';
+    margin: 0 0 5px 0;
+    color: #666666;
+}
+
+.main_wrapper .content_block .content .offer_right > div.text_block p{
+    font: normal 11px 'Verdana';
+    color: #666666;
+}
+/*right part*/

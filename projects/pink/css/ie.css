@@ -1,0 +1,27 @@
+/*here are fixes for Internet Explorer*/
+
+/*---START login page override---*/
+body .main_wrapper .login_form_wrapper{
+    background: url('../images/login_form_ie.png') no-repeat center center;
+    width: 457px;
+    height: 282px;
+    left: 440px;
+    top: 351px;
+}
+
+body .main_wrapper .login_form_wrapper .login_form{
+    background: none;
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 30px;
+}
+
+body .main_wrapper .login_form_wrapper .forgot_login{
+    background: none;
+    position: absolute;
+    top: 225px;
+    left: 30px;
+    z-index: 0;
+}
+/*---END login page override---*/

@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dashboard</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script type="text/javascript" src="./js/lib/sdmenu/menu.js"></script>  
+        <script type="text/javascript" src="js/lib/jquery/jquery-1.7.2.min.js"></script>
+        <script type="text/javascript" src="js/lib/jquery/jquery.ezpz_tooltip.min.js"></script>
+        <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/tooltip.css">
+        <link rel="stylesheet" href="css/dashboard.css">
+        <script type="text/javascript">
+            // <![CDATA[         
+            var sideMenu;
+            window.onload = function()
+            {
+                // side menu script
+                sideMenu = new SDMenu("sideMenu");   // create menu object
+                sideMenu.speed = 5;                  // menu sliding speed (1 - 5 recomended)
+                sideMenu.oneSmOnly = true;           // one expanded submenu at a time
+                sideMenu.remember = true;            // store menu states (expanded or collapsed) in cookie and restore later
+                sideMenu.markCurrent = true;        // mark current link / page (link.href == location.href)
+                sideMenu.init();
+                
+                // account manager close
+                $('#close_account_manager').click( function(){
+                    $('#account_manager').animate({
+                        right: '-285px'
+                    }, 300, function() {
+                       
+                    });
+                });
+                
+                // account manager open
+                $('#open_account_manager').click( function(){ 
+                    $('#account_manager').animate({
+                        right: '0'
+                    }, 300, function() {
+                       
+                    });
+                });
+                
+                //info tooltips
+                $(".button.info").ezpz_tooltip({
+                    contentId: 'info_tooltip',
+                    showContent: function(content) {
+                        content.fadeIn(200);
+                    },
+                    hideContent: function(content) {
+                        content.stop(true, true).fadeOut(200);
+                    }
+                });
+            };
+            // ]]>
+        </script>
+        <script>
+            //draw line chart
+            google.load("visualization", "1", {packages:["corechart"]});
+            google.setOnLoadCallback(drawChart);
+            function drawChart() {
+                var data = google.visualization.arrayToDataTable([
+                    ['Year', 'Sales', 'Expenses'],
+                    ['2004',  1000,      400],
+                    ['2005',  1170,      460],
+                    ['2006',  660,       1120],
+                    ['2007',  1030,      540]
+                ]);
+
+                var options = {
+                    title: 'Company Performance'
+                };
+
+                var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+                chart.draw(data, options);
+            }
+        </script>
+    </head>
+    <body>
+        <div class="header_wrapper">
+            <div class="header">
+                <div class="logo_wrapper">
+                    <a href="layout.html" class="logo"></a>
+                </div>
+                <div class="top_menu">
+                    <ul>
+                        <li>
+                            <a href="dashboard.html">DASHBOARD</a>
+                        </li>
+                        <li>
+                            <a href="#">BLOG</a>
+                        </li>
+                        <li>
+                            <a href="#">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="#">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="icon_block">
+                    <a href="#" class="icon1"></a>
+                    <a href="#" class="icon2"></a>
+                </div>
+                <div class="welcome">
+                    <p><span class="tc_ffcccc">Welcome,</span>&nbsp;<strong>Ardas SPA Centre</strong></p>
+                    <p><span class="tc_ffcccc">Balance</span>&nbsp;<strong>: 3500.00 €</strong></p>
+                </div>
+            </div>
+        </div>
+        <div class="account_manager" id="account_manager">
+            <div class="inner">
+                <div id="open_account_manager"></div>
+                <div class="title">
+                    <h2 >ACCOUNT MANAGER</h2>
+                </div>
+                <div class="name">
+                    <p>Loic Juillard</p>
+                    <p class="sub">name</p>
+                </div>
+                <div class="skype">
+                    <p>Loic.ddz</p>
+                    <p class="sub">skype</p>
+                </div>
+                <div class="email">
+                    <p>loic@pinkplatform.com</p>
+                    <p class="sub">e-mail</p>
+                </div>
+                <div id="close_account_manager"></div>
+                <a href="#" class="skype_logo" title="Contact Us Skype"></a>
+            </div>
+        </div>
+        <div class="main_wrapper">
+            <div class="side_bar" id="side_bar">
+                <h2>Store to work with :</h2>
+                <form action="#" method="post">
+                    <select class="custom_select dark_border">
+                        <option>Sexyshopper (www.sexshop.loc)</option>
+                        <option>Luxsexshop</option>
+                    </select>
+                </form>
+                <div id="sideMenu" class="sdmenu">
+                    <div class="collapsed">
+                        <span>Configuration boutique</span>
+                        <a href="new_shop_1.html"><span class="arrow"></span>Configure new shop</a>
+                        <a href="modify_existing_shop.html"><span class="arrow"></span>Modify existing shop</a>
+                    </div>
+                    <div class="collapsed">
+                        <span>Outils publicitaires</span>
+                        <a href="bannerfarm_create_new.html"><span class="arrow"></span>Create new banner</a>
+                        <a href="bannerfarm_modify_existing.html"><span class="arrow"></span>Modify existing banners</a>
+                        <a href="bannerfarm_promo_links.html"><span class="arrow"></span>Promo links</a>
+                        <a href="bannerfarm_create_blockjs.html"><span class="arrow"></span>Create block JS</a>
+                        <a href="bannerfarm_block_js.html" ><span class="arrow"></span>Block JS</a>
+                        <a href="bannerfarm_csv_catalogue.html"><span class="arrow"></span>CSV Catalogue</a>
+                        <a href="bannerfarm_flus_rss.html"><span class="arrow"></span>Flus RSS</a>
+                        <a href="bannerfarm_kit_mails.html"><span class="arrow"></span>Kit mails</a>
+                        <a href="#"><span class="arrow"></span>Co-inscription newsletter</a>
+                    </div>
+                    <div class="collapsed">
+                        <span>Statistiques</span>
+                        <a href="stat_general_stats.html"><span class="arrow"></span>General statistics</a>
+                        <a href="stat_list_orders.html"><span class="arrow"></span>List of orders</a>
+                        <a href="stat_most_sold.html"><span class="arrow"></span>Most sold products</a>
+                        <a href="stat_top_referal.html"><span class="arrow"></span>Top referal links</a>
+                        <a href="stat_tracker.html"><span class="arrow"></span>Tracker</a>
+                        <a href="stat_banners.html"><span class="arrow"></span>Banners</a>
+                        <a href="stat_mail_camp.html"><span class="arrow"></span>Mail camping</a>
+                        <a href="stat_mobile.html"><span class="arrow"></span>Mobile</a>
+                    </div>
+                    <div class="collapsed">
+                        <span>Infos et paiements</span>
+                        <a href="ip_info_perso.html"><span class="arrow"></span>Personal information</a>
+                        <a href="ip_retrocessions.html"><span class="arrow"></span>Retrocessions, receipts</a>
+                        <a href="ip_referal.html"><span class="arrow"></span>Referal</a>
+                    </div>
+                </div>
+            </div>
+            <div class="content_block" id="content_block">
+                <div class="title_block">
+                    <h2>Dashboard</h2>
+                </div>
+                <div class="content">
+                    <div class="content_section">
+                        <div class="section_title">
+                            <h2>Ardas SPA Centre visitors per day</h2>
+                            <a href="#" class="button info" id="test"></a>
+                        </div>
+                        <div id="chart_div" style="width: 775px; height: 230px;"></div>
+                    </div>
+                    <div class="notifications">
+                        <div class="title">
+                            <h2>Notifications</h2>
+                            <a href="#" class="button info"></a>
+                        </div>
+                        <div class="notif_row">
+                            <div class="icon">
+                                <img src="images/icon_1.png" alt="icon_1.png" width="35" height="35"/>
+                            </div>
+                            <p class="date">12:34, Today</p>
+                            <p class="text">20000 invitations has sent</p>
+                        </div>
+                        <div class="notif_row">
+                            <div class="icon">
+                                <img src="images/icon_2.png" alt="icon_2.png" width="35" height="35"/>
+                            </div>
+                            <p class="date">12:11, 06.03.12.</p>
+                            <p class="text">Website settings has been changed</p>
+                        </div>
+                        <div class="notif_row">
+                            <div class="icon">
+                                <img src="images/icon_3.png" alt="icon_3.png" width="35" height="35"/>
+                            </div>
+                            <p class="date">12:11, 06.03.12.</p>
+                            <p class="text">New products added to the site</p>
+                        </div>
+                        <div class="notif_row">
+                            <div class="icon">
+                                <img src="images/icon_4.png" alt="icon_4.png" width="35" height="35"/>
+                            </div>
+                            <p class="date">12:11, 06.03.12.</p>
+                            <p class="text">Message flagged</p>
+                        </div>
+                        <div class="notif_row">
+                            <div class="icon">
+                                <img src="images/icon_5.png" alt="icon_5.png" width="35" height="35"/>
+                            </div>
+                            <p class="date">12:11, 06.03.12.</p>
+                            <p class="text">Background image added to the site</p>
+                        </div>
+                        <div class="notif_row">
+                            <div class="icon">
+                                <img src="images/icon_1.png" alt="icon_1.png" width="35" height="35"/>
+                            </div>
+                            <p class="date">12:11, 06.03.12.</p>
+                            <p class="text">20000 invitations has sent</p>
+                        </div>
+                        <div class="notif_row">
+                            <div class="icon">
+                                <img src="images/icon_2.png" alt="icon_2.png" width="35" height="35"/>
+                            </div>
+                            <p class="date">12:11, 06.03.12.</p>
+                            <p class="text">Website settings has been changed</p>
+                        </div>
+                        <div class="notif_row">
+                            <div class="icon">
+                                <img src="images/icon_3.png" alt="icon_3.png" width="35" height="35"/>
+                            </div>
+                            <p class="date">12:11, 06.03.12.</p>
+                            <p class="text">New products added to the site</p>
+                        </div>
+                        <div class="notif_row">
+                            <div class="icon">
+                                <img src="images/icon_4.png" alt="icon_4.png" width="35" height="35"/>
+                            </div>
+                            <p class="date">12:11, 06.03.12.</p>
+                            <p class="text">Message flagged</p>
+                        </div>
+                        <div class="notif_row">
+                            <div class="icon">
+                                <img src="images/icon_5.png" alt="icon_5.png" width="35" height="35"/>
+                            </div>
+                            <p class="date">12:11, 06.03.12.</p>
+                            <p class="text">Background image added to the site</p>
+                        </div>
+                        <div class="notif_row">
+                            <div class="icon">
+                                <img src="images/icon_1.png" alt="icon_1.png" width="35" height="35"/>
+                            </div>
+                            <p class="date">12:11, 06.03.12.</p>
+                            <p class="text">20000 invitations has sent</p>
+                        </div>
+                        <div class="notif_row">
+                            <div class="icon">
+                                <img src="images/icon_2.png" alt="icon_2.png" width="35" height="35"/>
+                            </div>
+                            <p class="date">12:11, 06.03.12.</p>
+                            <p class="text">Website settings has been changed</p>
+                        </div>
+                        <div class="notif_row">
+                            <div class="icon">
+                                <img src="images/icon_3.png" alt="icon_3.png" width="35" height="35"/>
+                            </div>
+                            <p class="date">12:11, 06.03.12.</p>
+                            <p class="text">New products added to the site</p>
+                        </div>
+                        <div class="notif_row">
+                            <div class="icon">
+                                <img src="images/icon_4.png" alt="icon_4.png" width="35" height="35"/>
+                            </div>
+                            <p class="date">12:11, 06.03.12.</p>
+                            <p class="text">Message flagged</p>
+                        </div>
+                        <div class="notif_row">
+                            <div class="icon">
+                                <img src="images/icon_5.png" alt="icon_5.png" width="35" height="35"/>
+                            </div>
+                            <p class="date">12:11, 06.03.12.</p>
+                            <p class="text">Background image added to the site</p>
+                        </div>
+                    </div>
+                    <div class="actual">
+                        <div class="title">
+                            <h2>Actual platform news</h2>
+                            <a href="#" class="button info"></a>
+                        </div>
+                        <div class="actual_row">
+                            <p class="date">12:34, Today</p>
+                            <h3>Nullam accumsan libero ornande.</h3>
+                            <p>Nulla ultrices tincidunt justo. Vestibulum dolor augue, pellentesque gravida imperdiet et, mollis eget nulla. Integer ac nunc ut dui tincidunt aliquam. Aliquam nisl purus, pharetra vel malesuada sit amet, iaculis eget eros. Praesent tristique tristique lectus id imperdiet.</p>
+                            <a href="#">» Read more</a>
+                        </div>
+                        <div class="actual_row">
+                            <p class="date">12:34, Today</p>
+                            <h3>Nullam accumsan libero ornande.</h3>
+                            <p>Sed vel diam libero. Nulla facilisi. Pellentesque pellentesque ornare ligula ac vehicula. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed faucibus diam quis sapien scelerisque congue.</p>
+                            <a href="#">» Read more</a>
+                        </div>
+                        <div class="actual_row">
+                            <p class="date">12:34, Today</p>
+                            <h3>Quisque non ultrices metus.</h3>
+                            <p>Fusce quis velit urna. Aliquam non blandit eros. Quisque ornare adipiscing scelerisque. In rutrum consectetur venenatis. Aliquam non blandit eros.</p>
+                            <a href="#">» Read more</a>
+                        </div>
+                        <a href="#">» News archive</a>
+                    </div>
+                    <div class="how_to">
+                        <div class="title">
+                            <h2>How to make Pink Platform work</h2>
+                            <a href="#" class="button info"></a>
+                        </div>
+                        <div class="media">
+                            <iframe width="370" height="235" src="http://www.youtube.com/embed/xPFDkGYpBts" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fclear"></div>
+            <div id="info_tooltip" class="tooltip">
+                <div class="tooltip_content">
+                    <p>
+                        <strong>Notifications</strong>
+                    </p>
+                    <p>Nulla id diam eu velit venenatis dignissim. Sed nec metus ut elit placerat elementum ut sed nulla. Cras vitae nulla leo, bibendum pretium tellus. In vehicula dolor eget purus ultrices quis diam.</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

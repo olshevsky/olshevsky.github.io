@@ -1,0 +1,211 @@
+.main_wrapper .content_block .content{
+    
+}
+
+.main_wrapper .content_block .content .content{
+    padding-bottom: 100px;
+}
+
+.main_wrapper .content_block .content .content_section h3{
+    font: bold 12px 'Verdana';
+    color: #666666;
+    margin: 0 0 5px 0;
+}
+
+/*---START Template selection---*/
+.main_wrapper .content_block .content .template_section{
+    
+}
+
+.main_wrapper .content_block .content .template_section > div.column{
+    width: 23.8%;
+    margin-right: 1.6%;
+    float: left;
+}
+
+.main_wrapper .content_block .content .template_section > div.column.last{
+    margin-right: 0;
+}
+
+.main_wrapper .content_block .content .template_section > div.column > div.title{
+    text-align: center;
+    height: 26px;
+    padding-top: 4px;
+}
+
+.main_wrapper .content_block .content .template_section > div.column > div.title > label{
+    font: bold 12px 'Verdana';
+    color: #666666;
+}
+
+.main_wrapper .content_block .content .template_section > div.column > div.title > input[type="radio"]:checked+label{ 
+    color: #cc3366; 
+}
+
+.main_wrapper .content_block .content .template_section > div.column > .image_block{
+    width: 180px;
+    height: 180px;
+    overflow: hidden;
+    border: 1px solid #E1E1E1;
+    margin: 0 0 5px 2px;
+}
+/*---END Template selection---*/
+
+/*---START Disclaimer configuration---*/
+.main_wrapper .content_block .content .disclaimer_config{
+    
+}
+
+.main_wrapper .content_block .content .disclaimer_config .hl{
+    margin-bottom: 15px;
+}
+
+.main_wrapper .content_block .content .disclaimer_config > div.image_block{
+    width: 255px;
+    height: 315px;
+    float: left;
+    margin-right: 10px; 
+    overflow: hidden;
+    border: 1px solid #E1E1E1;
+}
+
+.main_wrapper .content_block .content .disclaimer_config > div.config_block{
+    margin-left: 255px;
+}
+
+.main_wrapper .content_block .content .disclaimer_config > div.config_block > div{
+    margin-bottom: 20px;
+}
+
+.main_wrapper .content_block .content .disclaimer_config > div.config_block > div > h3{
+    margin: 0 0 5px 0;
+}
+/*---END Disclaimer configuration---*/
+
+/*---START Home page background you will use---*/
+.main_wrapper .content_block .content .homepage_bg_config{
+    
+}
+
+.main_wrapper .content_block .content .homepage_bg_config > .hl{
+    margin: 10px 0;
+}
+
+.main_wrapper .content_block .content .homepage_bg_config .image_block{
+    width: 140px;
+    height: 170px;
+    float: left;
+    margin-right: 10px;
+    overflow: hidden;
+    border: 1px solid #E1E1E1;
+}
+
+.main_wrapper .content_block .content .homepage_bg_config .config_block{    
+    margin-left: 140px;
+}
+
+.main_wrapper .content_block .content .homepage_bg_config > .config_block > div{
+    margin-bottom: 25px;
+}
+
+.main_wrapper .content_block .content .homepage_bg_config > .config_block > div > .custom_text{
+    width: 280px;
+}
+/*---END Home page background you will use---*/
+
+/*---START home page inner background configuration---*/
+.main_wrapper .content_block .content .homepage_inner_bg_config{
+    
+}
+
+.main_wrapper .content_block .content .homepage_inner_bg_config .hl{                                        
+    margin: 10px 0;
+}
+/*---END home page inner background configuration---*/
+
+/*---START Webshop colours---*/
+.main_wrapper .content_block .content .webshop_colours_config{
+    
+}
+
+.main_wrapper .content_block .content .webshop_colours_config .column{
+    width: 20%;
+    float: left;
+}
+
+.main_wrapper .content_block .content .webshop_colours_config > .hl{
+    margin: 5px 0;
+}
+/*---END Webshop colours---*/
+
+/*---START E-mail logotype---*/
+.main_wrapper .content_block .content .webshop_logotype_config{
+    
+}
+
+.main_wrapper .content_block .content .webshop_logotype_config .hl{
+    margin: 5px 0;
+}
+
+.main_wrapper .content_block .content .webshop_logotype_config > .header_logotype{
+    float: left;
+    width: 41%;
+    margin-right: 3%;
+}
+
+.main_wrapper .content_block .content .webshop_logotype_config > .header_logotype > .header_logo{
+    width: 325px;
+    height: 60px;
+    overflow: hidden;
+    border: 1px solid #E2E2E2;
+    margin-bottom: 5px;
+}
+
+.main_wrapper .content_block .content .webshop_logotype_config > .favicon{
+    float: left;
+    width: 18%;
+    margin-right: 5%;
+}
+
+.main_wrapper .content_block .content .webshop_logotype_config > .favicon > .p{
+    height: 40px;
+}
+
+.main_wrapper .content_block .content .webshop_logotype_config > .store_icon{
+    float: left;
+    width: 33%;
+}
+/*---END E-mail logotype---*/
+
+/*---START E-mail colours---*/
+.main_wrapper .content_block .content .email_colors_config{
+    
+}
+
+.main_wrapper .content_block .content .email_colors_config > .hl{
+    margin: 5px;
+}
+
+.main_wrapper .content_block .content .email_colors_config > .column{
+    width: 20%;
+    float: left;
+}
+/*---END E-mail colours---*/
+
+/*---START E-mail logotype---*/
+.main_wrapper .content_block .content .email_logotype_config{
+    
+}
+
+.main_wrapper .content_block .content .email_logotype_config > .header_logo{
+    width: 325px;
+    height: 60px;
+    overflow: hidden;
+    border: 1px solid #E2E2E2;
+    margin-bottom: 5px;
+}
+
+.main_wrapper .content_block .content .email_logotype_config > .hl{
+    margin: 5px 0;
+}
+/*---END E-mail logotype---*/

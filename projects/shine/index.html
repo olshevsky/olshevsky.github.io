@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Shine Expert</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+        <link href="//fonts.googleapis.com/css?family=Roboto:100italic,100,300italic,300,400italic,400,500italic,500,700italic,700,900italic,900" rel="stylesheet" type="text/css">
+        <link href="./css/normalize.css" rel="stylesheet" media="all">
+        <link href="./css/style.css" rel="stylesheet" media="all">
+        <script src="https://code.jquery.com/jquery-1.7.2.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/main.slider.js"></script>
+        <script src="js/small.slider.js"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="header">
+                <a href="index.html"><img src="img/logo.png" class="logo"/></a>
+                <div class="social">
+                    <a href="#" class="icon icon1"></a>
+                    <a href="#" class="icon icon2"></a>
+                    <a href="#" class="icon icon3"></a>
+                </div>
+                <div class="lang">
+                    <a href="#" class="selected">ENG</a>
+                    <a href="#">LAT</a>
+                    <a href="#">RUS</a>
+                </div>
+                <div class="auth">
+                    <form action="" method="post" class="form">
+                        <input type="text" name="username" class="username" value="Username"/>
+                        <input type="password" name="password" class="password" value="Password"/>
+                        <input type="submit" name="submit" value="" class="login"/>
+                    </form><br/>
+                    <a href="#" class="register">Register NOW!</a>
+                    <a href="#" class="forgot">Forgot your login details?</a>
+                </div>
+                <div class="fclear"></div>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li class="selected"><a href="#">HOME</a></li>
+                    <li><a href="#">SERVICES</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">GALLERY</a></li>
+                    <li><a href="#">LOCATIONS</a></li>
+                    <li><a href="#">CONTACTS</a></li>
+                </ul>
+            </div>
+            <div class="slider" id="mainSlider">
+                <ul class="items">
+                    <li><img src="img/slide1.jpg"/></li>
+                    <li><img src="img/slide1.jpg"/></li>
+                    <li><img src="img/slide1.jpg"/></li>
+                    <li><img src="img/slide1.jpg"/></li>
+                </ul>
+                <div class="fclear"></div>
+                <ul class="controls">
+                    <li attr="0"><a href="#"></a></li>
+                    <li><a class="selected" href="#" attr="1"></a></li>
+                    <li><a href="#" attr="2"></a></li>
+                    <li><a href="#" attr="3"></a></li>
+                </ul>
+            </div>
+            <div class="banners">
+                <ul>
+                    <li><img src="img/banner1.png"/><a href="#"><img src="img/button1.png"/></a></li>
+                    <li><img src="img/banner2.png"/><a href="#"><img src="img/button2.png"/></a></li>
+                    <li class="last"><img src="img/banner3.png"/><a href="#"><img src="img/button3.png"/></a></li>
+                </ul>
+                <div class="fclear"></div>
+            </div>
+            <div class="title">
+                <h2>OUR PARTNERS</h2>
+            </div>
+            <div class="partners" id="partnersSlider">
+                <a href="#" class="arrow left"></a>
+                <a href="#" class="arrow right"></a>
+                <div class="hider">
+                    <ul>
+                        <li><a href="#" class="sp1"></a></li>
+                        <li><a href="#" class="sp2"></a></li>
+                        <li><a href="#" class="sp3"></a></li>
+                        <li><a href="#" class="sp4"></a></li>
+                        <li><a href="#" class="sp5"></a></li>
+                        <li><a href="#" class="sp6"></a></li>
+                        <li><a href="#" class="sp1"></a></li>
+                        <li><a href="#" class="sp2"></a></li>
+                        <li><a href="#" class="sp3"></a></li>
+                        <li><a href="#" class="sp4"></a></li>
+                        <li><a href="#" class="sp5"></a></li>
+                        <li><a href="#" class="sp6"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer">
+                <p class="fleft">SHINE EXPERT &COPY; 2014</p>
+                <p class="fright">REACH US: (+371) 29-231-333</p>
+                <div class="fclear"></div>
+            </div>
+        </div>
+        <script>
+            var mainSlider = new Slider("#mainSlider");
+            mainSlider.init();
+            
+            var partnersSlider = new SmallSlider("#partnersSlider");
+            partnersSlider.init();
+        </script>
+    </body>
+</html>

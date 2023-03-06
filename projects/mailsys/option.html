@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>EmailSys</title>
+
+<link rel="stylesheet" href="css/main.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/jquery-ui-1.8.21.custom.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/layout.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/text.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/segment.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/override.css" type="text/css" media="all" />
+
+<script type="text/javascript" src="js/lib/jquery/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/lib/jquery/jquery-ui-1.8.21.custom.min.js"></script>
+<script type="text/javascript" src="js/lib/sdmenu/menu.js"></script>
+<script type="text/javascript" src="js/lib/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript" src="js/lib/taconite/jquery.taconite.js"></script>
+
+
+<script type="text/javascript">
+	// <![CDATA[         
+  var sideMenu;
+  window.onload = function() {
+    sideMenu = new SDMenu("my_menu"); //create menu object
+    sideMenu.speed = 5; //menu sliding speed (1 - 5 recomended)
+    sideMenu.oneSmOnly = true; // One expanded submenu at a time
+    sideMenu.remember = true; // Store menu states (expanded or collapsed) in cookie and restore later
+    sideMenu.markCurrent = false; // Mark current link / page (link.href == location.href)
+    sideMenu.init();
+  };
+
+  $(function() {
+    $('.fancybox').fancybox();
+  });
+	// ]]>
+</script>
+  </head>
+<body>
+
+<div id="header">
+<div class="headerInner">
+    	<div class="logo"><img src="images/logo.png" width="205" height="40" alt="logo"/></div>
+<div class="profile">
+        	<p style="width:400px; clear:both; height:15px">Bienvenue, <strong>Kellogs</strong></p>
+        	
+       		
+            <div class="icons">
+            	<img src="images/1.png" width="31" height="31" alt="1.png"/><img src="images/2.png" width="31" height="31" alt="2.png"/><img src="images/3.png" width="31" height="31" alt="3.png"/>
+            </div>
+            <div class="stats">
+					<p>Formule souscrite : <strong>365000</strong></p>
+                    <p>Credits restants : <strong>3500</strong></p>
+            </div>
+        </div>
+  </div>
+</div>
+<!-- header -->
+
+
+<div id="all">
+	<div id="menu">
+            <div class="menu_inner_wrapp">
+                <div style="float: left" id="my_menu" class="sdmenu">
+                    <div class="collapsed">
+                        <span>Campaign</span>
+                        <a href="#"><span class="arrow"></span>Message</a>
+                        <a href="#" class="current"><span class="arrow"></span>Liste</a>
+                        <a href="#"><span class="arrow"></span>Campagne</a>
+                        <a href="#"><span class="arrow"></span>Split testing</a>
+                        <a href="#"><span class="arrow"></span>Reflex</a>
+                        <a href="#"><span class="arrow"></span>Scenario</a>
+                    </div>
+                    <div class="collapsed">
+                        <span>Delivrabilite</span>
+                        <a href="#"><span class="arrow"></span>Split testing</a>
+                        <a href="#"><span class="arrow"></span>Reflex</a>
+                        <a href="#"><span class="arrow"></span>Scenario</a>
+                    </div>
+                    <div class="collapsed">
+                        <span>Notifications</span>
+                        <a href="#"><span class="arrow"></span>Campagne</a>
+                        <a href="#"><span class="arrow"></span>Message</a>
+                        <a href="#"><span class="arrow"></span>Split testing</a>
+                    </div>
+                    <div class="collapsed">
+                        <span>Social Media</span>
+                        <a href="#"><span class="arrow"></span>Reflex</a>
+                        <a href="#"><span class="arrow"></span>Scenario</a>
+                    </div>
+                    <div class="collapsed">
+                        <span>Base de donnes</span>
+                        <a href="#"><span class="arrow"></span>Scenario</a>
+                    </div>
+                    <div class="collapsed">
+                        <span>Analyse</span>
+                        <a href="#"><span class="arrow"></span>Campagne</a>
+                        <a href="#"><span class="arrow"></span>Scenario</a>
+                        <a href="#"><span class="arrow"></span>Split testing</a>
+                        <a href="#"><span class="arrow"></span>Reflex</a>
+                        <a href="#"><span class="arrow"></span>Message</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+	<div id="content">
+            <div class="navigation"></div>
+            
+            <!-- block of world map and datas -->
+            <div class="optionBlock">
+                                            Database: 	<select>
+                                                                        <option value="--">--</option>
+                                                        </select>  
+
+
+                            <div class="optionContainer">
+                                                <select>
+                                                                        <option value="">E-mail adress</option>
+                                                </select>
+                                        <select style="width:70px">
+                                                                        <option value="">Is</option>
+                                                </select>
+                                        <input type="text" />
+                                        or
+                                        <select style="width:100px">
+                                                                        <option value="">Different</option>
+                                                </select>
+                                        <input type="submit" value="Add more" />
+                            </div>      
+            </div>
+            <!-- block of world map and datas -->
+            
+            <div class="about_section">
+                    <h3>About selection :</h3>
+                    <p>How many people in the database : 232 323</p>
+                    <p>Precentags of previous clicks : 45%</p>
+            </div>
+        </div>
+        <!-- content -->  
+</div>
+<!-- all -->
+</body>
+</html>

@@ -1,0 +1,137 @@
+.main_wrapper .content_block .content .grey_form_block{
+    height: 115px;
+}
+
+/*---START Choose 4 products you want to advertise on home page---*/
+.main_wrapper .content_block .content .block_row{
+/*    height: 60px;*/
+    padding: 0 10px 5px 10px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    border: 1px solid #D7D7D7;
+}
+
+.main_wrapper .content_block .content .block_row > .block_title{
+    width: 290px;
+    float: left;
+}
+
+.main_wrapper .content_block .content .block_row h3{
+    font: bold 12px 'Verdana';
+    color: #666;
+}
+
+.main_wrapper .content_block .content .block_row > .block_title h3{
+    margin: 5px 0;
+}
+
+.main_wrapper .content_block .content .block_row > .block_title input{
+    width: 280px;
+}
+
+.main_wrapper .content_block .content .block_image{
+    width: 50px;
+    height: 50px;
+    margin: 5px 10px;
+    overflow: hidden;
+    float: left;
+}
+
+.main_wrapper .content_block .content .block_row > .block_desc{
+    float: left;
+    width: 290px;
+    height: 60px;
+}
+
+.main_wrapper .content_block .content .block_row > .block_desc > h3{
+    margin: 5px 0;
+}
+
+.main_wrapper .content_block .content .block_row > .block_desc > p{
+    margin-bottom: 5px;
+}
+
+.main_wrapper .content_block .content .block_row > .block_desc > input{
+    float: left;
+    margin-right: 5px;
+}
+
+.main_wrapper .content_block .content  .block_row > .block_desc .input_row{
+    width: 85px;
+    float: left;
+}
+
+.main_wrapper .content_block .content  .block_row > .block_desc > a{
+    display: block;
+    margin-top: 4px;
+}
+
+.main_wrapper .content_block .content  .block_row a{
+    text-decoration: underline;
+    font: normal 12px 'Verdana';
+    color: #C36;
+}
+/*---END Choose 4 products you want to advertise on home page---*/
+
+/*---START select 25 products---*/
+.main_wrapper .content_block .content .content_section > .products_25{
+    width: 45%;
+    padding-top: 5px;
+    float: left;
+}
+
+.main_wrapper .content_block .content .content_section > .products_25 > .category_tree{
+    margin-left: 5px;
+}
+/*---END select 25 products---*/
+
+/*---START product block---*/
+.main_wrapper .content_block .content .content_section > .product_block{
+    width: 55%;
+    padding-top: 5px;
+    float: left;
+}
+
+.main_wrapper .content_block .content .content_section .product_block .breadcrumbs{
+    margin: 0 0 10px 0;
+}
+
+.main_wrapper .content_block .content .content_section .product_row{
+    width: 98%;
+    padding: 5px 0 0 2%;
+    height: 55px;
+    overflow: hidden;
+    margin-bottom: 5px;
+    border: 1px solid #D7D7D7;
+}
+
+.main_wrapper .content_block .content .content_section .product_row > .image_block{
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+    margin: 0 5px 0 0;
+    float: left;
+}
+
+.main_wrapper .content_block .content .content_section .product_row > div{
+    margin-bottom: 5px;
+    font: normal 12px 'Verdana';
+    color: #666;
+}
+
+.main_wrapper .content_block .content .content_section .product_row div a{
+    font: bold 12px 'Verdana';
+    color: #cc3366;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+.main_wrapper .content_block .content .content_section .product_row div a:hover{
+    text-decoration: underline;
+}
+
+.main_wrapper .content_block .content .content_section .product_block .pagination{
+    margin-top: 10px;
+    display: inline-block;
+}
+/*---END product block---*/

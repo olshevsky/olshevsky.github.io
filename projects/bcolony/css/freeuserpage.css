@@ -1,0 +1,446 @@
+/*freeuserpage.html css file*/
+
+body{
+	background: #000 url(freeuserpage_bg.jpg) no-repeat center 78px;
+}
+
+#menu_bg{
+	margin-bottom: 5px;
+}
+
+.freeuserpage_content{
+	background: #1A1A1A;
+	padding: 2px 7px 85px 7px;
+}
+
+.clickIt{
+font: normal 11px 'Myriad Pro', 'Arial', sans-serif;
+}
+
+.reg_impact{
+	font: normal 14px 'Impact', 'Arial', sans-serif;
+}
+
+/*------------------<header>---------------------*/
+.freeuserpage_header_bg{
+	height: 215px;
+	width: 1000px;
+	background: transparent url(freeuserpage_header_bg.png) no-repeat;
+}
+
+.freeuserpage_header_bg p{
+	margin: 2px 0 0 15px;
+}
+
+#troyLeeDesigns{
+	position: relative;
+	left: 750px;
+	top: 5px;
+	height: 39px;
+	width: 220px;
+	display: inline;
+}
+
+.page_sponsor{
+	background: transparent url(page_sponsor.png) no-repeat;
+	display: block;
+	height: 33px;
+	width: 79px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.page_sponsor span{
+	display: block;
+	font: normal 14px 'Impact', 'Arial', sans-serif;
+	line-height: 15px;
+	color: #FFF;
+}
+
+.header .page_sponsor{
+	position: relative;
+	left: 2.5%;
+	top: 65%;
+}
+/*------------------</header>---------------------*/
+
+/*--------------------<top user info block>-------------------*/
+.userpage_top{
+	background-color: #333333;
+	padding: 3px 0 0 3px;
+	margin-bottom: 15px;
+	height: 212px;
+	overflow: hidden;
+}
+
+.userpage_top  img{
+	border: 5px solid #FFF;
+}
+
+.userpage_top a{
+	text-decoration: none;
+}
+
+.info_block{
+	height: 215px;
+	width: 658px;
+	overflow: hidden;
+}
+
+/*---------<top block header>--------------*/
+.userpage_header{
+	height: 36px;
+	background-color: #FFF;
+}
+
+.userpage_title{
+	padding-top: 7px;
+	width: 77px;
+	height: 29px;
+	overflow: hidden;
+	color: #000;
+	font: normal 11px 'Myriad Pro', 'Arial', sans-serif;
+	word-spacing: 2px;
+	text-align: center;
+}
+
+/*-------<top buttons block>----*/
+.user_buttons_block{
+	background-color: #333333;
+	height: 32px;
+	width: 576px;
+	overflow: hidden;
+	padding-left: 5px;
+}
+
+.user_button{
+	width: 112px;
+	height: 30px;
+	padding-top: 2px;
+	text-align: center;
+	display: block;
+	background: transparent url(button.png) no-repeat;
+	margin-right: 3px;
+}
+
+.user_button span{
+	display: block;
+}
+
+.user_button_title{
+	color: #000;
+	font: normal 14px 'Impact', 'Arial', sans-serif;
+	line-height: 14px;
+}
+
+.user_button_count{
+	color: #FFF;
+	font: normal 13px 'Myriad Pro', 'Arial', sans-serif;
+	line-height: 13px;	
+}
+/*-------</top buttons block>-------*/
+/*-------</top block header>---------------*/
+
+/*---------------<info block>----------------*/
+/*---------<left side items>---------*/
+.left_info_block{
+	width: 340px;
+	height: 176px;
+}
+
+.athlete{
+	height: 22px;
+	width: 336px;
+	overflow: hidden;
+	border-bottom: 4px solid #FFF;
+	padding: 10px 0 0 4px;
+}
+
+.sport{
+	height: 17px;
+	width: 262px;
+	overflow: hidden;
+	border-bottom: 4px solid #FFF;
+	padding: 8px 0 0 4px;
+}
+
+.skill{
+	height: 17px;
+	width: 206px;
+	overflow: hidden;
+	border-bottom: 4px solid #FFF;
+	padding: 8px 0 0 4px;
+}
+
+.personal_data{
+	height: 80px;
+	width: 206px;
+	overflow: hidden;
+	padding: 8px 0 0 4px;
+	line-height: 15px;
+}
+/*---------</left side items>---------*/
+/*---------<right side items>---------*/
+.right_info_block{
+	width: 318px;
+	height: 176px;
+}
+
+.right_item_block{
+	width: 318px;
+	height: 133px;
+	overflow: hidden;
+}
+
+.right_item{
+	width: 228px;
+	height: 18px;
+	overflow: hidden;
+	margin-top: 14px;
+	background-color: #1A1A1A;
+	text-align: center;
+	padding-top: 5px;
+}
+
+/*-----<buttons block>-----*/
+.right_buttons_block{
+	width: 318px;
+	height: 43px;
+	overflow: hidden;
+	color: #FFF;
+	
+}
+
+.right_buttons_block span{
+	color: #FFF;
+	font: normal 12px Impact;
+	line-height: 12px;
+	display: block;
+}
+
+.green_button{
+	background: url(button_green.png) no-repeat;
+}
+
+.red_button{
+	background: url(button_red.png) no-repeat;
+}
+
+.blue_button{
+	background: url(button_blue.png) no-repeat;
+}
+
+.right_user_button{
+	width: 75px;
+	height: 29px;
+	margin: 14px 2px 0 0;
+	display: block;
+	text-align: center;
+}
+
+.black_user_button{
+	width: 75px;
+	height: 26px;
+	padding: 17px 0 0 10px;
+	margin-right: 2px;
+	display: block;
+	text-align: center;
+	background: url(button_black.png) no-repeat;
+}
+/*-----</buttons block>-----*/
+/*---------</right side items>---------*/
+/*---------------</info block>----------------*/
+/*--------------------</top user info block>-------------------*/
+
+/*--------------------<left block>-----------------------------*/
+
+.freeuserpage_left_block{
+	width: 250px;
+	float: left;
+}
+
+.freeuserpage_left_block_item{
+	width: 250px;
+	min-height: 285px;
+	background-color: #E6E6E6;
+	color: #000;
+	margin-bottom: 15px;
+}
+
+.left_block_header{
+	height: 35px;
+	width: 250px;
+	overflow: hidden;
+	background-color: #333333;
+	color: #FFF;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.left_block_content{
+	width: 243px;
+	min-height: 230px;
+	padding: 5px 5px 5px 2px;
+}
+
+.left_block_footer{
+	height: 15px;
+	width: 250px;
+
+}
+
+.left_block_footer a{
+	text-decoration: none;
+}
+
+.left_block_item{
+	width: 120px;
+	height: 80px;
+	margin-bottom: 5px;
+	overflow: hidden;
+}
+
+.plus_minus{
+	width: 20px;
+	height: 60px;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.plus_minus a{
+	text-decoration: none;
+	font: bold 18px 'Arial Black';
+	line-height: 60px;
+}
+
+
+.left_block_text{
+	padding: 5px 0 0 20px;
+	width: 100px;
+	height: 15px;
+	font: normal 13px 'Myriad Pro', 'Arial', sans-serif;
+}
+/*--------------------</left block>-----------------------------*/
+
+/*--------------------<right block>------------------------------*/
+.freeuserpage_right_block{
+	width: 728px;
+	float: right;
+	
+}
+
+
+/*-------<top block>--------*/
+.freeuserpage_right_block_header_img{
+	width: 728px;
+	height: 90px;
+	background: url(freeuserpage_content_header.jpg);
+}
+
+.freeuserpage_right_block_header_img .page_sponsor{
+	position: relative;
+	left: 0;
+	top: 65%;
+}
+
+.freeuserpage_right_block_top{
+	width: 728px;
+	height: 290px;
+	overflow: hidden;
+	margin-bottom: 15px;
+}
+/*-------</top block>--------*/
+
+/*-------<wall_and_news block>--------*/
+.wall_and_news{
+	width: 728px;
+}
+
+.wall_and_news_header{
+	height: 34px;
+	width: 713px;
+	padding: 0 10px 0 5px;
+	overflow: hidden;
+	background-color: #333333;
+	border-bottom: 1px solid #E6E6E6;
+	color: #FFF;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.wall_and_news_header a{
+	text-decoration: none;
+	color: #FFF;
+}
+
+.wall_and_news_img_head{
+	height: 70px;
+	width: 728px;
+	padding: 2px 0;
+	background-color: #4D4D4D;
+	border-bottom: 2px solid #E6E6E6;
+	margin-bottom: 1px;
+	overflow: hidden;
+}
+
+.wall_and_news_img_head div{
+	padding: 20px 0 0 5px;
+}
+
+.wall_and_news_img_head  a img{
+	margin-left: 215px;
+}
+
+.wall_and_news_content{
+	width: 728px;
+	min-height: 900px;
+	background-color: #E6E6E6;
+	color: #000;
+}
+
+.wall_and_news_content ul{
+	list-style-type: none;
+	text-align: center;
+}
+
+.wall_and_news_content ul li{
+	display: inline;
+	font: normal 14px Impact;
+}
+
+.wall_and_news_content ul li a{
+	text-decoration: none;
+	font: normal 14px Impact;
+	color: #000;
+}
+
+
+.wall_and_news_button{
+	background-color: #E6E6E6;
+}
+
+.wall_and_news_button .clickIt{
+	color: #000;
+	margin: 20px 0 0 2px;
+}
+
+.wall_and_news_img_foot{
+	height: 90px;
+	width: 728px;
+	overflow: hidden;
+}
+
+.wall_and_news_footer{
+	height: 28px;
+	width: 728px;
+	overflow: hidden;
+	background-color: #4D4D4D;
+	color: #FFF;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+
+/*-------<wall_and_news block>--------*/
+/*--------------------</right block>-----------------------------*/

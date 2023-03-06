@@ -1,0 +1,35 @@
+.main_wrapper .content_block .content{
+
+}
+
+.main_wrapper .content_block .content .grey_form_block{
+    height: 105px;
+}
+
+.main_wrapper .content_block .content .grey_form_block .left_part{
+    width: 100%;
+}
+
+.main_wrapper .content_block .content .grey_form_block .left_part div.input_row{
+    padding-left: 1%;
+    width: 99%;
+}
+
+.main_wrapper .content_block .content .content_section > .left_part{
+    width: 49%;
+    float: left;
+}
+
+.main_wrapper .content_block .content .content_section > .right_part{
+    width: 49%;
+    float: right;
+}
+
+.main_wrapper .content_block .content .content_section input.custom_text{
+    width: 98%;
+}
+
+.main_wrapper .content_block .content .content_section p{
+    margin: 5px 0 0 0;
+    font-style: italic;
+}

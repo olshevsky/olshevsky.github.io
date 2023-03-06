@@ -1,0 +1,151 @@
+.main_wrapper .content_block .content{
+
+}
+
+/*---START Générateur kit mailing---*/
+.main_wrapper .content_block .content{
+
+}
+
+.main_wrapper .content_block .content .kit_mailing{
+
+}
+
+.main_wrapper .content_block .content .kit_mailing .input_row{
+    width: 100%;
+    height: 30px;
+}
+
+.main_wrapper .content_block .content .kit_mailing .input_row label{
+    margin-right: 20px;
+    width: 120px;
+}
+
+.main_wrapper .content_block .content .kit_mailing .input_row .custom_text{
+    width: 245px;
+}
+
+.main_wrapper .content_block .content .kit_mailing .input_row .custom_select{
+    width: 252px;
+}
+/*---END Générateur kit mailing---*/
+
+/*---START Choose design for mailing---*/
+.main_wrapper .content_block .content .votre_kit{
+
+}
+
+.main_wrapper .content_block .content .votre_kit .input_row label{
+    font-size: 12px;    
+}
+
+.main_wrapper .content_block .content .votre_kit .input_row > input[type="radio"]:checked+label{ 
+    color: #cc3366;
+    font-weight: bold;
+}
+/*---END Choose design for mailing---*/
+
+/*---START Choose design for mailing---*/
+.main_wrapper .content_block .content .chose_design{
+    margin-bottom: 20px;
+}
+/*---END Choose design for mailing---*/
+
+/*---START Selected products (appears when people start to select)---*/
+.main_wrapper .content_block .content .selected_products{
+
+}
+
+.main_wrapper .content_block .content .selected_products > p{
+    font-size: 12px;
+}
+
+.main_wrapper .content_block .content .selected_products > p > a{
+    text-decoration: none;
+    color: #cc3366;
+    font-weight: bold;
+}
+
+.main_wrapper .content_block .content .selected_products > p > a:hover{
+    text-decoration: underline;
+}
+/*---END Selected products (appears when people start to select)---*/
+
+/*---START Choice of product---*/
+.main_wrapper .content_block .content .choice_product{
+
+}
+
+.main_wrapper .content_block .content .choice_product > .left_part{
+    width: 315px;
+    float: left;
+}
+
+.main_wrapper .content_block .content .choice_product > .right_part{
+    margin-left: 315px;
+}
+
+.main_wrapper .content_block .content .choice_product > .right_part .product_block{
+    width: 100%;
+}
+/*---END Choice of product---*/
+
+/*---START Other kit options*/
+.main_wrapper .content_block .content .other_kit_options{
+    
+}
+
+.main_wrapper .content_block .content .other_kit_options .input_row{
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.main_wrapper .content_block .content .other_kit_options .input_row textarea{
+    width: 245px;
+}
+
+.main_wrapper .content_block .content .other_kit_options .input_row label{
+    width: 120px;
+    margin-top: 3px;
+}
+/*---END Other kit options*/
+
+/*---START your mails---*/
+.main_wrapper .content_block .content .your_mail{
+    margin-top: 25px;
+}
+
+.main_wrapper .content_block .content .your_mail table.grey_table tr td, .main_wrapper .content_block .content .your_mail table.grey_table tr td a{
+    color: #cc3366;
+    text-align: left;
+}
+
+.main_wrapper .content_block .content .your_mail table.grey_table tr td a{
+    text-decoration: none;
+}
+
+.main_wrapper .content_block .content .your_mail table.grey_table tr td a:hover{
+    text-decoration: underline;
+}
+
+.main_wrapper .content_block .content .your_mail table.grey_table tr td{
+    padding: 0 0 0 35px;
+}
+
+.main_wrapper .content_block .content .your_mail table.grey_table tr td:first-child{
+    padding-left: 10px;
+}
+
+.main_wrapper .content_block .content .your_mail table.grey_table tr td > a > img{
+    float: left;
+    margin: -2px 5px 0 0;
+}
+
+.name_preview{
+    width: 80%;
+}
+
+.download_zip{
+    height: 20%;
+}
+/*---END your mails---*/

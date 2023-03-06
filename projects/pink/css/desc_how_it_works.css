@@ -1,0 +1,13 @@
+.main_wrapper > .content_block > .title_block > p{
+    margin: 0;
+    padding: 20px 0 0 25px;
+    color: #666666;
+    font: normal 11px 'Verdana';
+}
+
+.main_wrapper > .content_block > .content > p.click_on{
+    color: #cc3366;
+    font: normal 11px 'Verdana';
+    margin: -10px 0 0 0;
+    padding: 0 0 0 30px;
+}

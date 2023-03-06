@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Layout</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script type="text/javascript" src="js/lib/sdmenu/menu.js"></script>  
+        <script type="text/javascript" src="js/lib/jquery/jquery-1.7.2.min.js"></script>
+        <script type="text/javascript" src="js/lib/jquery/jquery.ezpz_tooltip.min.js"></script>
+        <script type="text/javascript" src="js/lib/jquery/jquery.treeview.js"></script>
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/treeview/treeview.css">
+        <link rel="stylesheet" href="css/tooltip.css">
+        <link rel="stylesheet" href="css/bannerfarm_flus_rss.css">
+        <script type="text/javascript">
+            // <![CDATA[         
+            var sideMenu;
+            window.onload = function()
+            {
+                //all javascript calls and events placed here
+                
+                // side menu script
+                sideMenu = new SDMenu("sideMenu");   // create menu object
+                sideMenu.speed = 5;                  // menu sliding speed (1 - 5 recomended)
+                sideMenu.oneSmOnly = true;           // one expanded submenu at a time
+                sideMenu.remember = true;            // store menu states (expanded or collapsed) in cookie and restore later
+                sideMenu.markCurrent = true;        // mark current link / page (link.href == location.href)
+                sideMenu.init();
+                
+                //init treeview
+                $("#browser, #browser2").treeview();
+                
+                // account manager close
+                $('#close_account_manager').click( function(){
+                    $('#account_manager').animate({
+                        right: '-285px'
+                    }, 300, function() {
+                       
+                    });
+                });
+                
+                // account manager open
+                $('#open_account_manager').click( function(){ 
+                    $('#account_manager').animate({
+                        right: '0'
+                    }, 300, function() {
+                       
+                    });
+                });
+                
+                //info tooltips
+                $(".button.info").ezpz_tooltip({
+                    contentId: 'info_tooltip',
+                    showContent: function(content) {
+                        content.fadeIn(200);
+                    },
+                    hideContent: function(content) {
+                        content.stop(true, true).fadeOut(200);
+                    }
+                });
+                
+                //img tooltips
+                $(".tooltip-target").ezpz_tooltip({
+                    showContent: function(content) {
+                        content.fadeIn(200);
+                    },
+                    hideContent: function(content) {
+                        content.stop(true, true).fadeOut(200);
+                    }
+                });
+
+            };
+            // ]]>
+        </script>
+    </head>
+    <body>
+        <div class="header_wrapper">
+            <div class="header">
+                <div class="logo_wrapper">
+                    <a href="layout.html" class="logo"></a>
+                </div>
+                <div class="top_menu">
+                    <ul>
+                        <li>
+                            <a href="dashboard.html">DASHBOARD</a>
+                        </li>
+                        <li>
+                            <a href="#">BLOG</a>
+                        </li>
+                        <li>
+                            <a href="#">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="#">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="icon_block">
+                    <a href="#" class="icon1"></a>
+                    <a href="#" class="icon2"></a>
+                </div>
+                <div class="welcome">
+                    <p><span class="tc_ffcccc">Welcome,</span>&nbsp;<strong>Ardas SPA Centre</strong></p>
+                    <p><span class="tc_ffcccc">Balance</span>&nbsp;<strong>: 3500.00 €</strong></p>
+                </div>
+            </div>
+        </div>
+        <div class="account_manager" id="account_manager">
+            <div class="inner">
+                <div id="open_account_manager"></div>
+                <div class="title">
+                    <h2 >ACCOUNT MANAGER</h2>
+                </div>
+                <div class="name">
+                    <p>Loic Juillard</p>
+                    <p class="sub">name</p>
+                </div>
+                <div class="skype">
+                    <p>Loic.ddz</p>
+                    <p class="sub">skype</p>
+                </div>
+                <div class="email">
+                    <p>loic@pinkplatform.com</p>
+                    <p class="sub">e-mail</p>
+                </div>
+                <div id="close_account_manager"></div>
+                <a href="#" class="skype_logo" title="Contact Us Skype"></a>
+            </div>
+        </div>
+        <div class="main_wrapper">
+            <div class="side_bar" id="side_bar">
+                <h2>Store to work with :</h2>
+                <form action="#" method="post">
+                    <select class="custom_select dark_border">
+                        <option>Sexyshopper (www.sexshop.loc)</option>
+                        <option>Luxsexshop</option>
+                    </select>
+                </form>
+                <div id="sideMenu" class="sdmenu">
+                    <div class="collapsed">
+                        <span>Configuration boutique</span>
+                        <a href="new_shop_1.html"><span class="arrow"></span>Configure new shop</a>
+                        <a href="modify_existing_shop.html"><span class="arrow"></span>Modify existing shop</a>
+                    </div>
+                    <div class="collapsed">
+                        <span>Outils publicitaires</span>
+                        <a href="bannerfarm_create_new.html"><span class="arrow"></span>Create new banner</a>
+                        <a href="bannerfarm_modify_existing.html"><span class="arrow"></span>Modify existing banners</a>
+                        <a href="bannerfarm_promo_links.html"><span class="arrow"></span>Promo links</a>
+                        <a href="bannerfarm_create_blockjs.html"><span class="arrow"></span>Create block JS</a>
+                        <a href="bannerfarm_block_js.html" ><span class="arrow"></span>Block JS</a>
+                        <a href="bannerfarm_csv_catalogue.html"><span class="arrow"></span>CSV Catalogue</a>
+                        <a href="bannerfarm_flus_rss.html"><span class="arrow"></span>Flus RSS</a>
+                        <a href="bannerfarm_kit_mails.html"><span class="arrow"></span>Kit mails</a>
+                        <a href="#"><span class="arrow"></span>Co-inscription newsletter</a>
+                    </div>
+                    <div class="collapsed">
+                        <span>Statistiques</span>
+                        <a href="stat_general_stats.html"><span class="arrow"></span>General statistics</a>
+                        <a href="stat_list_orders.html"><span class="arrow"></span>List of orders</a>
+                        <a href="stat_most_sold.html"><span class="arrow"></span>Most sold products</a>
+                        <a href="stat_top_referal.html"><span class="arrow"></span>Top referal links</a>
+                        <a href="stat_tracker.html"><span class="arrow"></span>Tracker</a>
+                        <a href="stat_banners.html"><span class="arrow"></span>Banners</a>
+                        <a href="stat_mail_camp.html"><span class="arrow"></span>Mail camping</a>
+                        <a href="stat_mobile.html"><span class="arrow"></span>Mobile</a>
+                    </div>
+                    <div class="collapsed">
+                        <span>Infos et paiements</span>
+                        <a href="ip_info_perso.html"><span class="arrow"></span>Personal information</a>
+                        <a href="ip_retrocessions.html"><span class="arrow"></span>Retrocessions, receipts</a>
+                        <a href="ip_referal.html"><span class="arrow"></span>Referal</a>
+                    </div>
+                </div>
+            </div>
+            <div class="content_block" id="content_block">
+                <div class="title_block">
+                    <h2>Flus RSS</h2>
+                </div>
+                <div class="content">
+                    <div class="content_section">
+                        <div class="section_title">
+                            <h2>Selection des produits a afficher</h2>
+                            <a href="#" class="button info"> </a>
+                        </div>
+                        <div class="input_row">
+                            <input type="radio" class="custom_radio" name="radio_choice" id="radio1" value="1">
+                            <label for="radio1">Choisir les produits d’une categorie</label>
+                        </div>
+                        <div class="input_row">
+                            <input type="radio" class="custom_radio" name="radio_choice" id="radio2" value="1">
+                            <label for="radio2">Definir une liste de produits</label>
+                        </div>
+                        <div class="section_title">
+                            <h2>Choice of product</h2>
+                            <a href="#" class="button info"> </a>
+                        </div>
+                        <div class="category_tree">
+                            <ul id="browser" class="filetree treeview">
+                                <li class="collapsable"><div class="hitarea collapsable-hitarea"></div>
+                                    <span class="folder">Accueil</span>
+                                    <ul>
+                                        <li>
+                                            <input type="checkbox" name="category-id" value="1" class="custom_checkbox">
+                                            <span class="file">Jarretelles</span>
+                                        </li>
+                                        <li class="last">
+                                            <input type="checkbox" name="category-id" value="1" class="custom_checkbox">
+                                            <span class="file">Test</span>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="closed expandable"><div class="hitarea closed-hitarea expandable-hitarea"></div>
+                                    <span class="folder">Femmes</span>
+                                    <ul style="display: none; ">
+                                        <li class="expandable lastExpandable"><div class="hitarea expandable-hitarea lastExpandable-hitarea"></div>
+                                            <span class="folder">Lingerie Sexy</span>
+                                            <ul id="folder21">
+                                                <li>
+                                                    <input type="checkbox" name="category-id" value="1" class="custom_checkbox">
+                                                    <span class="file">Culottes et strings</span>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" name="category-id" value="1" class="custom_checkbox">
+                                                    <span class="file">Body, Combinaisons sexy</span>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" name="category-id" value="1" class="custom_checkbox">
+                                                    <span class="file">Ensembles fantaisie</span>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" name="category-id" value="1" class="custom_checkbox">
+                                                    <span class="file">Ensembles coquin</span>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" name="category-id" value="1" class="custom_checkbox">
+                                                    <span class="file">Ensembles charme</span>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" name="category-id" value="1" class="custom_checkbox">
+                                                    <span class="file">Jarretelles</span>
+                                                </li>
+                                                <li class="last">
+                                                    <input type="checkbox" name="category-id" value="1" class="custom_checkbox">
+                                                    <span class="file">Body, Combinaisons sexy</span>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="closed expandable"><div class="hitarea closed-hitarea expandable-hitarea"></div>
+                                    <span class="folder">Hommes</span>
+                                    <ul style="display: none; ">
+                                        <li class="last">
+                                            <input type="checkbox" name="category-id" value="1" class="custom_checkbox">
+                                            <span class="file">Item 1</span>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="closed expandable"><div class="hitarea closed-hitarea expandable-hitarea"></div>
+                                    <span class="folder">Sex Shop</span>
+                                    <ul style="display: none; ">
+                                        <li class="last">
+                                            <input type="checkbox" name="category-id" value="1" class="custom_checkbox">
+                                            <span class="file">Item 1</span>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="closed collapsable expandable"><div class="hitarea closed-hitarea collapsable-hitarea expandable-hitarea"></div>
+                                    <span class="folder">Chaussures</span>
+                                    <ul style="display: none; ">
+                                        <li class="last">
+                                            <input type="checkbox" name="category-id" value="1" class="custom_checkbox">
+                                            <span class="file">Item 1</span>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="closed expandable"><div class="hitarea closed-hitarea expandable-hitarea"></div>
+                                    <span class="folder">Bijoux</span>
+                                    <ul style="display: none; ">
+                                        <li class="last">
+                                            <input type="checkbox" name="category-id" value="1" class="custom_checkbox">
+                                            <span class="file">Item 1</span>
+                                        </li>
+                                    </ul>
+                                </li> 
+                                <li class="closed expandable"><div class="hitarea closed-hitarea expandable-hitarea"></div>
+                                    <span class="folder">Bien-etre</span>
+                                    <ul style="display: none; ">
+                                        <li class="last">
+                                            <input type="checkbox" name="category-id" value="1" class="custom_checkbox">
+                                            <span class="file">Item 1</span>
+                                        </li>
+                                    </ul>
+                                </li> 
+                                <li class="closed expandable"><div class="hitarea closed-hitarea expandable-hitarea"></div>
+                                    <span class="folder">Bric a Brac sexy</span>
+                                    <ul style="display: none; ">
+                                        <li class="last">
+                                            <input type="checkbox" name="category-id" value="1" class="custom_checkbox">
+                                            <span class="file">Item 1</span>
+                                        </li>
+                                    </ul>
+                                </li> 
+                                <li class="closed expandable"><div class="hitarea closed-hitarea expandable-hitarea"></div>
+                                    <span class="folder">Fetish-SM</span>
+                                    <ul style="display: none; ">
+                                        <li class="last">
+                                            <input type="checkbox" name="category-id" value="1" class="custom_checkbox">
+                                            <span class="file">Item 1</span>
+                                        </li>
+                                    </ul>
+                                </li> 
+                                <li class="closed expandable lastExpandable"><div class="hitarea closed-hitarea expandable-hitarea lastExpandable-hitarea"></div>
+                                    <span class="folder">DVD</span>
+                                    <ul style="display: none; ">
+                                        <li class="last">
+                                            <input type="checkbox" name="category-id" value="1" class="custom_checkbox">
+                                            <span class="file">Item 1</span>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="fclear"></div>
+                        <div class="section_title">
+                            <h2>Selection des produits a afficher</h2>
+                            <a href="#" class="button info"> </a>
+                        </div>
+                        <div class="input_row">
+                            <input type="radio" class="custom_radio" name="choice" id="radio3" value="1">
+                            <label for="radio3">Choisir les produits d’une categorie</label>
+                        </div>
+                        <div class="input_row">
+                            <input type="radio" class="custom_radio" name="choice" id="radio4" value="1">
+                            <label for="radio4">Definir une liste de produits</label>
+                        </div>
+                        <div class="selected_products">
+                            <div class="section_title">
+                                <h2>Selected products</h2>
+                                <a href="#" class="button info" > </a>
+                            </div>
+                            <p><span class="tooltip-target" id="image-target-1">Escarpins ouverts bicolores Seduce <strong> 87,03 €</strong></span> - <a href="#" class="tc_cc3366">Deselect</a></p>
+                            <p><span class="tooltip-target" id="image-target-2">Bottines Daring Skull <strong> 87,03 €</strong></span> - <a href="#" class="tc_cc3366">Deselect</a></p>
+                            <p><span class="tooltip-target" id="image-target-3">Daring Zèbre <strong> 87,03 €</strong></span> - <a href="#" class="tc_cc3366">Deselect</a></p>
+                            <p><span class="tooltip-target" id="image-target-4">Daring Bakarana <strong> 87,03 €</strong></span> - <a href="#" class="tc_cc3366">Deselect</a></p>
+                            <p><span class="tooltip-target" id="image-target-5">Escarpins ouverts bicolores Seduce <strong> 87,03 €</strong></span> - <a href="#" class="tc_cc3366">Deselect</a></p>
+                            <p><span class="tooltip-target" id="image-target-6">Escarpins ouverts bicolores Seduce <strong> 87,03 €</strong></span> - <a href="#" class="tc_cc3366">Deselect</a></p>
+                        </div>
+                        <div class="choice_product product_section">
+                            <div class="section_title">
+                                <h2>Choice of product</h2>
+                                <a href="#" class="button info"></a>
+                            </div>
+                            <div class="left_part">
+                                <div class="category_tree">
+                                    <ul id="browser2" class="filetree treeview">
+                                        <li class="expandable"><div class="hitarea expandable-hitarea"></div>
+                                            <span class="folder">Accueil</span>
+                                            <ul style="display: none; ">
+                                                <li>
+                                                    <input type="radio" name="category-id" value="1" class="custom_checkbox">
+                                                    <span class="file">Jarretelles</span>
+                                                </li>
+                                                <li class="last">
+                                                    <input type="radio" name="category-id" value="1" class="custom_checkbox">
+                                                    <span class="file">Test</span>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="closed expandable"><div class="hitarea closed-hitarea expandable-hitarea"></div>
+                                            <span class="folder">Femmes</span>
+                                            <ul style="display: none; ">
+                                                <li class="expandable lastExpandable"><div class="hitarea expandable-hitarea lastExpandable-hitarea"></div>
+                                                    <span class="folder">Lingerie Sexy</span>
+                                                    <ul id="folder21">
+                                                        <li>
+                                                            <input type="radio" name="category-id" value="1" class="custom_checkbox">
+                                                            <span class="file">Culottes et strings</span>
+                                                        </li>
+                                                        <li>
+                                                            <input type="radio" name="category-id" value="1" class="custom_checkbox">
+                                                            <span class="file">Body, Combinaisons sexy</span>
+                                                        </li>
+                                                        <li>
+                                                            <input type="radio" name="category-id" value="1" class="custom_checkbox">
+                                                            <span class="file">Ensembles fantaisie</span>
+                                                        </li>
+                                                        <li>
+                                                            <input type="radio" name="category-id" value="1" class="custom_checkbox">
+                                                            <span class="file">Ensembles coquin</span>
+                                                        </li>
+                                                        <li>
+                                                            <input type="radio" name="category-id" value="1" class="custom_checkbox">
+                                                            <span class="file">Ensembles charme</span>
+                                                        </li>
+                                                        <li>
+                                                            <input type="radio" name="category-id" value="1" class="custom_checkbox">
+                                                            <span class="file">Jarretelles</span>
+                                                        </li>
+                                                        <li class="last">
+                                                            <input type="radio" name="category-id" value="1" class="custom_checkbox">
+                                                            <span class="file">Body, Combinaisons sexy</span>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="closed expandable"><div class="hitarea closed-hitarea expandable-hitarea"></div>
+                                            <span class="folder">Hommes</span>
+                                            <ul style="display: none; ">
+                                                <li class="last">
+                                                    <input type="radio" name="category-id" value="1" class="custom_checkbox">
+                                                    <span class="file">Item 1</span>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="closed expandable"><div class="hitarea closed-hitarea expandable-hitarea"></div>
+                                            <span class="folder">Sex Shop</span>
+                                            <ul style="display: none; ">
+                                                <li class="last">
+                                                    <input type="radio" name="category-id" value="1" class="custom_checkbox">
+                                                    <span class="file">Item 1</span>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="closed expandable"><div class="hitarea closed-hitarea expandable-hitarea"></div>
+                                            <span class="folder">Chaussures</span>
+                                            <ul style="display: none; ">
+                                                <li class="last">
+                                                    <input type="radio" name="category-id" value="1" class="custom_checkbox">
+                                                    <span class="file">Item 1</span>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="closed expandable"><div class="hitarea closed-hitarea expandable-hitarea"></div>
+                                            <span class="folder">Bijoux</span>
+                                            <ul style="display: none; ">
+                                                <li class="last">
+                                                    <input type="radio" name="category-id" value="1" class="custom_checkbox">
+                                                    <span class="file">Item 1</span>
+                                                </li>
+                                            </ul>
+                                        </li> 
+                                        <li class="closed expandable"><div class="hitarea closed-hitarea expandable-hitarea"></div>
+                                            <span class="folder">Bien-etre</span>
+                                            <ul style="display: none; ">
+                                                <li class="last">
+                                                    <input type="radio" name="category-id" value="1" class="custom_checkbox">
+                                                    <span class="file">Item 1</span>
+                                                </li>
+                                            </ul>
+                                        </li> 
+                                        <li class="closed expandable"><div class="hitarea closed-hitarea expandable-hitarea"></div>
+                                            <span class="folder">Bric a Brac sexy</span>
+                                            <ul style="display: none; ">
+                                                <li class="last">
+                                                    <input type="radio" name="category-id" value="1" class="custom_checkbox">
+                                                    <span class="file">Item 1</span>
+                                                </li>
+                                            </ul>
+                                        </li> 
+                                        <li class="closed expandable"><div class="hitarea closed-hitarea expandable-hitarea"></div>
+                                            <span class="folder">Fetish-SM</span>
+                                            <ul style="display: none; ">
+                                                <li class="last">
+                                                    <input type="radio" name="category-id" value="1" class="custom_checkbox">
+                                                    <span class="file">Item 1</span>
+                                                </li>
+                                            </ul>
+                                        </li> 
+                                        <li class="closed expandable lastExpandable"><div class="hitarea closed-hitarea expandable-hitarea lastExpandable-hitarea"></div>
+                                            <span class="folder">DVD</span>
+                                            <ul style="display: none; ">
+                                                <li class="last">
+                                                    <input type="radio" name="category-id" value="1" class="custom_checkbox">
+                                                    <span class="file">Item 1</span>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="right_part">
+                                <div class="product_block">
+                                    <div class="breadcrumbs">
+                                        <ul>
+                                            <li>
+                                                <a href="#">Femmes</a>
+                                            </li>
+                                            <li>/</li>
+                                            <li>
+                                                <a href="#">Lingerine Sexy</a>
+                                            </li>
+                                            <li>/</li>
+                                            <li>
+                                                <a href="#">Nuisettes</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="title">You still can select : <strong>22 products</strong></div>
+                                    <div class="product_row">
+                                        <div class="image_block">
+                                            <img src="images/demo_images/shoe1.png" alt="shoe1.png">
+                                        </div>
+                                        <p>Bottines Daring Zèbre</p>
+                                        <p>90,00 €</p>
+                                        <p><a href="#" title="select">+ Select</a></p>
+                                    </div>
+                                    <div class="product_row">
+                                        <div class="image_block">
+                                            <img src="images/demo_images/shoe2.png" alt="shoe2.png">
+                                        </div>
+                                        <p>Bottines Daring Skull</p>
+                                        <p>9120,00 €</p>
+                                        <p><a href="#" title="select">+ Select</a></p>
+                                    </div>
+                                    <div class="product_row">
+                                        <div class="image_block">
+                                            <img src="images/demo_images/shoe3.png" alt="shoe3.png">
+                                        </div>
+                                        <p>Escarpins ouverts bicolores Seduce</p>
+                                        <p>901,00 €</p>
+                                        <p><a href="#" title="select">+ Select</a></p>
+                                    </div>
+                                    <div class="product_row">
+                                        <div class="image_block">
+                                            <img src="images/demo_images/shoe4.png" alt="shoe4.png">
+                                        </div>
+                                        <p>Bottines Daring Zèbre</p>
+                                        <p>90,00 €</p>
+                                        <p><a href="#" title="select">+ Select</a></p>
+                                    </div>
+                                    <div class="ta_center">
+                                        <div class="pagination">
+                                            <a href="#" class="prev"></a>
+                                            <a href="#">1</a>
+                                            <a href="#">2</a>
+                                            <a href="#">3</a>
+                                            <a href="#">4</a>
+                                            <a href="#">5</a>
+                                            <a href="#" class="next"></a>
+                                            <div class="fclear"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="fclear"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fclear"></div>
+            <div id="info_tooltip" class="tooltip">
+                <div class="tooltip_content">
+                    <p>
+                        <strong>Notifications</strong>
+                    </p>
+                    <p>Nulla id diam eu velit venenatis dignissim. Sed nec metus ut elit placerat elementum ut sed nulla. Cras vitae nulla leo, bibendum pretium tellus. In vehicula dolor eget purus ultrices quis diam.</p>
+                </div>
+            </div>
+            <div class="tooltip_img" id="image-content-1">
+                <img src="images/demo_images/tooltip-test.png" alt="tooltip-test.png"/>
+            </div>
+            <div class="tooltip_img" id="image-content-2">
+                <img src="images/demo_images/1.png" alt="tooltip-test.png"/>
+            </div>
+            <div class="tooltip_img" id="image-content-3">
+                <img src="images/demo_images/2.png" alt="tooltip-test.png"/>
+            </div>
+            <div class="tooltip_img" id="image-content-4">
+                <img src="images/demo_images/3.png" alt="tooltip-test.png"/>
+            </div>
+            <div class="tooltip_img" id="image-content-5">
+                <img src="images/demo_images/1.png" alt="tooltip-test.png"/>
+            </div>
+            <div class="tooltip_img" id="image-content-6">
+                <img src="images/demo_images/2.png" alt="tooltip-test.png"/>
+            </div>
+        </div>
+    </body>
+</html>

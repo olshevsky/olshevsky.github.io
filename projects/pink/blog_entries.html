@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Layout</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <script type="text/javascript" src="js/lib/sdmenu/menu.js"></script>  
+        <script type="text/javascript" src="js/lib/jquery/jquery-1.7.2.min.js"></script>
+        <script type="text/javascript" src="js/lib/jquery/jquery.cookie.js"></script>
+        <link rel="stylesheet" href="css/common.css"/>
+        <link rel="stylesheet" href="css/blog_common.css"/>
+        <link rel="stylesheet" href="css/blog_entries.css"/>
+        <script type="text/javascript">
+            // <![CDATA[         
+            var sideMenu;
+            window.onload = function()
+            {
+                // side menu script
+                sideMenu = new SDMenu("sideMenu");   // create menu object
+                sideMenu.speed = 5;                  // menu sliding speed (1 - 5 recomended)
+                sideMenu.oneSmOnly = true;           // one expanded submenu at a time
+                sideMenu.remember = false;            // store menu states (expanded or collapsed) in cookie and restore later
+                sideMenu.markCurrent = true;        // mark current link / page (link.href == location.href)
+                sideMenu.init();
+                
+                // account manager close
+                $('#close_account_manager').click( function(){
+                    $('#account_manager').animate({
+                        right: '-285px'
+                    }, 300, function() {
+                       
+                    });
+                });
+                
+                // account manager open
+                $('#open_account_manager').click( function(){ 
+                    $('#account_manager').animate({
+                        right: '0'
+                    }, 300, function() {
+                       
+                    });
+                });
+            };
+            // ]]>
+        </script>
+    </head>
+    <body>
+        <div class="header_wrapper">
+            <div class="header">
+                <div class="logo_wrapper">
+                    <a href="layout.html" class="logo"></a>
+                </div>
+                <div class="top_menu">
+                    <ul>
+                        <li>
+                            <a href="dashboard.html">DASHBOARD</a>
+                        </li>
+                        <li>
+                            <a href="#">BLOG</a>
+                        </li>
+                        <li>
+                            <a href="#">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="#">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="icon_block">
+                    <a href="#" class="icon1"></a>
+                    <a href="#" class="icon2"></a>
+                </div>
+                <div class="welcome">
+                    <p><span class="tc_ffcccc">Welcome,</span>&nbsp;<strong>Ardas SPA Centre</strong></p>
+                    <p><span class="tc_ffcccc">Balance</span>&nbsp;<strong>: 3500.00 €</strong></p>
+                </div>
+            </div>
+        </div>
+        <div class="account_manager" id="account_manager">
+            <div class="inner">
+                <div id="open_account_manager"></div>
+                <div class="title">
+                    <h2 >ACCOUNT MANAGER</h2>
+                </div>
+                <div class="name">
+                    <p>Loic Juillard</p>
+                    <p class="sub">name</p>
+                </div>
+                <div class="skype">
+                    <p>Loic.ddz</p>
+                    <p class="sub">skype</p>
+                </div>
+                <div class="email">
+                    <p>loic@pinkplatform.com</p>
+                    <p class="sub">e-mail</p>
+                </div>
+                <div id="close_account_manager"></div>
+                <a href="#" class="skype_logo" title="Contact Us Skype"></a>
+            </div>
+        </div>
+        <div class="main_wrapper">
+            <div class="side_bar" id="side_bar">
+                <div id="sideMenu" class="sdmenu">
+                    <div>
+                        <span>Blog categories</span>
+                        <a href="blog_entries.html"><span class="arrow"></span>News</a>
+                        <a href="#"><span class="arrow"></span>People</a>
+                        <a href="#"><span class="arrow"></span>Sexe</a>
+                        <a href="#"><span class="arrow"></span>Photos</a>
+                    </div>
+                    <div class="collapsed">
+                        <span>Lien boutique</span>
+                        <a href="blog_entry.html"><span class="arrow"></span>News</a>
+                        <a href="#"><span class="arrow"></span>People</a>
+                        <a href="#"><span class="arrow"></span>Sexe</a>
+                        <a href="#"><span class="arrow"></span>Photos</a>
+                    </div>
+                </div>
+                <div class="popular_articles">
+                    <div class="title">
+                        <span>Popular articles</span>
+                    </div>
+                    <div class="article">
+                        Mauris massa, nec mattis eu, ullamcor sed enim <span class="tc_cccccc">[&nbsp;453x&nbsp;]</span>
+                    </div>
+                    <div class="article">
+                        Nullam eget erat quirem ent, do soleu.. <span class="tc_cccccc">[&nbsp;453x&nbsp;]</span>
+                    </div>
+                    <div class="article">
+                        Mauris massa, nec mattis eu, ullamcor sed enim <span class="tc_cccccc">[&nbsp;453x&nbsp;]</span>
+                    </div>
+                    <div class="article">
+                        Vainom baron delsuta parkoura delfiena reabo, des kasma <span class="tc_cccccc">[&nbsp;453x&nbsp;]</span>
+                    </div>
+                </div>
+                <div class="banners">
+                    <a href="#">
+                        <img src="images/demo_images/banner1.png" alt="banner1.png">
+                    </a>
+                    <a href="#">
+                        <img src="images/demo_images/banner2.png" alt="banner2.png">
+                    </a>
+                    <a href="#">
+                        <img src="images/demo_images/banner3.png" alt="banner3.png">
+                    </a>
+                </div>
+            </div>
+            <div class="content_block" id="content_block">
+                <div class="title_block">
+                    <h2>Blog</h2>
+                </div>
+                <div class="blog_content">
+                    <input type="button" class="button pink_small" name="back_to_blogs" value="Back to blogs"/>
+                    <div class="content_section">
+                        <a href="#" class="button new"></a>
+                        <div class="blog_title">
+                            <a href="#"><h3>Integer tempor purus sit amet lectus luctus volutpat.</h3></a>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ornare, est gravida pulvinar lobortis, metus massa sagittis ligula, ac aliquet ipsum quam at tellus. Praesent quam nisi, condimentum quis viverra a, auctor at erat. Sed in lectus hendrerit velit sagittis semper vel sed quam. Maecenas ante magna, vulputate eget tincidunt nec, viverra ac lacus. Nullam bibendum sapien sed diam blandit id gravida mi dignissim. Nulla facilisi.</p>
+                        <div class="hl"></div>
+                        <div class="date">
+                            <a href="#" class="button fb"></a>
+                            <p>Date posted: 12.04.2012.  12:31</p>
+                            <a href="#">» READ MORE</a>
+                        </div>
+                        <div class="fclear"></div>
+                    </div>
+                    <div class="content_section">
+                        <a href="#" class="button new"></a>
+                        <div class="blog_title">
+                            <a href="#"><h3>Integer tempor purus sit amet lectus luctus volutpat.</h3></a>
+                        </div>
+                        <img src="images/demo_images/svin_small.png" alt="svin_small.png" />
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ornare, est gravida pulvinar lobortis, metus massa sagittis ligula, ac aliquet ipsum quam at tellus. Praesent quam nisi, condimentum quis viverra a, auctor at erat. Sed in lectus hendrerit velit sagittis semper vel sed quam. Maecenas ante magna, vulputate eget tincidunt nec, viverra ac lacus. Nullam bibendum sapien sed diam blandit id gravida mi dignissim. Nulla facilisi.</p>
+                        <div class="hl fclear"></div>
+                        <div class="date">
+                            <a href="#" class="button fb"></a>
+                            <p>Date posted: 12.04.2012.  12:31</p>
+                            <a href="#">» READ MORE</a>
+                        </div>
+                        <div class="fclear"></div>
+                    </div>
+                    <div class="content_section">
+                        <a href="#" class="button new"></a>
+                        <div class="blog_title">
+                            <a href="#"><h3>Integer tempor purus sit amet lectus luctus volutpat.</h3></a>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ornare, est gravida pulvinar lobortis, metus massa sagittis ligula, ac aliquet ipsum quam at tellus. Praesent quam nisi, condimentum quis viverra a, auctor at erat. Sed in lectus hendrerit velit sagittis semper vel sed quam. Maecenas ante magna, vulputate eget tincidunt nec, viverra ac lacus. Nullam bibendum sapien sed diam blandit id gravida mi dignissim. Nulla facilisi.</p>
+                        <div class="hl"></div>
+                        <div class="date">
+                            <a href="#" class="button fb"></a>
+                            <p>Date posted: 12.04.2012.  12:31</p>
+                            <a href="#">» READ MORE</a>
+                        </div>
+                        <div class="fclear"></div>
+                    </div>
+                    <div class="content_section">
+                        <a href="#" class="button new"></a>
+                        <div class="blog_title">
+                            <a href="#"><h3>Integer tempor purus sit amet lectus luctus volutpat.</h3></a>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ornare, est gravida pulvinar lobortis, metus massa sagittis ligula, ac aliquet ipsum quam at tellus. Praesent quam nisi, condimentum quis viverra a, auctor at erat. Sed in lectus hendrerit velit sagittis semper vel sed quam. Maecenas ante magna, vulputate eget tincidunt nec, viverra ac lacus. Nullam bibendum sapien sed diam blandit id gravida mi dignissim. Nulla facilisi.</p>
+                        <div class="hl"></div>
+                        <div class="date">
+                            <a href="#" class="button fb"></a>
+                            <p>Date posted: 12.04.2012.  12:31</p>
+                            <a href="#">» READ MORE</a>
+                        </div>
+                        <div class="fclear"></div>
+                    </div>
+                    <div class="content_section">
+                        <a href="#" class="button new"></a>
+                        <div class="blog_title">
+                            <a href="#"><h3>Integer tempor purus sit amet lectus luctus volutpat.</h3></a>
+                        </div>
+                        <img src="images/demo_images/svin_small.png" alt="svin_small.png" />
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ornare, est gravida pulvinar lobortis, metus massa sagittis ligula, ac aliquet ipsum quam at tellus. Praesent quam nisi, condimentum quis viverra a, auctor at erat. Sed in lectus hendrerit velit sagittis semper vel sed quam. Maecenas ante magna, vulputate eget tincidunt nec, viverra ac lacus. Nullam bibendum sapien sed diam blandit id gravida mi dignissim. Nulla facilisi.</p>
+                        <div class="hl fclear"></div>
+                        <div class="date">
+                            <a href="#" class="button fb"></a>
+                            <p>Date posted: 12.04.2012.  12:31</p>
+                            <a href="#">» READ MORE</a>
+                        </div>
+                        <div class="fclear"></div>
+                    </div>
+                    <div class="ta_center">
+                        <div class="pagination">
+                            <a href="#" class="prev"></a>
+                            <a href="#">1</a>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                            <a href="#">4</a>
+                            <a href="#">5</a>
+                            <a href="#" class="next"></a>
+                            <div class="fclear"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fclear"></div>
+        </div>
+    </body>
+</html>

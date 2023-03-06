@@ -1,0 +1,70 @@
+.main_wrapper .content_block .content{
+    
+}
+
+/*---START physical_address---*/
+.main_wrapper .content_block .content .physical_address .address_column{
+    width: 330px;
+    float: left;
+    margin-right: 20px;
+}
+
+.main_wrapper .content_block .content .physical_address .address_column input{
+    width: 325px;
+}
+
+.main_wrapper .content_block .content .physical_address .country_column{
+    width: 150px;
+    float: left;
+    margin-right: 20px;
+}
+
+.main_wrapper .content_block .content .physical_address .country_column select{
+    width: 150px;
+    margin-top: 8px;
+}
+
+.main_wrapper .content_block .content .physical_address .postal_column{
+    width: 100px;
+    float: left;
+}
+
+.main_wrapper .content_block .content .physical_address .postal_column input{
+    width: 90px;
+}
+/*---END physical_address---*/
+
+/*---START iban---*/
+.main_wrapper .content_block .content .iban{
+    margin-bottom: 0;
+}
+
+.main_wrapper .content_block .content .iban .iban_column{
+    width: 215px;
+    float: left;
+    margin-right: 20px;
+}
+
+.main_wrapper .content_block .content .iban .iban_column input{
+    width: 210px;
+}
+
+.main_wrapper .content_block .content .iban .swift_column{
+    width: 125px;
+    margin-right: 20px;
+    float: left;
+}
+
+.main_wrapper .content_block .content .iban .swift_column input{
+    width: 120px;
+}
+
+.main_wrapper .content_block .content .iban .bankname_column{
+    width: 235px;
+    float: left;
+}
+
+.main_wrapper .content_block .content .iban .bankname_column input{
+    width: 230px;
+}
+/*---END iban---*/

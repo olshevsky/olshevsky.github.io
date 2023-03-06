@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Layout</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script type="text/javascript" src="js/lib/sdmenu/menu.js"></script>  
+        <script type="text/javascript" src="js/lib/jquery/jquery-1.7.2.min.js"></script>
+        <script type="text/javascript" src="js/lib/jquery/jquery.cookie.js"></script>
+        <script type="text/javascript" src="js/lib/jquery/jquery.treeview.js"></script>
+        <script type="text/javascript" src="js/lib/jquery/jquery.ezpz_tooltip.min.js"></script>
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/tooltip.css">
+        <link rel="stylesheet" href="css/new_shop_2-3-4.css">
+        <link rel="stylesheet" href="css/treeview/treeview.css">
+        <script type="text/javascript">
+            // <![CDATA[         
+            var sideMenu;
+            window.onload = function()
+            {
+                // side menu script
+                sideMenu = new SDMenu("sideMenu");   // create menu object
+                sideMenu.speed = 5;                  // menu sliding speed (1 - 5 recomended)
+                sideMenu.oneSmOnly = true;           // one expanded submenu at a time
+                sideMenu.remember = true;            // store menu states (expanded or collapsed) in cookie and restore later
+                sideMenu.markCurrent = true;        // mark current link / page (link.href == location.href)
+                sideMenu.init();
+                
+                // account manager close
+                $('#close_account_manager').click( function(){
+                    $('#account_manager').animate({
+                        right: '-285px'
+                    }, 300, function() {
+                       
+                    });
+                });
+                
+                // account manager open
+                $('#open_account_manager').click( function(){ 
+                    $('#account_manager').animate({
+                        right: '0'
+                    }, 300, function() {
+                       
+                    });
+                });
+                
+                //init treeview
+                $("#browser").treeview();
+                
+                //info tooltips
+                $(".button.info").ezpz_tooltip({
+                    contentId: 'info_tooltip',
+                    showContent: function(content) {
+                        content.fadeIn(200);
+                    },
+                    hideContent: function(content) {
+                        content.stop(true, true).fadeOut(200);
+                    }
+                });
+            };
+            // ]]>
+        </script>
+    </head>
+    <body>
+        <div class="header_wrapper">
+            <div class="header">
+                <div class="logo_wrapper">
+                    <a href="layout.html" class="logo"></a>
+                </div>
+                <div class="top_menu">
+                    <ul>
+                        <li>
+                            <a href="dashboard.html">DASHBOARD</a>
+                        </li>
+                        <li>
+                            <a href="#">BLOG</a>
+                        </li>
+                        <li>
+                            <a href="#">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="#">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="icon_block">
+                    <a href="#" class="icon1"></a>
+                    <a href="#" class="icon2"></a>
+                </div>
+                <div class="welcome">
+                    <p><span class="tc_ffcccc">Welcome,</span>&nbsp;<strong>Ardas SPA Centre</strong></p>
+                    <p><span class="tc_ffcccc">Balance</span>&nbsp;<strong>: 3500.00 €</strong></p>
+                </div>
+            </div>
+        </div>
+        <div class="account_manager" id="account_manager">
+            <div class="inner">
+                <div id="open_account_manager"></div>
+                <div class="title">
+                    <h2 >ACCOUNT MANAGER</h2>
+                </div>
+                <div class="name">
+                    <p>Loic Juillard</p>
+                    <p class="sub">name</p>
+                </div>
+                <div class="skype">
+                    <p>Loic.ddz</p>
+                    <p class="sub">skype</p>
+                </div>
+                <div class="email">
+                    <p>loic@pinkplatform.com</p>
+                    <p class="sub">e-mail</p>
+                </div>
+                <div id="close_account_manager"></div>
+                <a href="#" class="skype_logo" title="Contact Us Skype"></a>
+            </div>
+        </div>
+        <div class="main_wrapper">
+            <div class="side_bar" id="side_bar">
+                <h2>Store to work with :</h2>
+                <form action="#" method="post">
+                    <select class="custom_select dark_border">
+                        <option>Sexyshopper (www.sexshop.loc)</option>
+                        <option>Luxsexshop</option>
+                    </select>
+                </form>
+                <div id="sideMenu" class="sdmenu">
+                    <div class="collapsed">
+                        <span>Configuration boutique</span>
+                        <a href="new_shop_1.html"><span class="arrow"></span>Configure new shop</a>
+                        <a href="modify_existing_shop.html"><span class="arrow"></span>Modify existing shop</a>
+                    </div>
+                    <div class="collapsed">
+                        <span>Outils publicitaires</span>
+                        <a href="bannerfarm_create_new.html"><span class="arrow"></span>Create new banner</a>
+                        <a href="bannerfarm_modify_existing.html"><span class="arrow"></span>Modify existing banners</a>
+                        <a href="bannerfarm_promo_links.html"><span class="arrow"></span>Promo links</a>
+                        <a href="bannerfarm_create_blockjs.html"><span class="arrow"></span>Create block JS</a>
+                        <a href="bannerfarm_block_js.html" ><span class="arrow"></span>Block JS</a>
+                        <a href="bannerfarm_csv_catalogue.html"><span class="arrow"></span>CSV Catalogue</a>
+                        <a href="bannerfarm_flus_rss.html"><span class="arrow"></span>Flus RSS</a>
+                        <a href="bannerfarm_kit_mails.html"><span class="arrow"></span>Kit mails</a>
+                        <a href="#"><span class="arrow"></span>Co-inscription newsletter</a>
+                    </div>
+                    <div class="collapsed">
+                        <span>Statistiques</span>
+                        <a href="stat_general_stats.html"><span class="arrow"></span>General statistics</a>
+                        <a href="stat_list_orders.html"><span class="arrow"></span>List of orders</a>
+                        <a href="stat_most_sold.html"><span class="arrow"></span>Most sold products</a>
+                        <a href="stat_top_referal.html"><span class="arrow"></span>Top referal links</a>
+                        <a href="stat_tracker.html"><span class="arrow"></span>Tracker</a>
+                        <a href="stat_banners.html"><span class="arrow"></span>Banners</a>
+                        <a href="stat_mail_camp.html"><span class="arrow"></span>Mail camping</a>
+                        <a href="stat_mobile.html"><span class="arrow"></span>Mobile</a>
+                    </div>
+                    <div class="collapsed">
+                        <span>Infos et paiements</span>
+                        <a href="ip_info_perso.html"><span class="arrow"></span>Personal information</a>
+                        <a href="ip_retrocessions.html"><span class="arrow"></span>Retrocessions, receipts</a>
+                        <a href="ip_referal.html"><span class="arrow"></span>Referal</a>
+                    </div>
+                </div>
+            </div>
+            <div class="content_block" id="content_block">
+                <div class="title_block">
+                    <h2>Configure new shop</h2>
+                </div>
+                <div class="content">
+                    <div class="grey_form_block">
+                        <form class="grey_form" method="post" action="#">
+                            <div class="left_part">
+                                <div class="input_row">
+                                    <input type="checkbox" class="checkbox" checked="checked" disabled="disabled"/>
+                                    <h3>Configure domain names and URL</h3>
+                                </div>
+                                <div class="input_row active">
+                                    <input type="checkbox" class="checkbox" disabled="disabled"/>
+                                    <h3>Content and design</h3>
+                                </div>
+                                <div class="input_row deactivate">
+                                    <input type="checkbox" class="checkbox" disabled="disabled" />
+                                    <h3>Meta titles, description, SEO</h3>
+                                </div>   
+                            </div>
+                            <div class="right_part">
+                                <h3>STEP 2 - Content and design</h3>
+                                <input type="checkbox" class="checkbox_small" name="check" value="1" checked="checked" disabled="disabled"/>
+                                <p>Content</p>
+                                <input type="checkbox" class="checkbox_small" name="check" checked="checked" value="1" disabled="disabled"/>
+                                <p>Appearance</p>
+                                <input type="checkbox" class="checkbox_small" name="check" value="1" disabled="disabled"/>
+                                <p>Home page costumization</p>
+                            </div>
+                            <div class="fclear"></div>
+                        </form>
+                    </div>
+                    <form action="new_shop_2-3-5.html" method="post">
+                        <div class="content_section">
+                            <div class="section_title">
+                                <h2>Choose 4 products you want to advertise on home page</h2>
+                                <a href="#" class="button info"></a>
+                            </div>
+                            <div class="block_row">
+                                <div class="block_title">
+                                    <h3>Block #1 title:</h3>
+                                    <input type="text" class="custom_text" name="block1"/>
+                                </div>
+                                <div class="block_image">
+                                    <img src="images/demo_images/shoe1.png"/>
+                                </div>
+                                <div class="block_desc">
+                                    <h3>Bottines Daring Zèbre</h3>
+                                    <p>90,00 €</p>
+                                    <input type="checkbox" class="custom_checkbox"/>
+                                    <p>Choose product and title automatically</p>
+                                </div>
+                            </div>                            
+                            <div class="block_row">
+                                <div class="block_title">
+                                    <h3>Block #2 title:</h3>
+                                    <input type="text" class="custom_text" name="block2"/>
+                                </div>
+                                <div class="block_image">
+                                    <img src="images/demo_images/shoe2.png"/>
+                                </div>
+                                <div class="block_desc">
+                                    <h3>Bottines Daring Skull</h3>
+                                    <p>87,00 €</p>
+                                    <input type="checkbox" class="custom_checkbox"/>
+                                    <p>Choose product and title automatically</p>
+                                </div>
+                            </div>
+                            <div class="block_row">
+                                <div class="block_title">
+                                    <h3>Block #3 title:</h3>
+                                    <input type="text" class="custom_text" name="block3"/>
+                                </div>
+                                <div class="block_image">
+                                    <img src="images/demo_images/shoe3.png"/>
+                                </div>
+                                <div class="block_desc">
+                                    <h3>Bottines Daring Skull</h3>
+                                    <p>87,00 €</p>
+                                    <input type="checkbox" class="custom_checkbox"/>
+                                    <p>Choose product and title automatically</p>
+                                </div>
+                            </div>
+                            <div class="block_row">
+                                <div class="block_title">
+                                    <h3>Block #4 title:</h3>
+                                    <input type="text" class="custom_text" name="block4"/>
+                                </div>
+                                <div class="block_image">
+                                    <img src="images/no_photo_small.png"/>
+                                </div>
+                                <div class="block_desc">
+                                    <h3>Promo</h3>
+                                    <div class="input_row">
+                                        <input type="radio" class="custom_radio" name="promo_type" id="promo_type_1" value="1">
+                                        <label for="promo_type_1">Random</label>
+                                    </div>
+                                    <div class="input_row">
+                                        <input type="radio" class="custom_radio" name="promo_type" id="promo_type_2" value="1">
+                                        <label for="promo_type_2">Static</label>
+                                    </div>
+                                </div>
+                                <a href="#">« Choose other</a>
+                            </div>
+                            <div class="hl"></div>
+                            <div class="products_25">
+                                <p>Browse catalogue and add products</p>
+                                <div class="category_tree">
+                                    <ul id="browser" class="filetree treeview">
+                                        <li class="collapsable"><div class="hitarea collapsable-hitarea"></div>
+                                            <span class="folder">Accueil</span>
+                                            <ul>
+                                                <li>
+                                                    <input type="checkbox" name="category-id" value="1" class="custom_checkbox">
+                                                    <span class="file">Jarretelles</span>
+                                                </li>
+                                                <li class="last">
+                                                    <input type="checkbox" name="category-id" value="1" class="custom_checkbox">
+                                                    <span class="file">Test</span>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="closed expandable"><div class="hitarea closed-hitarea expandable-hitarea"></div>
+                                            <span class="folder">Femmes</span>
+                                            <ul style="display: none; ">
+                                                <li class="expandable lastExpandable"><div class="hitarea expandable-hitarea lastExpandable-hitarea"></div>
+                                                    <span class="folder">Lingerie Sexy</span>
+                                                    <ul id="folder21">
+                                                        <li>
+                                                            <input type="checkbox" name="category-id" value="1" class="custom_checkbox">
+                                                            <span class="file">Culottes et strings</span>
+                                                        </li>
+                                                        <li>
+                                                            <input type="checkbox" name="category-id" value="1" class="custom_checkbox">
+                                                            <span class="file">Body, Combinaisons sexy</span>
+                                                        </li>
+                                                        <li>
+                                                            <input type="checkbox" name="category-id" value="1" class="custom_checkbox">
+                                                            <span class="file">Ensembles fantaisie</span>
+                                                        </li>
+                                                        <li>
+                                                            <input type="checkbox" name="category-id" value="1" class="custom_checkbox">
+                                                            <span class="file">Ensembles coquin</span>
+                                                        </li>
+                                                        <li>
+                                                            <input type="checkbox" name="category-id" value="1" class="custom_checkbox">
+                                                            <span class="file">Ensembles charme</span>
+                                                        </li>
+                                                        <li>
+                                                            <input type="checkbox" name="category-id" value="1" class="custom_checkbox">
+                                                            <span class="file">Jarretelles</span>
+                                                        </li>
+                                                        <li class="last">
+                                                            <input type="checkbox" name="category-id" value="1" class="custom_checkbox">
+                                                            <span class="file">Body, Combinaisons sexy</span>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="closed expandable"><div class="hitarea closed-hitarea expandable-hitarea"></div>
+                                            <span class="folder">Hommes</span>
+                                            <ul style="display: none; ">
+                                                <li class="last">
+                                                    <input type="checkbox" name="category-id" value="1" class="custom_checkbox">
+                                                    <span class="file">Item 1</span>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="closed expandable"><div class="hitarea closed-hitarea expandable-hitarea"></div>
+                                            <span class="folder">Sex Shop</span>
+                                            <ul style="display: none; ">
+                                                <li class="last">
+                                                    <input type="checkbox" name="category-id" value="1" class="custom_checkbox">
+                                                    <span class="file">Item 1</span>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="closed collapsable expandable"><div class="hitarea closed-hitarea collapsable-hitarea expandable-hitarea"></div>
+                                            <span class="folder">Chaussures</span>
+                                            <ul style="display: none; ">
+                                                <li class="last">
+                                                    <input type="checkbox" name="category-id" value="1" class="custom_checkbox">
+                                                    <span class="file">Item 1</span>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="closed expandable"><div class="hitarea closed-hitarea expandable-hitarea"></div>
+                                            <span class="folder">Bijoux</span>
+                                            <ul style="display: none; ">
+                                                <li class="last">
+                                                    <input type="checkbox" name="category-id" value="1" class="custom_checkbox">
+                                                    <span class="file">Item 1</span>
+                                                </li>
+                                            </ul>
+                                        </li> 
+                                        <li class="closed expandable"><div class="hitarea closed-hitarea expandable-hitarea"></div>
+                                            <span class="folder">Bien-etre</span>
+                                            <ul style="display: none; ">
+                                                <li class="last">
+                                                    <input type="checkbox" name="category-id" value="1" class="custom_checkbox">
+                                                    <span class="file">Item 1</span>
+                                                </li>
+                                            </ul>
+                                        </li> 
+                                        <li class="closed expandable"><div class="hitarea closed-hitarea expandable-hitarea"></div>
+                                            <span class="folder">Bric a Brac sexy</span>
+                                            <ul style="display: none; ">
+                                                <li class="last">
+                                                    <input type="checkbox" name="category-id" value="1" class="custom_checkbox">
+                                                    <span class="file">Item 1</span>
+                                                </li>
+                                            </ul>
+                                        </li> 
+                                        <li class="closed expandable"><div class="hitarea closed-hitarea expandable-hitarea"></div>
+                                            <span class="folder">Fetish-SM</span>
+                                            <ul style="display: none; ">
+                                                <li class="last">
+                                                    <input type="checkbox" name="category-id" value="1" class="custom_checkbox">
+                                                    <span class="file">Item 1</span>
+                                                </li>
+                                            </ul>
+                                        </li> 
+                                        <li class="closed expandable lastExpandable"><div class="hitarea closed-hitarea expandable-hitarea lastExpandable-hitarea"></div>
+                                            <span class="folder">DVD</span>
+                                            <ul style="display: none; ">
+                                                <li class="last">
+                                                    <input type="checkbox" name="category-id" value="1" class="custom_checkbox">
+                                                    <span class="file">Item 1</span>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product_block">
+                                <div class="breadcrumbs">
+                                    <ul>
+                                        <li>
+                                            <a href="#">Femmes</a>
+                                        </li>
+                                        <li>/</li>
+                                        <li>
+                                            <a href="#">Lingerine Sexy</a>
+                                        </li>
+                                        <li>/</li>
+                                        <li>
+                                            <a href="#">Nuisettes</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="product_row">
+                                    <div class="image_block">
+                                        <img src="images/demo_images/shoe1.png" alt="shoe1.png"/>
+                                    </div>
+                                    <div>Bottines Daring Zèbre</div>
+                                    <div>90,00 €</div>
+                                    <div>
+                                        <strong>+ Add to home page block</strong>
+                                        <a href="#" title="select">#1</a>
+                                        <a href="#" title="select">#2</a>
+                                        <a href="#" title="select">#3</a>
+                                        <a href="#" title="select">#4</a>
+                                    </div>
+                                </div>
+                                <div class="product_row">
+                                    <div class="image_block">
+                                        <img src="images/demo_images/shoe2.png" alt="shoe2.png"/>
+                                    </div>
+                                    <div>Bottines Daring Skull</div>
+                                    <div>9120,00 €</div>
+                                    <div>
+                                        <strong>+ Add to home page block</strong>
+                                        <a href="#" title="select">#1</a>
+                                        <a href="#" title="select">#2</a>
+                                        <a href="#" title="select">#3</a>
+                                        <a href="#" title="select">#4</a>
+                                    </div>
+                                </div>
+                                <div class="product_row">
+                                    <div class="image_block">
+                                        <img src="images/demo_images/shoe3.png" alt="shoe3.png"/>
+                                    </div>
+                                    <div>Escarpins ouverts bicolores Seduce</div>
+                                    <div>901,00 €</div>
+                                    <div>
+                                        <strong>+ Add to home page block</strong>
+                                        <a href="#" title="select">#1</a>
+                                        <a href="#" title="select">#2</a>
+                                        <a href="#" title="select">#3</a>
+                                        <a href="#" title="select">#4</a>
+                                    </div>
+                                </div>
+                                <div class="product_row">
+                                    <div class="image_block">
+                                        <img src="images/demo_images/shoe4.png" alt="shoe4.png"/>
+                                    </div>
+                                    <div>Bottines Daring Zèbre</div>
+                                    <div>90,00 €</div>
+                                    <div>
+                                        <strong>+ Add to home page block</strong>
+                                        <a href="#" title="select">#1</a>
+                                        <a href="#" title="select">#2</a>
+                                        <a href="#" title="select">#3</a>
+                                        <a href="#" title="select">#4</a>
+                                    </div>
+                                </div>
+                                <div class="ta_center">
+                                    <div class="pagination">
+                                        <a href="#" class="prev"></a>
+                                        <a href="#">1</a>
+                                        <a href="#">2</a>
+                                        <a href="#">3</a>
+                                        <a href="#">4</a>
+                                        <a href="#">5</a>
+                                        <a href="#" class="next"></a>
+                                        <div class="fclear"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="fclear"></div>
+                        </div>
+                        <div class="ta_center">
+                            <input type="button" class="button pink" value="Preview">
+                            <input type="submit" class="button pink" value="Save and continue">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="fclear"></div>
+            <div id="info_tooltip" class="tooltip">
+                <div class="tooltip_content">
+                    <p><strong>Notifications</strong></p>
+                    <p>Nulla id diam eu velit venenatis dignissim. Sed nec metus ut elit placerat elementum ut sed nulla. Cras vitae nulla leo, bibendum pretium tellus. In vehicula dolor eget purus ultrices quis diam.</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
